@@ -2,7 +2,8 @@
 title: 'Death In Space - #4N4RCHY PR06R4M'
 description: 'DEATH IN SPACE est un jeu de rôle de science-fiction et de survie dans un univers dévasté par la guerre, écrit par Christian Plogfors et Niblaeus du Stockholm Kartell.'
 pubDate: '2024-04-19'
-tags: ["jdr", "test", "meerde"]
+tags: ["jdr"]
+draft: false
 ---
 
 DEATH IN SPACE est un jeu de rôle de science-fiction écrit par Christian Plogfors et Niblaeus du Stockholm Kartell.
