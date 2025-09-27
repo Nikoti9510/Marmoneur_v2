@@ -1,0 +1,86 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseHead from "../components/BaseHead.astro";
+import Footer from "../components/Footer.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+import Tags from "../components/Tags.astro";
+
+type Props = CollectionEntry<"blog">["data"];
+
+const { title, description, pubDate, updatedDate, tags } = Astro.props;
+---
+
+<html lang="en">
+	<head>
+		<BaseHead title={title} description={description} />
+		<style>
+			.prose {
+				margin: auto;
+				padding: 1em;
+				color: rgb(var(--gray-dark));
+			}
+			.meta {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				gap: 2rem;
+			}
+			.title {
+				display: grid;
+				gap: 1rem;
+				padding: 1em 0;
+				text-align: center;
+				line-height: 1;
+			}
+			.title h1 {
+				margin: 0 0 0.5em 0;
+			}
+			.date {
+				color: rgb(var(--gray));
+			}
+			.last-updated-on {
+				font-style: italic;
+			}
+			.back {
+				display: inline-flex;
+				gap: .5rem;
+				justify-content: center;
+				text-decoration: none;
+
+				& :not(.arrow) {
+					text-decoration: underline
+				}
+			}
+		</style>
+	</head>
+
+	<body>
+		<main>
+			<article>
+				<div class="prose">
+					<div class="title">
+						<a class="back" href="/"><span class="arrow">←</span><span>Retour à l'accueil</span></a>
+						<div class="meta">
+							<div class="date">
+								<FormattedDate date={pubDate} />
+								{
+									updatedDate && (
+										<div class="last-updated-on">
+											Last updated on{" "}
+											<FormattedDate date={updatedDate} />
+										</div>
+									)
+								}
+							</div>
+							<Tags tags={tags} />
+						</div>
+						<h1>{title}</h1>
+						<hr />
+					</div>
+					<slot />
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
