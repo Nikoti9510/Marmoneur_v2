@@ -96,6 +96,7 @@ a:hover {
 
 p {
 	margin-bottom: 1em;
+	text-wrap: pretty;
 }
 
 .prose p {
