@@ -1,5 +1,5 @@
 ---
-title: "Essayer de faire plus de ce qui compte"
+title: "Article de connard.txt"
 description: "Comment sortir des cercles de distractions et engager  plus significativement avec les loisirs et projets qui me motivent ? Apprendre à aimer courir plutôt que de fantasmer la fin de la course."
 pubDate: '2025-09-29'
 tags: ["meta"]
