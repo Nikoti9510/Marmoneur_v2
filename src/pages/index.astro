@@ -16,75 +16,34 @@ publishedPosts.sort(
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-		<style>
-			ul {
-				list-style: none;
-				display: grid;
-				gap: 1rem;
-				padding: 0;
-				margin: 0;
-			}
-			ul li * {
-				text-decoration: none;
-				transition: 0.2s ease;
-			}
-			ul li a {
-				display: block;
-			}
-			.title {
-				margin: 0;
-				color: rgb(var(--black));
-				line-height: 1;
-			}
-			.date {
-				margin: 0;
-				color: rgb(var(--gray));
-			}
-			ul li a:hover h2,
-			ul li a:hover .date {
-				color: rgb(var(--accent));
-			}
-			@media (max-width: 720px) {
-				ul {
-					gap: 0.5em;
-				}
-				ul li {
-					width: 100%;
-					text-align: center;
-				}
-			}
-		</style>
 	</head>
 
 	<body>
-		<main>
-			<section>
-				<ul>
+		<main class="grid">
+			<h1>Mon bloug.</h1>
+			<section class="posts-collection">
 					{	
 						publishedPosts.map((post, i) => {
 							return (
 								/* fragment */
 								<> 
-									<li>
+									<article>
 										<a href={`/blog/${post.id}/`}>
 											<h2 class="title">
 												{post.data.title}
 											</h2>
-											<p class="date">
+											<span class="date">
 												<FormattedDate
 													date={post.data.pubDate}
 												/>
-											</p>
+											</span>
 										</a>
-									</li>
-									{i + 1 !== publishedPosts.length && <hr />}
+									</article>
 								</>
 							);
 						})
 					}
-				</ul>
 			</section>
 		</main>
-		<Footer />
 	</body>
 </html>
