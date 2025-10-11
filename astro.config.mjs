@@ -14,7 +14,7 @@ export default defineConfig({
 			[
 				rehypeExternalLinks,
 				{
-					content: { type: 'text', value: ' 🔗' },
+					content: { type: 'text', value: '↗' },
 					rel: {value: 'external'} // ne fonctionne pas, mais évite la valeur par défaut 'nofollow'. Oh well...
 				}
 			],

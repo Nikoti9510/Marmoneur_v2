@@ -4,7 +4,7 @@
 	html {
 		color-scheme: light dark;
 		font:
-			clamp(1rem, 1rem + 0.5vw, 2rem) / 1.4 system-ui,
+			clamp(1rem, 1rem + 0.5vw, 2rem) / 1.7 system-ui,
 			sans-serif;
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
@@ -14,6 +14,7 @@
 	body {
 		margin: 0;
 		padding: 2rem;
+		background-color: var(--surface);
 
 		@media (width < 500px) {
 			padding: 1rem;
@@ -44,11 +45,13 @@
 	h4,
 	h5,
 	h6
+
 	/* FUTURE :heading */
 		{
 		text-wrap: balance;
 		margin-block-start: 2rem;
 		margin-block-end: .5lh;
+		font-family: sans-serif;
 	}
 
 	h1 {
@@ -65,6 +68,13 @@
 	a {
 		color: var(--color_link);
 		text-underline-offset: 2px;
+
+		&>span {
+			display: inline-block;
+			font-size: 60%;
+			vertical-align: super;
+			padding-inline-start: .2em;
+		}
 
 		&:not(:is(:hover, :focus)) {
 			text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
@@ -208,6 +218,8 @@
 	table {
 		caption-side: bottom;
 		border-collapse: collapse;
+		width: 100%;
+		margin-block: 1em;
 
 		td {
 			font-size: 90%;
@@ -218,6 +230,11 @@
 			word-break: normal;
 			border: 1px solid gray;
 			padding: 0.5rem;
+			text-align: start;
+		}
+
+		tbody tr:nth-child(odd) {
+			background-color: hsl(from var(--surface) h s 10%);
 		}
 	}
 
@@ -260,9 +277,19 @@
 
 @layer variables {
 	:root {
+		--text-heading: light-dark(#000, #fff);
+		--text-body: light-dark(#212121, #e7e1e1);
+		--surface: light-dark(#efefef, #212121);
+		--color_link: light-dark(#4b1df3, #e8f800);
 		--max-inline-size: 60ch;
-		--color_link: oklch(0.68 0.17 228);
-		--color_bg: oklch(26.241% 0.00294 197.537);
+	}
+
+	html[data-theme="light"] {
+		color-scheme: light;
+	}
+
+	html[data-theme="dark"] {
+		color-scheme: dark;
 	}
 }
 
@@ -295,13 +322,42 @@
 		gap: 1rem;
 
 		& a {
+			text-decoration: none;
 			display: block;
-			padding: 2rem;
-			background-color: var(--color_bg);
+			color: var(--text-body);
+
+			&:hover {
+				color: var(--color_link);
+				text-decoration: underline;
+				text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
+			}
+
+			& .date {
+				text-decoration: none;
+			}
 		}
 
 		& .title {
 			margin-block: 0;
+		}
+	}
+}
+
+@layer prose {
+	.prose {
+		& blockquote {
+			background-color: hsl(from var(--surface) h s 10%);
+			padding: .5lh .75lh;
+			margin-block-start: 1em;
+			margin-inline: 0;
+
+			& :is(h1,h2,h3,h4,h5,h6) {
+				margin-block-start: 0;
+			}
+
+			& p {
+				margin-block: 0;
+			}
 		}
 	}
 }

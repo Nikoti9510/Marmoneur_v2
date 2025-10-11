@@ -11,8 +11,7 @@ Une liste de 500 objets pouvant être trouvés dans des ruines sales et obscures
 Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accorder simplement un avantage ou une réussite automatique au joueur qui utilise un objet de manière créative, ou laisser les joueurs décorer leurs personnages avec les babioles puantes des décombres. 
 
 > ***Comment lancer 1d500 :*** \
-> Commencez par lancer 1d10, et attribuez le résultat de la façon suivante *\[0,1 = 1 | 2,3 = 2 | 4,5 = 3 | 6,7 = 4 | 8,9 = 5]*. Ce résultat correspond à la centaine. Ensuite, lancer 1d100 pour déterminer le reste du lancer. \
-> Exemple : Le d10 donne 3, on prend donc 2 pour la centaine. Le d100 donne 12, on a donc obtenu 212 sur le d500, un *collier de capsules de bouteilles*. Génial.
+> Lancez *1d10*, et attribuez le résultat de la façon suivante : *\[0,1 = 1 | 2,3 = 2 | 4,5 = 3 | 6,7 = 4 | 8,9 = 5]*. Ce résultat correspond à la centaine. Ensuite, lancer *1d100* pour déterminer le reste du lancer.
 
 ## 1d500 objets
 1. vieux pneu de tracteur
