@@ -108,6 +108,15 @@
 		ol,
 		dl {
 			padding-inline-start: 2ch;
+			margin-block-end: 1em;
+		}
+
+		li>p {
+			display: inline;
+		}
+		
+		li:has(p) + li {
+			margin-block-start: 1em;
 		}
 	}
 
@@ -351,7 +360,7 @@
 			margin-block-start: 1em;
 			margin-inline: 0;
 
-			& :is(h1,h2,h3,h4,h5,h6) {
+			& :is(h1, h2, h3, h4, h5, h6) {
 				margin-block-start: 0;
 			}
 
