@@ -1,0 +1,64 @@
+---
+import Parser from "rss-parser";
+import Layout from "../layouts/layout.astro";
+const parser = new Parser();
+
+const maxDate = new Date();
+maxDate.setDate(maxDate.getDate() - 30);
+
+const feedSources = [
+    "https://www.prismaticwasteland.com/?format=rss",
+    "https://riseupcomus.blogspot.com/feeds/posts/default",
+];
+
+interface FeedItem {
+    feed?: string;
+    title?: string;
+    link?: string;
+    date?: Date;
+}
+
+const feedItems: FeedItem[] = [];
+
+await Promise.allSettled(
+    feedSources.map(async (source) => {
+        try {
+            const feed = await parser.parseURL(source);
+            feed.items.forEach((item) => {
+                const date = item.pubDate ? new Date(item.pubDate) : undefined;
+                if (date && date >= maxDate) {
+                    feedItems.push({
+                        feed: feed.title,
+                        title: item.title,
+                        link: item.link,
+                        date,
+                    });
+                }
+            });
+        } catch (error) {
+            console.error(`Error fetching feed from ${source}:`, error);
+        }
+    }),
+);
+
+const sortedFeedItems = feedItems.sort(
+    (a, b) =>
+        (b.date ?? new Date()).getTime() - (a.date ?? new Date()).getTime(),
+);
+---
+
+<Layout>
+    <main>
+        {
+            sortedFeedItems.map((item) => (
+                <ul>
+                    <li>
+                        <a href={item.link}>{item.title}</a>
+                        <p>{item.feed}</p>
+                        <p>{item.date}</p>
+                    </li>
+                </ul>
+            ))
+        }
+    </main>
+</Layout>

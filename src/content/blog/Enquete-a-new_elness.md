@@ -243,9 +243,6 @@ Une fois rentrée dans la mine, les sons de la montagne disparaissent pour laiss
 🔎 Liste des décès à l'église. Le dernier enfants est morts il y a 3 semaines.
 
 
-
-
-
 ## Prélude
 Si vous avez le temps, il est possible de jouer une ou deux scènes d'enquêtes à Boston avant de partir pour New Elness. Cela permet de commencer doucement le scénario, ce qui donnera encore plus de contraste à la partie. Laissez les joueurs faire des propositions, et piochez dans la liste des indices pour récompenser les bonnes idées. 
 

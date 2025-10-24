@@ -1,48 +1,48 @@
 ---
 import { getCollection } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
+import Layout from "../layouts/Layout.astro";
 import FormattedDate from "../components/FormattedDate.astro";
-import { SITE_DESCRIPTION, SITE_TITLE } from "../consts";
+
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+const title = SITE_TITLE;
+const description = SITE_DESCRIPTION;
 
 const posts = await getCollection("blog");
 const publishedPosts = posts.filter((post) => post.data.draft === false);
 publishedPosts.sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(), 
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
 
-<!doctype html>
-<html lang="en">
-	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
-	</head>
-
+<Layout title={title} description={description}>
 	<body>
 		<main class="grid">
 			<h1>Mon bloug.</h1>
 			<section class="posts-collection">
-					{	
-						publishedPosts.map((post, i) => {
-							return (
-								/* fragment */
-								<> 
-									<article>
-										<a href={`/blog/${post.id}/`}>
-											<h2 class="title">
-												{post.data.title}
-											</h2>
-											<span class="date">
-												<FormattedDate
-													date={post.data.pubDate}
-												/>
-											</span>
-										</a>
-									</article>
-								</>
-							);
-						})
-					}
+				{
+					publishedPosts.map((post, i) => {
+						return (
+							/* fragment */
+							<>
+								<article>
+									<a href={`/blog/${post.id}/`}>
+										<h2 class="title">{post.data.title}</h2>
+										<span class="date">
+											<FormattedDate
+												date={post.data.pubDate}
+											/>
+										</span>
+									</a>
+								</article>
+							</>
+						);
+					})
+				}
+			</section>
+			<section>
+				<h2>FEED RSS</h2>
+				<a href="/rssFeed">vers le feed</a>
 			</section>
 		</main>
 	</body>
-</html>
+</Layout>

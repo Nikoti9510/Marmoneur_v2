@@ -1,6 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content";
-import BaseHead from "../components/BaseHead.astro";
+import Layout from "../layouts/Layout.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 import Tags from "../components/Tags.astro";
 
@@ -9,40 +9,33 @@ type Props = CollectionEntry<"blog">["data"];
 const { title, description, pubDate, updatedDate, tags } = Astro.props;
 ---
 
-<html lang="en">
-	<head>
-		<BaseHead title={title} description={description} />
-	</head>
-
-	<body>
-		<main>
-			<article class="grid">
-				<div class="title">
-					<a class="back" href="/"
-						><span class="arrow">←</span><span
-							>Retour à l'accueil</span
-						></a
-					>
-					<div class="meta">
-						<div class="date">
-							<FormattedDate date={pubDate} />
-							{
-								updatedDate && (
-									<div class="last-updated-on">
-										Last updated on{" "}
-										<FormattedDate date={updatedDate} />
-									</div>
-								)
-							}
-						</div>
-						<Tags tags={tags} />
+<Layout title={title} description={description}>
+	<main>
+		<article class="grid">
+			<div class="title">
+				<a class="back" href="/"
+					><span class="arrow">←</span><span>Retour à l'accueil</span
+					></a
+				>
+				<div class="meta">
+					<div class="date">
+						<FormattedDate date={pubDate} />
+						{
+							updatedDate && (
+								<div class="last-updated-on">
+									Last updated on{" "}
+									<FormattedDate date={updatedDate} />
+								</div>
+							)
+						}
 					</div>
+					<Tags tags={tags} />
 				</div>
-				<div class="prose">
-					<h1>{title}</h1>
-					<slot />
-				</div>
-			</article>
-		</main>
-	</body>
-</html>
+			</div>
+			<div class="prose">
+				<h1>{title}</h1>
+				<slot />
+			</div>
+		</article>
+	</main>
+</Layout>
