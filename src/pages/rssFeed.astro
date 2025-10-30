@@ -1,15 +1,16 @@
 ---
 import Parser from "rss-parser";
-import Layout from "../layouts/layout.astro";
+import {feedSource} from "../Feeds/feedSources.ts";
+import Layout from "../layouts/Layout.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+const title = SITE_TITLE;
+const description = SITE_DESCRIPTION;
 const parser = new Parser();
 
 const maxDate = new Date();
-maxDate.setDate(maxDate.getDate() - 30);
+maxDate.setDate(maxDate.getDate() - 7);
 
-const feedSources = [
-    "https://www.prismaticwasteland.com/?format=rss",
-    "https://riseupcomus.blogspot.com/feeds/posts/default",
-];
+const ttrpgFeed = feedSource?.get(1);
 
 interface FeedItem {
     feed?: string;
@@ -21,7 +22,7 @@ interface FeedItem {
 const feedItems: FeedItem[] = [];
 
 await Promise.allSettled(
-    feedSources.map(async (source) => {
+    ttrpgFeed!.map(async (source: any) => {
         try {
             const feed = await parser.parseURL(source);
             feed.items.forEach((item) => {
@@ -47,7 +48,7 @@ const sortedFeedItems = feedItems.sort(
 );
 ---
 
-<Layout>
+<Layout title={title} description={description}>
     <main>
         {
             sortedFeedItems.map((item) => (
