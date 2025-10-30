@@ -1,0 +1,29 @@
+---
+import type { CollectionEntry } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import FormattedDate from "../components/FormattedDate.astro";
+type Props = CollectionEntry<"blog">["data"];
+const { title, pubDate, updatedDate } = Astro.props;
+---
+
+<Layout>
+	<header class="title">
+		<a class="back" href="/"
+			><span class="arrow">←</span><span>Retour à l'accueil</span></a
+		>
+		<div class="date">
+			<FormattedDate date={pubDate} />
+			{
+				updatedDate && (
+					<div class="last-updated-on">
+						Last updated on <FormattedDate date={updatedDate} />
+					</div>
+				)
+			}
+		</div>
+	</header>
+	<div class="prose">
+		<h1>{title}</h1>
+		<slot />
+	</div>
+</Layout>

@@ -1,0 +1,19 @@
+---
+import Feed from "../../layouts/Feed.astro";
+import { feedSource } from "../../Feeds/feedSources.ts";
+
+export function getStaticPaths() {
+    var feeds = [];
+    for (const feed of [...feedSource]) {
+        feeds.push(feed.at(0));
+    }
+    return feeds.map((feed, index) => ({
+        params: { id: feed },
+        props: [...feedSource][index],
+    }));
+}
+
+const feed = Astro.props;
+---
+
+<Feed {feed} />
