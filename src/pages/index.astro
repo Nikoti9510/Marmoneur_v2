@@ -1,48 +1,18 @@
 ---
-import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
-import FormattedDate from "../components/FormattedDate.astro";
-
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-const title = SITE_TITLE;
-const description = SITE_DESCRIPTION;
-
-const posts = await getCollection("blog");
-const publishedPosts = posts.filter((post) => post.data.draft === false);
-publishedPosts.sort(
-	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
-);
+import BlogPosts from "../components/BlogPosts.astro";
 ---
 
-<Layout title={title} description={description}>
-	<body>
-		<main class="grid">
-			<h1>Mon bloug.</h1>
-			<section class="posts-collection">
-				{
-					publishedPosts.map((post, i) => {
-						return (
-							/* fragment */
-							<>
-								<article>
-									<a href={`/blog/${post.id}/`}>
-										<h2 class="title">{post.data.title}</h2>
-										<span class="date">
-											<FormattedDate
-												date={post.data.pubDate}
-											/>
-										</span>
-									</a>
-								</article>
-							</>
-						);
-					})
-				}
-			</section>
-			<section>
-				<h2>FEED RSS</h2>
-				<a href="/rssFeed">vers le feed</a>
-			</section>
-		</main>
-	</body>
+<Layout>
+	<section>
+		<h1>Marmomeur</h1>
+	</section>
+	<section class="posts-collection">
+		<h2>Blog.</h2>
+		<BlogPosts headingType="h3"/>
+	</section>
+	<section class="feeds">
+		<h2>Feeds.</h2>
+		<a href="/rssFeed">vers le feed</a>
+	</section>
 </Layout>

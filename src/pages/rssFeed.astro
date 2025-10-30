@@ -2,9 +2,8 @@
 import Parser from "rss-parser";
 import {feedSource} from "../Feeds/feedSources.ts";
 import Layout from "../layouts/Layout.astro";
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
-const title = SITE_TITLE;
-const description = SITE_DESCRIPTION;
+
+
 const parser = new Parser();
 
 const maxDate = new Date();
@@ -48,7 +47,7 @@ const sortedFeedItems = feedItems.sort(
 );
 ---
 
-<Layout title={title} description={description}>
+<Layout>
     <main>
         {
             sortedFeedItems.map((item) => (

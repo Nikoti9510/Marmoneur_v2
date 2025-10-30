@@ -4,8 +4,7 @@
 	html {
 		color-scheme: light dark;
 		font:
-			clamp(1rem, 1rem + 0.5vw, 2rem) / 1.7 system-ui,
-			sans-serif;
+			clamp(1rem, .6rem + 0.5vw, 2rem) / 1.4 monospace, system-ui;
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
@@ -45,17 +44,22 @@
 	h4,
 	h5,
 	h6
-
 	/* FUTURE :heading */
 		{
 		text-wrap: balance;
 		margin-block-start: 2rem;
 		margin-block-end: .5lh;
-		font-family: sans-serif;
 	}
-
+	
 	h1 {
 		margin-block-start: 0rem;
+		font-size: var(--font-size-h1);
+	}
+	h2 {
+		font-size: var(--font-size-h2);
+	}
+	h3 {
+		font-size: var(--font-size-h3);
 	}
 
 	p,
@@ -290,7 +294,11 @@
 		--text-body: light-dark(#212121, #e7e1e1);
 		--surface: light-dark(#efefef, #212121);
 		--color_link: light-dark(#4b1df3, #e8f800);
-		--max-inline-size: 60ch;
+		--max-inline-size: 55ch;
+
+		--font-size-h1: 2.5rem;
+		--font-size-h2: 1.5rem;
+		--font-size-h3: 1rem;
 	}
 
 	html[data-theme="light"] {
@@ -303,14 +311,10 @@
 }
 
 @layer layout {
-	.grid {
-		--max-content-width: var(--max-inline-size, 88ch);
+	body {
+		--max-content-width: var(--max-inline-size, 80ch);
 		--breakout-difference: 0.2;
-
-		/*  Compute total allowed grid width to `--breakout-difference` 
-      larger than content area  */
 		--breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
-
 		display: grid;
 		grid-template-columns:
 			[grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)),
@@ -320,7 +324,7 @@
 		margin: 5vb auto;
 	}
 
-	.grid>*:not(.breakout) {
+	body>*:not(.breakout) {
 		grid-column: content;
 	}
 }

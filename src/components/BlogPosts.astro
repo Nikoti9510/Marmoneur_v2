@@ -1,0 +1,30 @@
+---
+import FormattedDate from "../components/FormattedDate.astro";
+import { getCollection } from "astro:content";
+const posts = await getCollection("blog");
+const publishedPosts = posts.filter((post) => post.data.draft === false);
+publishedPosts.sort(
+	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const { headingType } = Astro.props;
+const Heading = headingType;
+---
+
+{
+    publishedPosts.map((post, i) => {
+        return (
+            /* fragment */
+            <>
+                <article>
+                    <a href={`/blog/${post.id}/`}>
+                        <Heading class="title">{post.data.title}</Heading>
+                        <span class="date">
+                            <FormattedDate date={post.data.pubDate} />
+                        </span>
+                    </a>
+                </article>
+            </>
+        );
+    })
+}
