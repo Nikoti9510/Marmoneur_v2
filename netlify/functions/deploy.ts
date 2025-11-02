@@ -1,5 +1,3 @@
-// netlify/functions/deploy.ts
-
 import type { Config } from '@netlify/functions';
 
 const BUILD_HOOK =
