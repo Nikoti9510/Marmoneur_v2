@@ -1,0 +1,15 @@
+---
+import { feedSource } from "../Feeds/feedSources.ts";
+const { headingType } = Astro.props;
+const Heading = headingType;
+---
+
+{
+  [...feedSource].map(([name]) => (
+    <article>
+      <a href={`/feed/${name}`}>
+        <Heading class="title">{name}</Heading>
+      </a>
+    </article>
+  ))
+}

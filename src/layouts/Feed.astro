@@ -1,67 +1,32 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Parser from "rss-parser";
-const parser = new Parser();
-
-const maxDate = new Date();
-maxDate.setDate(maxDate.getDate() - 7);
-
-interface FeedItem {
-    feed?: string;
-    title?: string;
-    link?: string;
-    date?: Date;
-}
-const feedItems: FeedItem[] = [];
+import { getFeedItems } from "../Feeds/getFeeds.ts";
 
 const { feed } = Astro.props;
-const feedName = feed["0"];
-const feedUrls: string[] = feed["1"];
-
-await Promise.allSettled(
-    feedUrls.map(async (url) => {
-        try {
-            const feed = await parser.parseURL(url);
-            feed.items.forEach((item) => {
-                const date = item.pubDate ? new Date(item.pubDate) : undefined;
-                if (date && date >= maxDate) {
-                    feedItems.push({
-                        feed: feed.title,
-                        title: item.title,
-                        link: item.link,
-                        date,
-                    });
-                }
-            });
-        } catch (error) {
-            console.error(`Error fetching feed from ${feedUrls}:`, error);
-        }
-    }),
-);
-
-const sortedFeedItems = feedItems.sort(
-    (a, b) =>
-        (b.date ?? new Date()).getTime() - (a.date ?? new Date()).getTime(),
-);
+const [feedName, feedUrls] = feed;
+const feedItems = await getFeedItems(feedName, feedUrls);
 ---
 
 <Layout>
-    <header class="title">
-        <a class="back" href="/"
-            ><span class="arrow">←</span><span>Retour à l'accueil</span></a
-        >
-    </header>
-    <div class="feedContainer">
-        {
-            sortedFeedItems.map((item) => (
-                <ul>
-                    <li>
-                        <a href={item.link}>{item.title}</a>
-                        <p>{item.feed}</p>
-                        <p>{item.date}</p>
-                    </li>
-                </ul>
-            ))
-        }
-    </div>
+  <header class="title">
+    <p>{feedName}</p>
+    <a class="back" href="/">
+      <span class="arrow">←</span><span>Retour à l'accueil</span>
+    </a>
+  </header>
+  <div class="feedContainer">
+    {feedItems.length === 0 ? (
+      <p>Aucun article récent trouvé.</p>
+    ) : (
+      <ul>
+        {feedItems.map((item) => (
+          <li>
+            <a target="_blank" href={item.link}>{item.title}</a>
+            <p>{item.feed}</p>
+            <p>{item.date?.toLocaleDateString()}</p>
+          </li>
+        ))}
+      </ul>
+    )}
+  </div>
 </Layout>

@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import BlogPosts from "../components/BlogPosts.astro";
+import PostsList from "../components/PostsList.astro";
+import FeedsList from "../components/FeedsList.astro";
 ---
 
 <Layout>
@@ -9,10 +10,10 @@ import BlogPosts from "../components/BlogPosts.astro";
 	</section>
 	<section class="posts-collection">
 		<h2>Blog.</h2>
-		<BlogPosts headingType="h3"/>
+		<PostsList headingType="h3"/>
 	</section>
 	<section class="feeds">
 		<h2>Feeds.</h2>
-		<a href="/rssFeed">vers le feed</a>
+		<FeedsList headingType="h3"/>
 	</section>
 </Layout>
