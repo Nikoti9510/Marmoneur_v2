@@ -19,7 +19,7 @@ maxDate.setDate(maxDate.getDate() - 7);
 export async function getFeedItems(feedName: string, feedUrls: string[]): Promise<FeedItem[]> {
   const feedItems: FeedItem[] = [];
 
-  await Promise.allSettled(
+  await Promise.allSettled( 
     feedUrls.map(async (url) => {
       try {
         const feed = await parser.parseURL(url);
