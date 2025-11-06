@@ -294,7 +294,7 @@
 		--text-body: light-dark(#212121, #e7e1e1);
 		--surface: light-dark(#efefef, #212121);
 		--color_link: light-dark(#4b1df3, #e8f800);
-		--max-inline-size: 55ch;
+		--max-inline-size: 65ch;
 
 		--font-size-h1: 2.5rem;
 		--font-size-h2: 1.5rem;
@@ -334,7 +334,7 @@
 
 @layer sections {
 	.posts-collection,
-	.feed {
+	.feeds {
 		display: grid;
 		gap: 1rem;
 

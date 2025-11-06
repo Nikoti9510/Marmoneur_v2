@@ -9,10 +9,10 @@ const feedItems = await getFeedItems(feedName, feedUrls);
 
 <Layout>
   <header class="title">
-    <p>{feedName}</p>
     <a class="back" href="/">
       <span class="arrow">←</span><span>Retour à l'accueil</span>
     </a>
+    <h1>{feedName}</h1>
   </header>
   <div class="feedContainer">
     {feedItems.length === 0 ? (
