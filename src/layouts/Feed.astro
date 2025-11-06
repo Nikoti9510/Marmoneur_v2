@@ -1,7 +1,6 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getFeedItems } from "../Feeds/getFeeds.ts";
-import FormattedDate from "../components/FormattedDate.astro";
 
 const { feed } = Astro.props;
 const [feedName, feedUrls] = feed;
@@ -24,16 +23,7 @@ const feedItems = await getFeedItems(feedName, feedUrls);
           <li>
             <a target="_blank" href={item.link}>{item.title}</a>
             <p>{item.feed}</p>
-            <div class="date">
-              <FormattedDate date={pubDate} />
-              {
-                updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )
-              }
-            </div>
+            <time datetime={item.date}>
           </li>
         ))}
       </ul>
