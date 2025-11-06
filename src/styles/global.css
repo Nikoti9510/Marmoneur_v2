@@ -16,7 +16,7 @@
 		background-color: var(--surface);
 		max-width: var(--max-inline-size);
 
-		@media (width < 500px) {
+		@media (width < 700px) {
 			padding: 1rem;
 		}
 	}
