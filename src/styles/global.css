@@ -312,7 +312,7 @@
 
 @layer layout {
 	body {
-		--max-content-width: var(--max-inline-size, 80ch);
+		/* --max-content-width: var(--max-inline-size, 80ch);
 		--breakout-difference: 0.2;
 		--breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
 		display: grid;
@@ -321,16 +321,20 @@
 				1fr) [content-end] 1fr [grid-end];
 		width: min(100% - 2rem, var(--breakout-grid-width));
 		row-gap: 1rem;
-		margin: 5vb auto;
+		margin: 5vb auto; */
+
+		max-width: var(--max-inline-size);
+		margin: 3rem;
 	}
 
-	body>*:not(.breakout) {
+	/* body>*:not(.breakout) {
 		grid-column: content;
-	}
+	} */
 }
 
 @layer sections {
-	.posts-collection {
+	.posts-collection,
+	.feed {
 		display: grid;
 		gap: 1rem;
 
