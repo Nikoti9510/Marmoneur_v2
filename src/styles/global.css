@@ -44,20 +44,23 @@
 	h4,
 	h5,
 	h6
+
 	/* FUTURE :heading */
 		{
 		text-wrap: balance;
 		margin-block-start: 2rem;
 		margin-block-end: .5lh;
 	}
-	
+
 	h1 {
 		margin-block-start: 0rem;
 		font-size: var(--font-size-h1);
 	}
+
 	h2 {
 		font-size: var(--font-size-h2);
 	}
+
 	h3 {
 		font-size: var(--font-size-h3);
 	}
@@ -118,8 +121,8 @@
 		li>p {
 			display: inline;
 		}
-		
-		li:has(p) + li {
+
+		li:has(p)+li {
 			margin-block-start: 1em;
 		}
 	}
@@ -333,6 +336,7 @@
 }
 
 @layer sections {
+
 	.posts-collection,
 	.feeds {
 		display: grid;
@@ -362,18 +366,23 @@
 	.feedContainer {
 		& ul {
 			list-style: none;
+			display: grid;
+			gap: 1rem;
+
 			& li {
 				display: grid;
 				gap: .2rem;
+
 				& * {
 					margin: 0;
 				}
+
 				& date {
 					font-style: italic;
 				}
 			}
 		}
-		
+
 	}
 }
 
