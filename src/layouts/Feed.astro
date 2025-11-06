@@ -23,7 +23,16 @@ const feedItems = await getFeedItems(feedName, feedUrls);
           <li>
             <a target="_blank" href={item.link}>{item.title}</a>
             <p>{item.feed}</p>
-            <date>{item.date?.toLocaleDateString()}</date>
+            <div class="date">
+              <FormattedDate date={pubDate} />
+              {
+                updatedDate && (
+                  <div class="last-updated-on">
+                    Last updated on <FormattedDate date={updatedDate} />
+                  </div>
+                )
+              }
+            </div>
           </li>
         ))}
       </ul>
