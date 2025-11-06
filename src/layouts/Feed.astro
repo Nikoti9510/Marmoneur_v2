@@ -23,7 +23,7 @@ const feedItems = await getFeedItems(feedName, feedUrls);
           <li>
             <a target="_blank" href={item.link}>{item.title}</a>
             <p>{item.feed}</p>
-            <time datetime={item.date}>
+            <time datetime={item.date.toLocaleDateString("fr-FR")}>{item.date.toLocaleDateString("fr-FR")}</time>
           </li>
         ))}
       </ul>
