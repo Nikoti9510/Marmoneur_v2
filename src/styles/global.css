@@ -250,7 +250,7 @@
 		}
 
 		tbody tr:nth-child(odd) {
-			background-color: hsl(from var(--surface) h s 10%);
+			background-color: hsl(from var(--surface) h s 85%);
 		}
 	}
 
@@ -389,7 +389,7 @@
 @layer prose {
 	.prose {
 		& blockquote {
-			background-color: hsl(from var(--surface) h s 10%);
+			background-color: hsl(from var(--surface) h s 85%);
 			padding: .5lh .75lh;
 			margin-block-start: 1em;
 			margin-inline: 0;
