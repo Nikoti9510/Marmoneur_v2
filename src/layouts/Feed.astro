@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getFeedItems } from "../Feeds/getFeeds.ts";
+import FormattedDate from "../components/FormattedDate.astro";
 
 const { feed } = Astro.props;
 const [feedName, feedUrls] = feed;
