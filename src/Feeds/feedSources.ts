@@ -79,7 +79,7 @@ const news = [
 ]
 
 export const feedSource = new Map<string, string[]>([
-  ["ttrpg", ttrpgFeed],
-  ["news", news],
+  ["TTRPG", ttrpgFeed],
+  ["News", news],
 ]);
 
