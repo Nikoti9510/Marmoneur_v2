@@ -12,8 +12,8 @@ const feedItems = await getFeedItems(feedName, feedUrls);
     <a class="back" href="/">
       <span class="arrow">←</span><span>Retour à l'accueil</span>
     </a>
-    <h1>{feedName}</h1>
   </header>
+  <h1>{feedName}</h1>
   <div class="feedContainer">
     {feedItems.length === 0 ? (
       <p>Aucun article récent trouvé.</p>
