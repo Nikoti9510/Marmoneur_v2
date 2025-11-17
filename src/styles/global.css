@@ -405,6 +405,28 @@
 			margin-block: 0;
 		}
 	}
+
+	.feedContainer li {
+		display: grid;
+
+		& a::after {
+			content: '↗';
+			margin-inline-start: .2rem;
+			display: inline-block;
+			font-size: 70%;
+			vertical-align: super;
+		}
+
+		& p {
+			margin: 0;
+			font-size: var(--font-size-h3);
+			font-style: italic;
+		}
+
+		& time {
+			font-size: 70%;
+		}
+	}
 }
 
 @layer prose {
@@ -428,6 +450,10 @@
 
 		& h3 {
 			margin-inline-start: .3rem;
+		}
+
+		& a>span {
+			text-decoration: none;
 		}
 
 		& blockquote {

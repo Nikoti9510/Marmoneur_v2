@@ -77,9 +77,7 @@ const ttrpgFeed = [
   "https://sagesanctum.bearblog.dev/feed/",
 ]
 const news = [
-  "https://www.lemonde.fr/rss/une.xml",
-  "https://www.francebleu.fr/rss/poitou/a-la-une.xml",
-  "https://www.francebleu.fr/rss/infos.xml",
+  // "https://www.francebleu.fr/rss/infos.xml",
   "https://feeds.leparisien.fr/leparisien/rss/politique",
   "https://feeds.leparisien.fr/leparisien/rss/international",
   "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/politique/?outputType=xml",
