@@ -3,9 +3,8 @@
 
 	html {
 		color-scheme: light dark;
-		color: var(--text-body);
 		font:
-			clamp(1rem, .5rem + 0.45vw, 1.2rem) / 1.4 monospace, system-ui;
+			clamp(1rem, .6rem + 0.5vw, 2rem) / 1.4 monospace, system-ui;
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
@@ -13,11 +12,13 @@
 
 	body {
 		margin: 0;
-		padding: 2rem;
+		padding: 3rem;
 		background-color: var(--surface);
-
-		@media (width < 500px) {
-			padding: 1rem;
+		max-width: var(--max-inline-size);
+	}
+	@media (width < 700px) {
+		body {
+			padding: 1.5rem;
 		}
 	}
 
@@ -48,7 +49,6 @@
 
 	/* FUTURE :heading */
 		{
-		color: var(--text-heading);
 		text-wrap: balance;
 		margin-block-start: 2rem;
 		margin-block-end: .5lh;
@@ -80,21 +80,12 @@
 
 		&>span {
 			display: inline-block;
-			font-size: 70%;
+			font-size: 60%;
 			vertical-align: super;
 			padding-inline-start: .2em;
 		}
 
-		&>span:not(.arrow) {
-			text-decoration: underline;
-		}
-
-		&>span.arrow {
-			text-decoration: none;
-		}
-
-		&:not(:is(:hover, :focus)),
-		&:not(:is(:hover, :focus))>span:not(.arrow) {
+		&:not(:is(:hover, :focus)) {
 			text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
 		}
 	}
@@ -135,10 +126,6 @@
 
 		li:has(p)+li {
 			margin-block-start: 1em;
-		}
-
-		::marker {
-			color: var(--color_link);
 		}
 	}
 
@@ -265,7 +252,7 @@
 		}
 
 		tbody tr:nth-child(odd) {
-			background-color: hsl(from var(--surface) h s 10%);
+			background-color: hsl(from var(--surface) h s 85%);
 		}
 	}
 
@@ -309,14 +296,14 @@
 @layer variables {
 	:root {
 		--text-heading: light-dark(#000, #fff);
-		--text-body: light-dark(#1f1e1e, #e4e0e0);
+		--text-body: light-dark(#212121, #e7e1e1);
 		--surface: light-dark(#efefef, #212121);
 		--color_link: light-dark(#4b1df3, #e8f800);
-		--max-inline-size: 55ch;
+		--max-inline-size: 65ch;
 
 		--font-size-h1: 2.5rem;
 		--font-size-h2: 1.5rem;
-		--font-size-h3: 1.1rem;
+		--font-size-h3: 1rem;
 	}
 
 	html[data-theme="light"] {
@@ -328,62 +315,12 @@
 	}
 }
 
-@layer layout {
-	body {
-		--max-content-width: var(--max-inline-size, 80ch);
-		--breakout-difference: 0.2;
-		--breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
-		display: grid;
-		grid-template-columns:
-			[grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)),
-				1fr) [content-end] 1fr [grid-end];
-		width: min(100% - 2rem, var(--breakout-grid-width));
-		row-gap: 1rem;
-		margin: 5vb auto;
-	}
-
-	body>*:not(.breakout) {
-		grid-column: content;
-	}
-
-	header,
-	footer {
-		padding: 1rem;
-		background-color: hsl(from var(--surface) h s 10%);
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-
-	header {
-		margin-block-end: 5rem;
-	}
-
-	footer {
-		margin-block-start: 5rem;
-
-		& p {
-			margin: 0;
-		}
-	}
-}
-
 @layer sections {
-	.highlighted-title {
-		& h2 {
-			padding: 1rem;
-			background-color: hsl(from var(--surface) h s 10%);
-		}
-	}
 
 	.posts-collection,
 	.feeds {
 		display: grid;
 		gap: 1rem;
-
-		& article {
-			padding-inline-start: .5rem;
-		}
 
 		& a {
 			text-decoration: none;
@@ -405,33 +342,34 @@
 			margin-block: 0;
 		}
 	}
-}
 
-@layer prose {
-	.title {
-		& a {
-			display: flex;
-			height: fit-content;
-			gap: .2rem;
-			text-decoration: none;
-		}
-	}
+	.feedContainer {
+		& ul {
+			list-style: none;
+			display: grid;
+			gap: 1rem;
 
-	.prose {
-		& :is(h2, h3) {
-			&::before {
-				content: "#";
-				margin-inline-end: .3rem;
-				color: var(--color_link);
+			& li {
+				display: grid;
+				gap: .2rem;
+
+				& * {
+					margin: 0;
+				}
+
+				& date {
+					font-style: italic;
+				}
 			}
 		}
 
-		& h3 {
-			margin-inline-start: .3rem;
-		}
+	}
+}
 
+@layer prose {
+	.prose {
 		& blockquote {
-			background-color: hsl(from var(--surface) h s 10%);
+			background-color: hsl(from var(--surface) h s 85%);
 			padding: .5lh .75lh;
 			margin-block-start: 1em;
 			margin-inline: 0;

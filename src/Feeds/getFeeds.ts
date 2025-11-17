@@ -8,8 +8,8 @@ interface FeedItem {
 }
 
 const parser = new Parser();
-const maxDate = new Date();
-maxDate.setDate(maxDate.getDate() - 7);
+  const maximumDate = new Date();
+  maximumDate.setDate(maximumDate.getDate() - 4);
 
 /**
  * Récupère les articles récents d'une catégorie de flux.
@@ -26,7 +26,7 @@ export async function getFeedItems(feedName: string, feedUrls: string[]): Promis
         feed.items.forEach((item) => {
 
           const date = item.pubDate ? new Date(item.pubDate) : undefined;
-          if (date && date >= maxDate) {
+          if (date && date >= maximumDate) {
             feedItems.push({
               feed: feed.title,
               title: item.title ?? "Sans titre",

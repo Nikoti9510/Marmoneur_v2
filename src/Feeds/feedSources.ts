@@ -37,7 +37,6 @@ const ttrpgFeed = [
   "https://www.explorersdesign.com/rss/",
   "https://hexculture.com/feed",
   "https://goblinpunch.blogspot.com/feeds/posts/default",
-  "https://grognardia.blogspot.com/feeds/posts/default",
   "https://talesofthegrotesqueanddungeonesque.blogspot.com/feeds/posts/default",
   "https://rememberdismove.blogspot.com/feeds/posts/default",
   "https://www.failforward.moe/feeds/posts/default",
@@ -73,13 +72,24 @@ const ttrpgFeed = [
   "https://weirdwonder.bearblog.dev/feed/",
   "https://maziriansgarden.blogspot.com/feeds/posts/default",
   "https://blog.d4caltrops.com/feeds/posts/default",
+  "https://onslaughtsix.com/feed/",
+  "https://dreamingdragonslayer.wordpress.com/feed/",
+  "https://sagesanctum.bearblog.dev/feed/",
 ]
 const news = [
   "https://www.lemonde.fr/rss/une.xml",
+  "https://www.francebleu.fr/rss/poitou/a-la-une.xml",
+  "https://www.francebleu.fr/rss/infos.xml",
+  "https://feeds.leparisien.fr/leparisien/rss/politique",
+  "https://feeds.leparisien.fr/leparisien/rss/international",
+  "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/politique/?outputType=xml",
+  "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/international/?outputType=xml",
+  "https://lesjours.fr/rss.xml",
+  "https://www.afp.com/rss.xml",
 ]
 
 export const feedSource = new Map<string, string[]>([
   ["TTRPG", ttrpgFeed],
-  ["News", news],
+  ["NEWS", news],
 ]);
 
