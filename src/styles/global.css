@@ -265,7 +265,7 @@
 		}
 
 		tbody tr:nth-child(odd) {
-			background-color: hsl(from var(--surface) h s 10%);
+			background-color: var(--surface-lighter);
 		}
 	}
 
@@ -311,6 +311,7 @@
 		--text-heading: light-dark(#000, #fff);
 		--text-body: light-dark(#1f1e1e, #e4e0e0);
 		--surface: light-dark(#efefef, #212121);
+		--surface-lighter: light-dark(#cfcfcf, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
 		--max-inline-size: 55ch;
 
@@ -349,7 +350,7 @@
 	header,
 	footer {
 		padding: 1rem;
-		background-color: hsl(from var(--surface) h s 10%);
+		background-color: var(--surface-lighter);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -372,7 +373,7 @@
 	.highlighted-title {
 		& h2 {
 			padding: 1rem;
-			background-color: hsl(from var(--surface) h s 10%);
+			background-color: var(--surface-lighter);
 		}
 	}
 
@@ -457,7 +458,7 @@
 		}
 
 		& blockquote {
-			background-color: hsl(from var(--surface) h s 10%);
+			background-color: var(--surface-lighter);
 			padding: .5lh .75lh;
 			margin-block-start: 1em;
 			margin-inline: 0;
