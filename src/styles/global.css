@@ -471,5 +471,9 @@
 				margin-block: 0;
 			}
 		}
+
+		& :is(ul,ol) > li+li {
+			margin-block-start: .3rem;
+		}
 	}
 }
