@@ -17,27 +17,27 @@ Voilà le pitch pour mon premier jeu et participation à la [One page RPG Jam de
 Vous pouvez retrouver le jeu sur [la page itch.io](https://antoine-moreau.itch.io/prevot-imperatrice) et le télécharger gratuitement (encore heureux).
 
 ## Idée initiale et mon but
-Cette année, le thème de la JAM était "GROWTH", ou "CROISSANCE" dans la langue des irréductibles armoricains. J'avais depuis un bon moment une idée de jeu de rôle solo dans lequel le joueur pourrait gérer et suivre la progression d'un ville ou d'un village. Le thème collant parfaitement, je me suis décidé a suivre cette voie. Les jeux solos ne sont pas forcément les plus simple à adapter en une seule page car ils reposent souvent sur des listes de prompts narratifs, sous la forme de tableau, qui sont souvent gourmant en espace. 
+Cette année, le thème de la JAM était "GROWTH", ou "CROISSANCE" dans la langue des irréductibles armoricains. J'avais depuis un bon moment une idée de jeu de rôle solo dans lequel le joueur pourrait gérer et suivre la progression d'une ville ou d'un village. Le thème collant parfaitement, je me suis décidé à suivre cette voie. Les jeux solos ne sont pas forcément les plus simple à adapter en une seule page car ils reposent souvent sur des listes de prompts narratifs, sous la forme de tableau, qui sont souvent gourmant en espace. 
 
-Une autre caractéristique que je voulais intégrer, un deck de tarot comme système de génération d'événement. Après quelques recherche, je me suis arrêté sur le système suivant : 
-- La ville est définit par une liste d'attribut et de ressource, dont les valeurs sont générés en début de partie. Le joueur la représente sur une grille, chaque case représentant un emplacement de bâtiment.
-- Une pile d'événements restreintes et pioché dans le deck de tarot. Cela permet de créer un identité à une ville, les événements s'enchainent et se répètent de manière cyclique. 
-- Chaque tour de jeu, le joueur peut choisir parmi une liste d'action pour gouverner la cité. En particulier, une action lui permet de construire un nouveau bâtiment s'il peut payer le coup en ressource.
+Une autre caractéristique que je voulais intégrer : un deck de tarot comme système de génération d'événement. Après quelques recherches, je me suis arrêté sur le système suivant : 
+- La ville est définit par une liste d'attribut et de ressource, dont les valeurs sont générées en début de partie. Le joueur représente sa cité sur une grille, chaque case correspondant à un emplacement de bâtiment.
+- Une pile d'événements restreinte est piochée dans le deck de tarot. Cela permet de créer une identité à une ville, les événements s'enchainent et se répètent de manière cyclique. 
+- Chaque tour de jeu, le joueur peut choisir parmi une liste d'action pour gouverner la cité. par exemple, une action lui permet de construire un nouveau bâtiment s'il peut payer son coup en ressource.
 - Un événement est tiré au hasard dans le deck de tarot, chaque carte possédant un prompte correspondant.
 
-La boucle de jeu reprend et se poursuit jusqu'à ce que la ville soit complète où si un attribut arrive à zéro, auquel cas le joueur "perd" la partie. Le but n'étant pas de créer un système de jeu équilibré ou de trouver des synergies puissantes (même si c'est sans doute possible), mais de créer des opportunités afin que le joueur puisse narrer les événements de sa ville. 
+La boucle de jeu reprend et se poursuit jusqu'à ce que la ville soit complète où qu'un des attribut arrive à zéro, auquel cas le joueur "perd" la partie. Le but n'étant pas de créer un système de jeu équilibré ou de trouver des synergies puissantes (même si c'est sans doute possible), mais de créer des opportunités afin que le joueur puisse narrer les événements de sa ville. 
 
 ## Les difficultés
 Comme c'est mon premier jeu, j'ai évidement réussi l'exploit de commettre toutes les erreurs possibles. 
-1. Je n'ai pas assez cerné mon thème. J'ai commencé à écrire mon jeu sans d'idée précise de l'univers dans lequel celui-ci se passerait. Avant-poste sur une planète nouvellement colonisé ? Groupe de survivant d'une apocalypse zombie ? Quelques mercenaires dans un fortin à la frontière des terres sauvages ? Après pas mal d'aller retour, je me suis décidé sur le choix le plus cliché et le plus familier, le médiévale fantaisie à la old-school D&D.
-2. J'ai vu trop gros. J'ai passé presque deux semaines à écrire un système d'expédition, sous la forme d'une action possible lors de la tour du joueur. Lorsqu'il est venu le temps de mettre en page mon manuscrit, sa ne loger pas sur une page A4 (la contrainte principale de la jAM). Cette idée est donc partie à la trappe.
-3. Je n'ai pas mis en place de choix suffisant pour le joueur. La première version de la liste d'action ne proposait que "construire un bâtiment" et "lancer une expédition". J'ai donc ajouté plusieurs autres actions pour aider le joueur à générer plus de ressources, pour anticiper les événements à venir, et une mécanique de [push-your-luck](https://boardgamegeek.com/boardgamemechanic/2661/push-your-luck). 
+1. **Je n'ai pas assez cerné mon thème**. J'ai commencé à écrire mon jeu sans d'idée précise de l'univers dans lequel celui-ci se passerait. Avant-poste sur une planète nouvellement colonisée ? Groupe de survivant d'une apocalypse zombie ? Quelques mercenaires dans un fortin à la frontière des terres sauvages ? Après pas mal d'aller-retour, j'ai fais le choix le plus cliché et le plus familier, le médiévale fantaisie à la old-school D&D.
+2. **J'ai vu trop gros**. J'ai passé presque deux semaines à écrire un système d'expédition, sous la forme d'une action possible lors du tour du joueur. Lorsqu'il est venu le temps de mettre en page mon manuscrit, ça ne loger pas sur une page A4 (la contrainte principale de la jAM). Cette idée est donc partie à la trappe.
+3. **Je n'ai pas mis en place suffisamment de choix impactant** pour le joueur. La première version de la liste d'action ne proposait que "construire un bâtiment" et "lancer une expédition". J'ai donc ajouté plusieurs autres actions pour aider le joueur à générer plus de ressources, pour anticiper les événements à venir, et une mécanique de [push-your-luck](https://boardgamegeek.com/boardgamemechanic/2661/push-your-luck). 
 
-Une fois ces problème résolus, je me suis retrouvé avec une boucle de gameplay unique, simple, mais fonctionnelle (?). Mais surtout, seulement quelques heures restantes pour publier mon jeu avant la fin de la JAM. Alors j'ai terminé la mise en page, j'ai publié, puis célébré, et picolé, avant de comater. 
+Une fois ces problèmes résolus, je me suis retrouvé avec une boucle de gameplay rudimentaire, mais fonctionnelle (?). Mais surtout, seulement quelques heures restantes pour publier mon jeu avant la fin de la JAM. Alors j'ai terminé la mise en page, j'ai publié, puis célébré, et picolé, avant de comater. 
 
 Ce qui nous mène à la quatrième et plus grosse erreur de débutant : 
 
-4. Je n'ai pas playtesté. Pas une seule fois, pas une seule seconde. Pas une seule carte de tarot tiré, pas un seul d6 lancé. Donc après m'être remis de mes émotions, je me suis lancé, et j'ai joué à mon jeu.
+4. **Je n'ai pas playtesté**. Pas une seule fois, pas une seule seconde. Pas une seule carte de tarot tiré, pas un seul d6 lancé, pas une seule phrase écrite. Donc après m'être remis de mes émotions, je me suis lancé, et j'ai joué à mon jeu.
 
 ## Le playstest, l'histoire de Philipe le sot
 
