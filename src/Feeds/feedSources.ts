@@ -43,7 +43,6 @@ const ttrpgFeed = [
   "https://save.vs.totalpartykill.ca/rss.xml",
   "https://liberludorum.com/feed/",
   "https://binarystar.games/posts/index.xml",
-  "https://thecreativeindependent.com/feed.xml",
   "https://nathangoldwag.wordpress.com/feed/",
   "https://ultansdoor.substack.com/feed",
   "https://murkdice.substack.com/feed",
@@ -75,19 +74,13 @@ const ttrpgFeed = [
   "https://onslaughtsix.com/feed/",
   "https://dreamingdragonslayer.wordpress.com/feed/",
   "https://sagesanctum.bearblog.dev/feed/",
-]
-const news = [
-  // "https://www.francebleu.fr/rss/infos.xml",
-  "https://feeds.leparisien.fr/leparisien/rss/politique",
-  "https://feeds.leparisien.fr/leparisien/rss/international",
-  "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/politique/?outputType=xml",
-  "https://www.liberation.fr/arc/outboundfeeds/rss-all/category/international/?outputType=xml",
-  "https://lesjours.fr/rss.xml",
-  "https://www.afp.com/rss.xml",
+  "https://danielulocke.substack.com/feed",
+  "https://mekhami.substack.com/feed",
+  "https://patchworkpaladin.com/feed/",
+  "https://castlegrief.substack.com/feed",
 ]
 
 export const feedSource = new Map<string, string[]>([
   ["TTRPG", ttrpgFeed],
-  ["NEWS", news],
 ]);
 

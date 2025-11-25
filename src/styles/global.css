@@ -211,6 +211,7 @@
 	[aria-disabled="true" i],
 	[disabled] {
 		cursor: not-allowed;
+		text-decoration: dashed 1px currentColor !important;
 	}
 
 	[hidden] {
@@ -386,20 +387,8 @@
 			padding-inline-start: .5rem;
 		}
 
-		& a {
+		& .date {
 			text-decoration: none;
-			display: block;
-			color: var(--text-body);
-
-			&:hover {
-				color: var(--color_link);
-				text-decoration: underline;
-				text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
-			}
-
-			& .date {
-				text-decoration: none;
-			}
 		}
 
 		& .title {
@@ -472,7 +461,7 @@
 			}
 		}
 
-		& :is(ul,ol) > li+li {
+		& :is(ul, ol)>li+li {
 			margin-block-start: .3rem;
 		}
 	}
