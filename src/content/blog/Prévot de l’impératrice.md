@@ -39,7 +39,99 @@ Ce qui nous mène à la quatrième et plus grosse erreur de débutant :
 
 4. **Je n'ai pas playtesté**. Pas une seule fois, pas une seule seconde. Pas une seule carte de tarot tiré, pas un seul d6 lancé, pas une seule phrase écrite. Donc après m'être remis de mes émotions, je me suis lancé, et j'ai joué à mon jeu.
 
-## Le playstest, l'histoire de Philipe le sot
+## Le playstest, l'histoire de Philippe le sot
+### Playtest 1
+*Création de l'avant poste* 
+<u>Jauges</u>
+Moral: 5
+Santé: 3
+Protection: 1
+Technologie: 3
 
+<u>Ressources</u>
+Informations: 2
+Richesses: 6
+Haut-faits: 6
+Population: 2
+Matériaux: 5
 
-## Conclusion du playtest et modifications apportées
+<u>Batiments</u>
+Centre ville
+Habitations (+1 population/mois)
+
+*Le journal du prévot Philippe le sot*
+Je me suis exilé dans la bourgade d'*Apparition*. Aussi loin de la capitale que possible, sans toutefois me retrouver au milieu de nulle part. Apparition est un lieu de pèlerinage éloigné, mais les quelques fidèles qui voyagent jusqu'ici savent se montrer généreux. L'impératrice m'a chassé, préférant mon rival pour ses fiançailles. Cet affront ne sera être pardonné.
+
+---
+
+<u>Mois de janvier 847</u>
+[Renforcer l'avant-poste] --> +3 Populations.
+[Construction de l'auberge] --> -4 Haut-faits et -2 Moral.
+[Carte tirée] --> 3 de Bâton: -1 Protection.
+J'ai entrepris la construction d'une auberge dans le village afin d'accueillir les pèlerins. Lors des travaux, des ouvriers ont découvert un ancien tombeau sous l'avant-poste. Des ghoules par dizaines s'en sont échappées et n'ont fait qu'une bouchée de ma garde et des villageois. J'ai réussi à fuir par miracle dans les bois alentour. Depuis les collines où j'écris ces mots, j'aperçois les morts-vivants dévorant les citoyens d'Apparition. Demain, je partirai avec quelques survivants en quête d'un nouvel avant-poste.
+**La jauge de Protection de l'avant-poste atteint 0, l'avant-poste est perdu.** 
+
+### Playtest 2
+*Création de l'avant poste* 
+<u>Jauges</u>
+Moral: 4
+Santé: 1
+Protection: 6
+Technologie: 3
+
+<u>Ressources</u>
+Informations: 5
+Richesses: 2
+Haut-faits: 1
+Population: 3
+Matériaux: 2
+
+<u>Batiments</u>
+Centre ville
+Auberge (+1 Information/mois)
+
+*Le journal du prévot Philippe le sot*
+Après avoir fui Apparition, je me suis retrouvé au pied d'un hameau tout à fait propice à l'installation de mon office. Juché au sommet d'une colline aux pentes raides et surplombant la vallée, le lieu est particulièrement défendable. L'auberge miteuse voit le passage que quelques marchands et maraudeurs des étendues sauvages et assure un influx de rumeurs et d'informations. Ce hameau n'a pas de nom sur mes cartes, je le nomme donc *Seconde chance*.
+
+---
+
+<u>Mois de février 847</u>
+[Renforcer l'avant-poste] --> +1 Richesses.
+[Construction du relais commercial] --> -6 Informations, -4 Protections, -2 Haut-faits.
+[Carte tirée] --> Cavalier d'épée: -1 Population et -1 protection.
+Le commerce est vital pour un avant-poste aussi éloigné de la capitale. Des chevaux frais et un entrepôt au sec devrait nous permettre de consolider notre position dans la région. Mais c'était sans compter sur ces maudits Gobelins ! Ils se sont infiltrés dans une caravane de passage dans le relais et ont berné nos défenses. Beaucoup de locaux ont péri, le chaos a duré plusieurs jours, mais ils ont fini par repartir. Espérons qu'ils ne reviennent pas. 
+
+--- 
+
+<u>Mois de mars 847</u>
+[Renforcer l'avant-poste] --> +5 Informations.
+[Pousser sa chance] --> +6 de chaque ressources. (!)
+[Carte tirée] --> As de denier: +1 Santé.
+Le mois dernier c'est avéré fructueux au-delà de toutes espérances ! Une troupe de nobliaux a fait escale à *Seconde chance* en route pour une grande chasse au loup dans les hautes terres. Je me suis assuré de leur faire bon accueil. Il faut croire que la traque fut bonne, à peine deux semaines plus tard, tout un cortège de marchand déboulait ici. Il va falloir agrandir, et vite. 
+
+--- 
+
+<u>Mois de avril 847</u>
+[Construction de l'entrepôt] --> -4 Richesses et -2 Populations.
+[Construction de la tour de guet] --> -4 Matériaux et -2 Populations.
+[Carte tirée] --> Cavalier de bâton: -1 Protection et +1 Richesse.
+Un *putain* de dragon doré ! C'est bien ma veine, à croire que je suis maudit. Tout le village est transformé en statue d'or rutilant et le vieux reptile a fait son nid en haut de ma tour de guet flambant neuve. Je préférais encore les gobelins, je suis sûr qu'ils se marrent bien depuis leurs cavernes puantes d'ailleurs. Me voilà encore sans toit ni sujets pour me protéger. Je n'ai échappé au dragon uniquement parce que j'étais partie reconnaître le terrain de mon futur château. C'est peut-être de rêver d'or et de grandeur qui a attiré la bête ici, si seulement il y avait une leçon à tirer de ce revers du destin.
+**La jauge de Protection de l'avant-poste attein 0, l'avant-poste est perdu.** 
+*(encore)*
+
+## Conclusion du playtest
+Ces deux playtests ne sont pas très rassurants. Globalement le système fonctionne, et permet bien de générer un récit, mais l'équilibrage est à revoir. En vrac, les notes que j'ai prises pendant le playtest : 
+- Ajouter une étape de description de l'avant-poste lors de la phase de mise en place :
+Tableaux d'1d6 : 
+    - Nom du prévôt
+    - Nom de l'avant-poste
+    - Type d'environnement
+    - Relation entre le prévôt et l'impératrice
+    - Année et mois de départ
+- Expliquer dans les règles que la pile d'événements de l'avant-poste doit reste face cachée et ordonné.
+- Faire une page annexe avec les tables optionnelles et une carte vide de l'avant-poste.
+- Supprimer des coûts de construction des bâtiments les jauges de la ville. Contre intuitif.
+- Ajouter une action pour ajouter ou remplacer une carte dans la pile d'événement.
+- Ajouter une action supplémentaire pour mettre à profit les arcanes majeurs de manière plus intéressante que l'action "Pousser sa chance". Cette action n'est pas intéressante, 1 chance sur 22 de perdre la partie, le reste des résultats offres des ressources sans aucun prompt narratif. 
+
+## Modifications apportées
