@@ -131,7 +131,7 @@ Un *putain* de dragon doré ! C'est bien ma veine, à croire que je suis maudit.
 
 ## Conclusion du playtest
 Ces deux playtests ne sont pas très rassurants. Globalement le système fonctionne, et permet bien de générer un récit, mais l'équilibrage est à revoir. En vrac, les notes que j'ai prises pendant le playtest : 
-- Ajouter une étape de description de l'avant-poste lors de la phase de mise en place :
+- Ajouter une étape de description de l'avant-poste lors de la phase de mise en place.
 Tableaux d'1d6 : 
     - Nom du prévôt
     - Nom de l'avant-poste
