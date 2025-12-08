@@ -278,7 +278,8 @@
 		font-size: 90%;
 	}
 
-	.screenreader-only:not(:focus):not(:active) {
+	.screenreader-only:not(:focus):not(:active),
+	.visibility-hidden {
 		clip: rect(0 0 0 0);
 		clip-path: inset(50%);
 		height: 1px;
