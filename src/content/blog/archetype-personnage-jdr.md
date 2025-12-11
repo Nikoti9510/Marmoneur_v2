@@ -25,3 +25,10 @@ La mystique qui exécute un rituel pour se garder des démons qui l'entour ; La 
 La cheffe de guerre charismatique qui mène sa troupe au combat ; Le courtisan qui amadou un noble de la cour pour s'attirer ses faveurs ; Le démagogue qui manipule une foule pour utiliser sa colère à ses propres fins ; Le porte étendard au masque démoniaque terrorisant les troupes adverses. Diriger, séduire, manipuler, effrayer. 
 - **Invoquer/contrôler/catalyser** :
 Le nécromancien qui ramène à la non-vie le villageois tout juste tué par sa troupe de mort-vivant ; Le hacker qui pilote son drone à distance, bien en sécurité dans sa planque ; La pilote de mécha qui serre les dents alors que son titan mécanique subit les assauts d'un Kaiju ; La chamane qui en appelle aux éléments pour protéger sa tribu des raids barbares. L'invocateur, le pilote, le catalyseur. 
+
+## Changer le monde
+- **Construction** :
+Le nain frappant l'acier, le feu de ses forges luisant dans ses yeux avides ; La rôdeuse qui rassemble son peuple égaré pour faire renaître de ses cendres son ancien royaume ; Le commerçant qui étant son réseau dans la grande cité, transaction par transaction ; L'ambassadrice qui impose une image de bonne volonté et de confiance dans l'esprit de ses adversaires ; L'artiste virtuose qui donne vie à des œuvres plus vraies que nature. Que ce soit de façon matériel ou non, ces personnages ajoutent au monde. 
+ 
+- **Destruction** :
+La révolutionnaire qui saccage le château local et renverse la tyrannie qui écrase son peuple ;  Le pyromane qui regarde les flammes dansées dans le ciel nocturne dans la cité en émoi ; Le tueur en série qui mutile le corps de sa victime sous le couvert de l'obscurité ; Le démon qui savoure la foi quittant le prêtre abandonné à son sort. Qu'elle soit politique, matérielle, physique ou religieuse, ces personnages veulent la destruction. 
