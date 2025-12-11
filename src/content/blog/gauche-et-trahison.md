@@ -3,7 +3,7 @@ title: "La gauche et la trahison"
 description: "Ma vision (sans doute naive) de la gauche en france en 2025, et des discussions tournant autour de la trahison."
 pubDate: '2025-12-11'
 tags: ["politique"]
-draft: true
+draft: false
 ---
 
 La gauche et le principe de trahison semblent avoir une longue histoire. Les groupes plus ou moins radicaux se lancent le terme au visage sans trop d'hésitations. Ils s'auto-convainquent que leur vision est la seule légitime et que celle de autres n'est pas la bonne. Et par conséquent, les autres trahissent la confiance des citoyens qui les ont élus. Je ne peux pas parler du passé, mais en 2025, je ne pense pas être le seul à penser la chose suivante : toute la gauche trahie. Pas seulement le Parti Socialiste, les Écologistes, La France Insoumise ou le Parti Communiste, mais tous.
