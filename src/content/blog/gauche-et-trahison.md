@@ -14,7 +14,7 @@ Voilà pourquoi je pense que toute la gauche trahie. Par ambition politique et/o
 
 Bref, la gauche trahie parce qu'elle ne fait pas front commun. 
 
-![t'as dead ça chackal](../../src/assets/images/gauche-et-trahison/image.png)
+![t'as dead ça chackal](..\..\src\assets\images\gauche-et-trahison\image.png)
 
 Ce n'est pas l'analyse la plus fine qui soit, mais si je dois choisir, je préfère débattre avec des membres de la GDR plutôt que du RN. J'aimerais, surtout, pouvoir voter pour un parti ou une alliance ayant une réelle chance de passer le premier tour d'une élection présidentiel. Et je suis persuadé qu'à l'image du Nouveau Front Populaire de 2024, il y a une vraie volonté des électeur·rices de gauche de pouvoir s'attacher à un programme commun (même si les détails de celui-ci doivent être débattus plus tard, après une victoire par exemple).
 
