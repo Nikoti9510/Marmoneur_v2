@@ -5,7 +5,7 @@
 		color-scheme: light dark;
 		color: var(--text-body);
 		font:
-			clamp(1rem, .5rem + 0.45vw, 1.2rem) / 1.4 monospace, system-ui;
+			clamp(1rem, .5rem + 0.45vw, 1.2rem) / 1.4 var(--font-stack);
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
@@ -45,7 +45,6 @@
 	h4,
 	h5,
 	h6
-
 	/* FUTURE :heading */
 		{
 		color: var(--text-heading);
@@ -77,21 +76,23 @@
 	a {
 		color: var(--color_link);
 		text-underline-offset: 2px;
+    text-decoration-thickness: 2px;
 
 		&>span {
 			display: inline-block;
 			font-size: 70%;
 			vertical-align: super;
 			padding-inline-start: .2em;
-		}
+    }
 
-		&>span:not(.arrow) {
-			text-decoration: underline;
-		}
-
-		&>span.arrow {
+		&>.arrow {
 			text-decoration: none;
 		}
+    
+    & i {
+      display: inline-block;
+      margin-inline-end: .2rem;
+    }
 
 		&:not(:is(:hover, :focus)),
 		&:not(:is(:hover, :focus))>span:not(.arrow) {
@@ -316,7 +317,8 @@
 		--surface-lighter: light-dark(#cfcfcf, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
 		--max-inline-size: 55ch;
-
+    --font-stack: Geist,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+    
 		--font-size-h1: 2.5rem;
 		--font-size-h2: 1.5rem;
 		--font-size-h3: 1.1rem;
