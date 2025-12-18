@@ -29,8 +29,7 @@
 
 	h1,
 	h2 {
-		font-weight: 900;
-		letter-spacing: -0.02rem;
+		letter-spacing: -0.04rem;
 	}
 
 	h1,
@@ -45,25 +44,13 @@
 	h4,
 	h5,
 	h6
+
 	/* FUTURE :heading */
 		{
 		color: var(--text-heading);
 		text-wrap: balance;
 		margin-block-start: 2rem;
 		margin-block-end: .5lh;
-	}
-
-	h1 {
-		margin-block-start: 0rem;
-		font-size: var(--font-size-h1);
-	}
-
-	h2 {
-		font-size: var(--font-size-h2);
-	}
-
-	h3 {
-		font-size: var(--font-size-h3);
 	}
 
 	p,
@@ -74,29 +61,31 @@
 	}
 
 	a {
-		color: var(--color_link);
+
 		text-underline-offset: 2px;
-    text-decoration-thickness: 2px;
+		text-decoration-thickness: 2px;
 
 		&>span {
 			display: inline-block;
 			font-size: 70%;
 			vertical-align: super;
 			padding-inline-start: .2em;
-    }
+			color: var(--color_link);
+		}
 
 		&>.arrow {
 			text-decoration: none;
 		}
-    
-    & i {
-      display: inline-block;
-      margin-inline-end: .2rem;
-    }
+
+		& i {
+			display: inline-block;
+			color: var(--color_link);
+			margin-inline-end: .2rem;
+		}
 
 		&:not(:is(:hover, :focus)),
 		&:not(:is(:hover, :focus))>span:not(.arrow) {
-			text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
+			text-decoration-color: color-mix(in srgb, var(--color_link), transparent 50%);
 		}
 	}
 
@@ -317,11 +306,7 @@
 		--surface-lighter: light-dark(#cfcfcf, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
 		--max-inline-size: 70ch;
-    --font-stack: Geist,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
-    
-		--font-size-h1: 2.5rem;
-		--font-size-h2: 1.5rem;
-		--font-size-h3: 1.1rem;
+		--font-stack: Geist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 	}
 
 	html[data-theme="light"] {
@@ -336,7 +321,7 @@
 @layer layout {
 	body {
 		--max-content-width: var(--max-inline-size, 80ch);
-		--breakout-difference: 0.2;
+		--breakout-difference: 0.4;
 		--breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
 		display: grid;
 		grid-template-columns:
@@ -423,15 +408,6 @@
 }
 
 @layer prose {
-	.title {
-		& a {
-			display: flex;
-			height: fit-content;
-			gap: .2rem;
-			text-decoration: none;
-		}
-	}
-
 	.prose {
 		& :is(h2, h3) {
 			&::before {
