@@ -316,7 +316,7 @@
 		--surface: light-dark(#efefef, #212121);
 		--surface-lighter: light-dark(#cfcfcf, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
-		--max-inline-size: 55ch;
+		--max-inline-size: 70ch;
     --font-stack: Geist,ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
     
 		--font-size-h1: 2.5rem;
