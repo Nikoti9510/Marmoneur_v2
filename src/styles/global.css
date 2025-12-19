@@ -483,6 +483,8 @@
 
 @layer prose {
 	.prose {
+		color-scheme: dark;
+		
 		h2 {
 			position: relative;
 
