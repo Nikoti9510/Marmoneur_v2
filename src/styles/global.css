@@ -48,8 +48,8 @@
 		{
 		color: var(--text-heading);
 		text-wrap: balance;
-		margin-block-start: var(--s-xs);
-		margin-block-end: .5lh;
+		/* margin-block-start: var(--s-xs);
+		margin-block-end: .5lh; */
 	}
 
 	p,
@@ -364,6 +364,18 @@
 
 	body>*:not(.breakout) {
 		grid-column: content;
+	}
+
+	.stack {
+  		display: flex;
+  		flex-direction: column;
+  		justify-content: flex-start;
+	}
+	.stack > * {
+  		margin-block: 0;
+	} 
+	.stack > * + * {
+  		margin-block-start: var(--space, var(--s-l));
 	}
 
 	header,
