@@ -11,14 +11,14 @@
 		word-break: break-word;
 	}
 
-	body {
+	/* body {
 		margin: 0;
-		/* padding: var(--s-l); */
+		padding: var(--s-l);
 
 		@media (width < 500px) {
-			/* padding: var(--s-m); */
+			padding: var(--s-m);
 		}
-	}
+	} */
 
 	*,
 	*::before,
@@ -48,7 +48,7 @@
 	h2 {
 		color: var(--text-heading);
 		letter-spacing: -0.04rem;
-		font-weight: 700;
+		font-weight: 600;
 		margin-block-start: var(--s-xxl);
 	}
 
