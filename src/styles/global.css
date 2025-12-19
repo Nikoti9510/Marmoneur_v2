@@ -453,7 +453,7 @@
 		display: grid;
 		gap: 1rem;
 
-		& *:not(h3) {
+		& a > *:not(h3) {
 			text-decoration: none;
 		}
 

@@ -20,9 +20,7 @@ const Heading = headingType;
                     <a href={`/blog/${post.id}/`}>
                         <Heading class="title">{post.data.title}</Heading>
                         <p>{post.data.description}</p>
-                        <span class="date">
-                            <FormattedDate date={post.data.pubDate} />
-                        </span>
+                        <FormattedDate date={post.data.pubDate} />
                     </a>
                 </article>
             </>
