@@ -208,6 +208,11 @@
 	kbd,
 	samp {
 		font-family: ui-monospace, SFMono-Regular, monospace;
+		padding: var(--s-xs) var(--s-s);
+	}
+
+	mark {
+		padding: var(--s-xs) var(--s-s);
 	}
 
 	svg {
@@ -362,6 +367,7 @@
 		margin: var(--s-xl) auto 0 auto; */
 
 		margin: var(--s-xl) auto 0 auto;
+		max-width: var(--max-inline-size);
 	}
 
 	body>*:not(.breakout) {
