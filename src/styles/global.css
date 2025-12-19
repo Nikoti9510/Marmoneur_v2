@@ -13,11 +13,11 @@
 
 	body {
 		margin: 0;
-		padding: 2rem;
+		padding: var(--s-l);
 		background-color: var(--surface);
 
 		@media (width < 500px) {
-			padding: 1rem;
+			padding: var(--s-m);
 		}
 	}
 
@@ -49,7 +49,7 @@
 		{
 		color: var(--text-heading);
 		text-wrap: balance;
-		margin-block-start: 2rem;
+		margin-block-start: var(--s-xs);
 		margin-block-end: .5lh;
 	}
 
@@ -83,7 +83,7 @@
 		& i {
 			display: inline-block;
 			color: var(--color_link);
-			margin-inline-end: .2rem;
+			margin-inline-end: var(--s-xs);
 		}
 
 		&:not(:is(:hover, :focus)),
@@ -139,12 +139,12 @@
 	video,
 	iframe,
 	figure,
-	pre, 
-	code,
+	p>code,
+	pre:not(code),
 	table,
 	caption,
 	blockquote {
-		border-radius: .4rem;
+		border-radius: var(--s-s);
     	box-shadow: 2px 2px 8px var(--surface-lighter);
     	outline: 1px solid var(--surface-lighter);
 	}
@@ -238,7 +238,7 @@
 		white-space: pre-wrap;
 		background: CanvasText;
 		color: Canvas;
-		padding: 1.5rem;
+		padding: var(--s-l);
 	}
 
 	hr {
@@ -247,7 +247,7 @@
 		color: inherit;
 		height: 0;
 		overflow: visible;
-		margin-block: 2.5rem;
+		margin-block: var(--s-xl);;
 	}
 
 	:target {
@@ -258,7 +258,7 @@
 		caption-side: bottom;
 		border-collapse: collapse;
 		width: 100%;
-		margin-block: 1em;
+		margin-block: var(--s-m);
 
 		td {
 			font-size: 90%;
@@ -268,7 +268,7 @@
 		th {
 			word-break: normal;
 			border: 1px solid gray;
-			padding: 0.5rem;
+			padding: var(--s-s);
 			text-align: start;
 		}
 
