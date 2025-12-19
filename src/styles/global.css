@@ -48,8 +48,8 @@
 		{
 		color: var(--text-heading);
 		text-wrap: balance;
-		/* margin-block-start: var(--s-xs);
-		margin-block-end: .5lh; */
+		margin-block-start: var(--s-l);
+		margin-block-end: var(--s-s);
 	}
 
 	p,
