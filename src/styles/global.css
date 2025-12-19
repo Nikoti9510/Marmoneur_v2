@@ -240,6 +240,10 @@
 	abbr {
 		text-underline-offset: 2px;
 	}
+
+	time {
+		font-size: 70%;
+	}
 	
 	svg {
 		fill: currentColor;
@@ -443,8 +447,17 @@
 @layer sections {
 	.highlighted-title {
 		& h2 {
-			padding: var(--s-m);
-			background-color: var(--surface);
+			position: relative;
+
+			&::after {
+				content: "";
+				height: 1px;
+				width: 100%;
+				display: block;
+				background-color: var(--surface-darker);
+				margin-block-end: var(--s-s);
+				margin-block-start: var(--s-s);
+			}
 		}
 	}
 
@@ -476,8 +489,8 @@
 		& a {
 			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
-			padding: var(--s-s);
-			display: inline-block;
+			padding: var(--s-m);
+			display: block;
 
 			&:is(:hover, :focus) {
 				background-color: var(--surface);
@@ -504,10 +517,6 @@
 			margin: 0;
 			font-size: var(--font-size-h3);
 			font-style: italic;
-		}
-
-		& time {
-			font-size: 70%;
 		}
 	}
 }
