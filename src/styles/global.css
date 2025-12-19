@@ -453,12 +453,12 @@
 		display: grid;
 		gap: 1rem;
 
-		& article {
-			padding-inline-start: var(--s-s);
+		& *:not(h3) {
+			text-decoration: none;
 		}
 
-		& .date {
-			text-decoration: none;
+		& p {
+			font-size: medium;
 		}
 
 		& .title {
