@@ -453,8 +453,18 @@
 		display: grid;
 		gap: 1rem;
 
-		& a > *:not(h3) {
+		& *:not(h3) {
 			text-decoration: none;
+		}
+
+		& h3 {
+			text-decoration-style: solid;
+			text-decoration-line: underline;
+			text-underline-offset: 2px;
+			text-decoration-thickness: 2px;
+
+			&:not(:is(:focus, :hover)) {
+			text-decoration-color:  color-mix(in srgb, var(--color_link), transparent 50%);
 		}
 
 		& p {
