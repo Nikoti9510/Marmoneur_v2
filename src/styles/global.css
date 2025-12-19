@@ -65,6 +65,10 @@
 		text-decoration-thickness: 2px;
 		color: var(--text-body);
 
+		&[data-footnote-backref] {
+			text-decoration: none;
+		}
+
 		&>span {
 			display: inline-block;
 			font-size: 70%;
@@ -82,7 +86,7 @@
 			margin-inline-end: .2rem;
 		}
 
-		&:not(:is(:hover, :focus, [data-footnote-backref])),
+		&:not(:is(:hover, :focus)),
 		&:not(:is(:hover, :focus))>span:not(.arrow) {
 			text-decoration-color: color-mix(in srgb, var(--color_link), transparent 50%);
 		}
