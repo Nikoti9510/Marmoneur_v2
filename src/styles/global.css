@@ -38,6 +38,10 @@
 		text-wrap: balance;
 		margin-block-start: var(--s-xl);
 		margin-block-end: var(--s-s);
+
+		& + :is(h1,h2,h3,h4,h5) {
+			margin-block-start: var(--s-m);
+		}
 	}
 
 	h1,
