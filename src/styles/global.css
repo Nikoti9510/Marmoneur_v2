@@ -70,7 +70,6 @@
 			font-size: 70%;
 			vertical-align: super;
 			padding-inline-start: .2em;
-			color: var(--color_link);
 		}
 
 		&>.arrow {
