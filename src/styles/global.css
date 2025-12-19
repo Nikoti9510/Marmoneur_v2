@@ -480,11 +480,12 @@
 		h2 {
 			position: relative;
 
-			&::before {
+			&::after {
 				content: "";
 				height: 1px;
 				width: 100%;
-				background-color: var(--surface);
+				display: block;
+				background-color: var(--surface-darker);
 				margin-block-end: var(--s-s);
 				margin-block-start: var(--s-s);
 			}
