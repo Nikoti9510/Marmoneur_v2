@@ -389,10 +389,10 @@
   		flex-direction: column;
   		justify-content: flex-start;
 	}
-	.stack > * {
+	.stack > *:not(:is(h1,h2,h3,h4,h5,h6)) {
   		margin-block: 0;
 	} 
-	.stack > * + * {
+	.stack > *:not(:is(h1,h2,h3,h4,h5,h6)) + *:not(:is(h1,h2,h3,h4,h5,h6)) {
   		margin-block-start: var(--space, var(--s-l));
 	}
 
