@@ -473,14 +473,14 @@
 		}
 
 		& a {
-			border: dotted var(--surface) 2px;
+			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
 			padding: var(--s-s);
 
-			&:hover {
+			&:is(:hover, :focus) {
 				background-color: var(--surface);
 
-				& h3:not(:is(:focus, :hover)) {
+				& h3 {
 					text-decoration-color:  color-mix(in srgb, var(--color_link), transparent 50%);
 				}
 			}
