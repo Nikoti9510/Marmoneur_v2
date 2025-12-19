@@ -465,7 +465,7 @@
 		& a {
 			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
-			padding: var(--s-m);
+			padding: var(--s-l);
 			display: block;
 
 			&:is(:hover, :focus) {
