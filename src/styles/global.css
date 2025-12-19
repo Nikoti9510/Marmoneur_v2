@@ -108,7 +108,7 @@
 		vertical-align: baseline;
 
 		&>* {
-			inset-inline-start: .5em;
+			margin-inline-start: .5em;
 		}
 	}
 
@@ -232,6 +232,10 @@
 		padding: var(--s-xs) var(--s-s);
 	}
 
+	abbr {
+		text-underline-offset: 2px;
+	}
+	
 	svg {
 		fill: currentColor;
 	}
@@ -418,13 +422,10 @@
 		margin-block-start: var(--space, var(--s-m));
 	}
 
-	header,
 	footer {
-		padding: var(--s-m);
-	}
-
-	footer * {
-		margin: 0;
+		display: flex;
+    	justify-content: center;
+    	gap: var(--s-m);
 	}
 }
 
