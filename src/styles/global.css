@@ -34,7 +34,6 @@
 	h6
 	/* FUTURE :heading */
 		{
-		color: var(--text-heading);
 		text-wrap: balance;
 		line-height: 1.1;
 		margin-block-start: var(--s-xl);
@@ -47,6 +46,7 @@
 
 	h1,
 	h2 {
+		color: var(--text-heading);
 		letter-spacing: -0.04rem;
 		font-weight: 700;
 		margin-block-start: var(--s-xxl);
@@ -361,7 +361,7 @@
 		--surface: light-dark(#eeeeee, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
-		--max-inline-size: 60ch;
+		--max-inline-size: 55ch;
 		--font-stack: Synonym-Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
 		--border-radius: var(--s-s);
