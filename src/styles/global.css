@@ -5,7 +5,7 @@
 		color-scheme: light dark;
 		color: var(--text-body);
 		font:
-			clamp(1rem, .5rem + 0.45vw, 1.2rem) / 1.4 var(--font-stack);
+			clamp(1rem, .55rem + 0.55vw, 1.4rem) / 1.6 var(--font-stack);
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
@@ -350,7 +350,7 @@
 
 @layer layout {
 	body {
-		--max-content-width: var(--max-inline-size, 80ch);
+		/* --max-content-width: var(--max-inline-size, 80ch);
 		--breakout-difference: 0.4;
 		--breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
 		display: grid;
@@ -359,6 +359,8 @@
 				1fr) [content-end] 1fr [grid-end];
 		width: min(100% - 2rem, var(--breakout-grid-width));
 		row-gap: var(--s-m);
+		margin: var(--s-xl) auto 0 auto; */
+
 		margin: var(--s-xl) auto 0 auto;
 	}
 
