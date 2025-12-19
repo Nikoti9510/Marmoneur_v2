@@ -36,7 +36,7 @@
 		{
 		color: var(--text-heading);
 		text-wrap: balance;
-		margin-block-start: var(--s-l);
+		margin-block-start: var(--s-xl);
 		margin-block-end: var(--s-s);
 	}
 
