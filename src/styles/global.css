@@ -155,7 +155,7 @@
 	table,
 	caption,
 	blockquote {
-		border-radius: var(--s-s);
+		border-radius: var(--border-radius);
     	box-shadow: var(--box-shadow);
     	outline: 1px solid var(--surface);
 	}
@@ -353,6 +353,7 @@
 		--max-inline-size: 70ch;
 		--font-stack: Geist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
+		--border-radius: var(--s-s);
 
 		--s-xs: .2rem;
 		--s-s: .4rem;
