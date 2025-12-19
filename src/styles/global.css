@@ -464,7 +464,8 @@
 			text-decoration-thickness: 2px;
 
 			&:not(:is(:focus, :hover)) {
-			text-decoration-color:  color-mix(in srgb, var(--color_link), transparent 50%);
+				text-decoration-color:  color-mix(in srgb, var(--color_link), transparent 50%);
+			}
 		}
 
 		& p {
