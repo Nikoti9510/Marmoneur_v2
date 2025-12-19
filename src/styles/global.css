@@ -61,9 +61,9 @@
 	}
 
 	a {
-
 		text-underline-offset: 2px;
 		text-decoration-thickness: 2px;
+		color: var(--text-body);
 
 		&>span {
 			display: inline-block;
@@ -82,7 +82,7 @@
 			margin-inline-end: .2rem;
 		}
 
-		&:not(:is(:hover, :focus)),
+		&:not(:is(:hover, :focus, [data-footnote-backref])),
 		&:not(:is(:hover, :focus))>span:not(.arrow) {
 			text-decoration-color: color-mix(in srgb, var(--color_link), transparent 50%);
 		}
