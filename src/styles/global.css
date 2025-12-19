@@ -14,7 +14,6 @@
 	body {
 		margin: 0;
 		padding: var(--s-l);
-		background-color: var(--surface);
 
 		@media (width < 500px) {
 			padding: var(--s-m);
@@ -354,8 +353,8 @@
 			[grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)),
 				1fr) [content-end] 1fr [grid-end];
 		width: min(100% - 2rem, var(--breakout-grid-width));
-		row-gap: 1rem;
-		margin: 5vb auto;
+		row-gap: var(--s-m);
+		margin: var(--s-xl) auto 0 auto;
 	}
 
 	body>*:not(.breakout) {
@@ -364,31 +363,23 @@
 
 	header,
 	footer {
-		padding: 1rem;
+		padding: var(--s-m);
 		background-color: var(--surface-lighter);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 	}
 
-	header {
-		margin-block-end: 5rem;
-	}
-
-	footer {
-		margin-block-start: 5rem;
-
-		& p {
-			margin: 0;
-		}
+	footer * {
+		margin: 0;
 	}
 }
 
 @layer sections {
 	.highlighted-title {
 		& h2 {
-			padding: 1rem;
-			background-color: var(--surface-lighter);
+			padding: var(--s-m);
+			background-color: var(--surface);
 		}
 	}
 
@@ -398,7 +389,7 @@
 		gap: 1rem;
 
 		& article {
-			padding-inline-start: .5rem;
+			padding-inline-start: var(--s-s);
 		}
 
 		& .date {
@@ -415,7 +406,7 @@
 
 		& a::after {
 			content: '↗';
-			margin-inline-start: .2rem;
+			margin-inline-start: var(--s-xs);
 			display: inline-block;
 			font-size: 70%;
 			vertical-align: super;
@@ -438,13 +429,13 @@
 		& :is(h2, h3) {
 			&::before {
 				content: "#";
-				margin-inline-end: .3rem;
+				margin-inline-end: var(--s-xs);
 				color: var(--color_link);
 			}
 		}
 
 		& h3 {
-			margin-inline-start: .3rem;
+			margin-inline-start: var(--s-xs);
 		}
 
 		& a>span {
@@ -452,9 +443,9 @@
 		}
 
 		& blockquote {
-			background-color: var(--surface-lighter);
-			padding: .5lh .75lh;
-			margin-block-start: 1em;
+			background-color: var(--surface);
+			padding: var(--s-s);
+			margin-block-start: var(--s-m);
 			margin-inline: 0;
 
 			& :is(h1, h2, h3, h4, h5, h6) {
@@ -467,7 +458,7 @@
 		}
 
 		& :is(ul, ol)>li+li {
-			margin-block-start: .3rem;
+			margin-block-start: var(--s-xs);
 		}
 	}
 }
