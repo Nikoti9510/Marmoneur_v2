@@ -247,7 +247,7 @@
 
 	blockquote {
 		background-color: var(--surface);
-		padding: var(--s-l);
+		padding: var(--s-m);
 		margin-inline: 0;
 	}
 
@@ -433,6 +433,10 @@
     	justify-content: center;
 		padding: var(--s-m);
     	gap: var(--s-m);
+
+		& * {
+			font-size: medium;
+		}
 	}
 }
 
