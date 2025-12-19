@@ -462,6 +462,7 @@
 			text-decoration-line: underline;
 			text-underline-offset: 2px;
 			text-decoration-thickness: 2px;
+			text-decoration-color:  color-mix(in srgb, var(--color_link), transparent 50%);
 		}
 
 		& p {
@@ -476,12 +477,13 @@
 			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
 			padding: var(--s-s);
+			display: inline-block;
 
 			&:is(:hover, :focus) {
 				background-color: var(--surface);
 
 				& h3 {
-					text-decoration-color:  color-mix(in srgb, var(--color_link), transparent 50%);
+					text-decoration-color:  currentColor;
 				}
 			}
 		}
