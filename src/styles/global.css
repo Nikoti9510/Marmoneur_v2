@@ -103,6 +103,7 @@
 	sub,
 	sup {
 		font-size: 75%;
+		inset-inline-start: .5em;
 		line-height: 0;
 		position: relative;
 		vertical-align: baseline;
@@ -295,7 +296,7 @@
 		td,
 		th {
 			word-break: normal;
-			padding: var(--s-s);
+			padding: var(--s-m);
 			text-align: start;
 		}
 
