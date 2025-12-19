@@ -38,7 +38,7 @@ test
 ### Syntax
 
 ```markdown
-![Alt text](./full/or/relative/path/of/image "Caption.")
+![Alt text](./full/or/relative/path/of/image "Title")
 ```
 
 ## Blockquotes

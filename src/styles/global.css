@@ -145,7 +145,7 @@
 	blockquote {
 		border-radius: var(--s-s);
     	box-shadow: var(--box-shadow);
-    	outline: 1px solid var(--surface-lighter);
+    	outline: 1px solid var(--surface);
 	}
 
 	img,
@@ -243,6 +243,10 @@
 	hr {
 		position: relative;
 		margin-block: var(--s-xl);
+		border: none;
+		text-align: center;
+		font-size: var(--s-l);
+		color: var(--surface-darker);
 
 		&::before {
 			content: "***";
@@ -271,7 +275,7 @@
 		}
 
 		tbody tr:nth-child(odd) {
-			background-color: var(--surface-lighter);
+			background-color: var(--surface);
 		}
 	}
 
@@ -319,12 +323,12 @@
 	:root {
 		--text-heading: light-dark(#000, #fff);
 		--text-body: light-dark(#1f1e1e, #e4e0e0);
-		--surface: light-dark(#efefef, #212121);
-		--surface-lighter: light-dark(#eeeeee, #4d4d4d);
+		--surface: light-dark(#eeeeee, #212121);
+		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
 		--max-inline-size: 70ch;
 		--font-stack: Geist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
-		--box-shadow: 2px 2px 8px var(--surface-lighter);
+		--box-shadow: 2px 2px 8px var(--surface);
 
 		--s-xs: .2rem;
 		--s-s: .4rem;
@@ -364,7 +368,7 @@
 	header,
 	footer {
 		padding: var(--s-m);
-		background-color: var(--surface-lighter);
+		background-color: var(--surface);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
