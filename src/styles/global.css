@@ -298,6 +298,8 @@
 
 	:focus-visible {
 		outline-offset: 2px;
+		outline-width: 2px;
+		outline-color: var(--text-body);
 	}
 
 	@media (prefers-reduced-motion: no-preference) {
