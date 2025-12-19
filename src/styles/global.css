@@ -32,6 +32,7 @@
 	h4,
 	h5,
 	h6
+
 	/* FUTURE :heading */
 		{
 		color: var(--text-heading);
@@ -39,7 +40,7 @@
 		margin-block-start: var(--s-xl);
 		margin-block-end: var(--s-s);
 
-		& + :is(h1,h2,h3,h4,h5,h6) {
+		&+ :is(h1, h2, h3, h4, h5, h6) {
 			margin-block-start: var(--s-m);
 		}
 	}
@@ -61,7 +62,7 @@
 	h4,
 	h5,
 	h6 {
-    	font-style: italic;
+		font-style: italic;
 	}
 
 	p,
@@ -160,8 +161,8 @@
 	caption,
 	blockquote {
 		border-radius: var(--border-radius);
-    	box-shadow: var(--box-shadow);
-    	outline: 1px solid var(--surface);
+		box-shadow: var(--box-shadow);
+		outline: 1px solid var(--surface);
 	}
 
 	img,
@@ -234,7 +235,7 @@
 	svg {
 		fill: currentColor;
 	}
-	
+
 	blockquote {
 		background-color: var(--surface);
 		padding: var(--s-m) var(--s-l);
@@ -398,15 +399,17 @@
 	}
 
 	.stack {
-  		display: flex;
-  		flex-direction: column;
-  		justify-content: flex-start;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
 	}
-	.stack > *:not(:is(h1,h2,h3,h4,h5,h6)) {
-  		margin-block: 0;
-	} 
-	.stack > *:not(:is(h1,h2,h3,h4,h5,h6)) + *:not(:is(h1,h2,h3,h4,h5,h6)) {
-  		margin-block-start: var(--space, var(--s-m));
+
+	.stack>*:not(:is(h1, h2, h3, h4, h5, h6)) {
+		margin-block: 0;
+	}
+
+	.stack>*:not(:is(h1, h2, h3, h4, h5, h6))+*:not(:is(h1, h2, h3, h4, h5, h6)) {
+		margin-block-start: var(--space, var(--s-m));
 	}
 
 	header,
@@ -482,7 +485,8 @@
 				height: 1px;
 				width: 100%;
 				background-color: var(--surface);
-				margin-block-end: var(--s-m);
+				margin-block-end: var(--s-s);
+				margin-block-start: var(--s-s);
 			}
 		}
 	}
