@@ -474,10 +474,12 @@
 
 		& a {
 			border: dotted var(--surface) 2px;
+			border-radius: var(--border-radius);
+			padding: var(--s-s);
 
 			&:hover {
 				background-color: var(--surface);
-				
+
 				& h3:not(:is(:focus, :hover)) {
 					text-decoration-color:  color-mix(in srgb, var(--color_link), transparent 50%);
 				}
