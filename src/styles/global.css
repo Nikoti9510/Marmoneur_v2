@@ -373,7 +373,7 @@
 		--text-body: light-dark(#323232, #e4e0e0);
 		--surface: light-dark(#eeeeee, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
-		--color_link: light-dark(#4b1df3, #e8f800);
+		--color_link: light-dark(#8b8b8b, #e8f800);
 		--max-inline-size: 55ch;
 		--font-stack: Synonym-Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
