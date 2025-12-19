@@ -48,7 +48,7 @@
 	h1,
 	h2 {
 		letter-spacing: -0.04rem;
-		font-weight: 800;
+		font-weight: 700;
 		margin-block-start: var(--s-xxl);
 	}
 
@@ -62,6 +62,7 @@
 	h4,
 	h5,
 	h6 {
+		font-size: 400;
 		font-style: italic;
 	}
 
@@ -349,6 +350,16 @@
 }
 
 @layer variables {
+	@font-face {
+		font-family: 'Synonym-Variable';
+		src: url('../../fonts/Synonym-Variable.woff2') format('woff2'),
+			url('../fonts/Synonym-Variable.woff') format('woff'),
+			url('../fonts/Synonym-Variable.ttf') format('truetype');
+		font-weight: 200 700;
+		font-display: swap;
+		font-style: normal;
+	}
+
 	:root {
 		--text-heading: light-dark(#000, #fff);
 		--text-body: light-dark(#1f1e1e, #e4e0e0);
@@ -356,16 +367,16 @@
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
 		--max-inline-size: 70ch;
-		--font-stack: Geist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+		--font-stack: Synonym-Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
 		--border-radius: var(--s-s);
 
 		--s-xs: .2rem;
 		--s-s: .4rem;
-		--s-m: 1rem;
-		--s-l: 1.5rem;
-		--s-xl: 3rem;
-		--s-xxl: 4.5rem;
+		--s-m: .8rem;
+		--s-l: 1.6rem;
+		--s-xl: 3.2rem;
+		--s-xxl: 4.8rem;
 	}
 
 	html[data-theme="light"] {
