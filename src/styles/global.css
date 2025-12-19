@@ -13,10 +13,10 @@
 
 	body {
 		margin: 0;
-		padding: var(--s-l);
+		/* padding: var(--s-l); */
 
 		@media (width < 500px) {
-			padding: var(--s-m);
+			/* padding: var(--s-m); */
 		}
 	}
 
@@ -398,10 +398,6 @@
 
 		margin: var(--s-xl) auto 0 auto;
 		max-width: var(--max-inline-size);
-	}
-
-	body>*:not(.breakout) {
-		grid-column: content;
 	}
 
 	.stack {
