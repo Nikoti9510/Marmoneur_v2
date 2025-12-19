@@ -428,6 +428,7 @@
 	}
 
 	footer {
+		margin-block-start: var(--s-xxl);
 		display: flex;
     	justify-content: center;
     	gap: var(--s-m);
