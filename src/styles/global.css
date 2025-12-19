@@ -29,6 +29,7 @@
 	h1,
 	h2 {
 		letter-spacing: -0.04rem;
+		font-weight: bold;
 	}
 
 	h1,
@@ -37,13 +38,19 @@
 		line-height: 1.1;
 	}
 
+	h3,
+	h4,
+	h5
+	h6 {
+		font-weight: normal;
+	}
+
 	h1,
 	h2,
 	h3,
 	h4,
 	h5,
 	h6
-
 	/* FUTURE :heading */
 		{
 		color: var(--text-heading);
@@ -52,7 +59,7 @@
 		margin-block-end: var(--s-s);
 
 		& + :is(h1,h2,h3,h4,h5,h6) {
-			margin-block-start: var(--s-s);
+			margin-block-start: var(--s-m);
 		}
 	}
 
