@@ -431,6 +431,7 @@
 		margin-block-start: var(--s-xxl);
 		display: flex;
     	justify-content: center;
+		padding: var(--s-m);
     	gap: var(--s-m);
 	}
 }
