@@ -29,7 +29,7 @@
 	h1,
 	h2 {
 		letter-spacing: -0.04rem;
-		font-weight: bold;
+		font-weight: 800;
 	}
 
 	h1,
@@ -40,9 +40,9 @@
 
 	h3,
 	h4,
-	h5
+	h5,
 	h6 {
-		font-weight: normal;
+    	font-style: italic;
 	}
 
 	h1,
