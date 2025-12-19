@@ -247,6 +247,7 @@
 		text-align: center;
 		font-size: var(--s-l);
 		color: var(--surface-darker);
+		pointer-events: none;
 
 		&::before {
 			content: "***";
@@ -448,8 +449,7 @@
 
 		& blockquote {
 			background-color: var(--surface);
-			padding: var(--s-s);
-			margin-block-start: var(--s-m) var(--s-l);
+			padding: var(--s-m) var(--s-l);
 			margin-inline: 0;
 
 			& :is(h1, h2, h3, h4, h5, h6) {
