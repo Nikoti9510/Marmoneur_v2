@@ -241,12 +241,12 @@
 	}
 
 	hr {
-		border-style: solid;
-		border-width: 1px 0 0;
-		color: inherit;
-		height: 0;
-		overflow: visible;
-		margin-block: var(--s-xl);;
+		position: relative;
+		margin-block: var(--s-xl);
+
+		&::before {
+			content: "***";
+		}
 	}
 
 	:target {
@@ -266,7 +266,6 @@
 		td,
 		th {
 			word-break: normal;
-			/* border: 1px solid gray; */
 			padding: var(--s-s);
 			text-align: start;
 		}
