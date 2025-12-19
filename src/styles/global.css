@@ -474,6 +474,16 @@
 
 @layer prose {
 	.prose {
+		h2 {
+			position: relative;
 
+			&::before {
+				content: "";
+				height: 1px;
+				width: 100%;
+				background-color: var(--surface);
+				margin-block-end: var(--s-m);
+			}
+		}
 	}
 }
