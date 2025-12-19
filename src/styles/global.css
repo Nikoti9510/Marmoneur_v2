@@ -446,7 +446,7 @@
 		& blockquote {
 			background-color: var(--surface);
 			padding: var(--s-s);
-			margin-block-start: var(--s-m);
+			margin-block-start: var(--s-m) var(--s-l);
 			margin-inline: 0;
 
 			& :is(h1, h2, h3, h4, h5, h6) {
