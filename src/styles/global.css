@@ -266,7 +266,7 @@
 		td,
 		th {
 			word-break: normal;
-			border: 1px solid gray;
+			/* border: 1px solid gray; */
 			padding: var(--s-s);
 			text-align: start;
 		}
