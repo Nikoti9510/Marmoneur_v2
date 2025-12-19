@@ -56,7 +56,7 @@
 	h4,
 	h5,
 	h6 {
-		font-size: 400;
+		font-weight: 400;
 		font-style: italic;
 	}
 
@@ -234,7 +234,7 @@
 
 	blockquote {
 		background-color: var(--surface);
-		padding: var(--s-m) var(--s-l);
+		padding: var(--s-l);
 		margin-inline: 0;
 	}
 
@@ -357,7 +357,7 @@
 
 	:root {
 		--text-heading: light-dark(#000, #fff);
-		--text-body: light-dark(#1f1e1e, #e4e0e0);
+		--text-body: light-dark(#323232, #e4e0e0);
 		--surface: light-dark(#eeeeee, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
