@@ -144,7 +144,7 @@
 	caption,
 	blockquote {
 		border-radius: var(--s-s);
-    	box-shadow: 2px 2px 8px var(--surface-lighter);
+    	box-shadow: var(--box-shadow);
     	outline: 1px solid var(--surface-lighter);
 	}
 
@@ -321,10 +321,11 @@
 		--text-heading: light-dark(#000, #fff);
 		--text-body: light-dark(#1f1e1e, #e4e0e0);
 		--surface: light-dark(#efefef, #212121);
-		--surface-lighter: light-dark(#cfcfcf, #4d4d4d);
+		--surface-lighter: light-dark(#eeeeee, #4d4d4d);
 		--color_link: light-dark(#4b1df3, #e8f800);
 		--max-inline-size: 70ch;
 		--font-stack: Geist, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+		--box-shadow: 2px 2px 8px var(--surface-lighter);
 
 		--s-xs: .2rem;
 		--s-s: .4rem;
