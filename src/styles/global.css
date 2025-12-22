@@ -5,7 +5,7 @@
 		color-scheme: light dark;
 		color: var(--text-body);
 		font:
-			clamp(1rem, .55rem + 0.55vw, 1.4rem) / 1.6 var(--font-stack);
+			clamp(1.1rem, .55rem + 0.55vw, 1.5rem) / 1.6 var(--font-stack);
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
@@ -482,12 +482,8 @@
 			padding: var(--s-l);
 			display: block;
 
-			&:is(:hover, :focus) {
-				background-color: var(--surface);
-
-				& .title {
-					text-decoration-color:  currentColor;
-				}
+			&:is(:hover, :focus) .title {
+				text-decoration-color: currentColor;
 			}
 		}
 
