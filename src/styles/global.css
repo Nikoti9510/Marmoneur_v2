@@ -534,7 +534,7 @@
 		padding-block-start: 0;
 	}
 
-	.post-header {
+	/* .post-header {
 		position: relative;
 		text-align: center;
 		background-color: var(--surface);
@@ -556,9 +556,9 @@
 			display: grid;
 			gap: var(--s-s);
 
-			/* & *:not(h1, .tags) {
+			& *:not(h1, .tags) {
 				font-size: small;
-			} */
+			}
 
 			& .tags {
 				list-style: none;
@@ -575,5 +575,5 @@
 				}
 			}
 		}
-	}
+	} */
 }
