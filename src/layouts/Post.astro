@@ -9,6 +9,7 @@ const { title, pubDate, updatedDate, tags } = Astro.props;
 <Layout>
 	<header class="post-header">
 		<div class="meta">
+			<a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
 			<div class="published-date">
 				<span>Publié le :</span>
 				<FormattedDate date={pubDate} />
@@ -26,7 +27,6 @@ const { title, pubDate, updatedDate, tags } = Astro.props;
 			</ul>
 		</div>
 		<h1>{title}</h1>
-		<a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
 	</header>
 	<div class="stack">
 		<slot />
