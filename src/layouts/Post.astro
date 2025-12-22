@@ -10,8 +10,10 @@ const { title, pubDate, updatedDate, tags } = Astro.props;
 	<header class="post-header">
 		<a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
 		<div class="meta">
-			<span>Publié le :</span>
-			<FormattedDate date={pubDate} />
+			<div class="publised-date">
+				<span>Publié le :</span>
+				<FormattedDate date={pubDate} />
+			</div>
 			{
 				updatedDate && (
 					<div class="last-updated-on">
@@ -20,10 +22,10 @@ const { title, pubDate, updatedDate, tags } = Astro.props;
 					</div>
 				)
 			}
+			<ul class="tags">
+				{tags.map(tag => <li>{tag}</li>)}
+			</ul>
 		</div>
-		<ul class="tags">
-			{tags.map(tag => <li>{tag}</li>)}
-		</ul>
 		<h1>{title}</h1>
 	</header>
 	<div class="stack">

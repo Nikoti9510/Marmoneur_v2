@@ -554,19 +554,21 @@
 
 		& .meta {
 			font-size: small;
-		}
-
-		& .tags {
-			list-style: none;
-			display: flex;
+			display: grid;
 			gap: var(--s-s);
 
-			& li {
-				line-height: 1;
-				border: solid 1px var(--surface-darker);
-				margin: 0;
-				padding: var(--s-xs) var(--s-s);
-				border-radius: var(--border-radius);
+			& .tags {
+				list-style: none;
+				display: flex;
+				gap: var(--s-s);
+
+				& li {
+					line-height: 1;
+					border: solid 1px var(--surface-darker);
+					margin: 0;
+					padding: var(--s-xs) var(--s-s);
+					border-radius: var(--border-radius);
+				}
 			}
 		}
 	}
