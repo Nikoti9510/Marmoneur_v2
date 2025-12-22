@@ -459,6 +459,13 @@
 				margin-block-start: var(--s-s);
 			}
 		}
+
+		& article {
+			
+			&:hover:not(:hover) {
+				opacity: .5;
+			}
+		}
 	}
 
 	.posts-collection,
