@@ -18,16 +18,16 @@ const feedItems = await getFeedItems(feedName, feedUrls);
     {feedItems.length === 0 ? (
       <p>Aucun article récent trouvé.</p>
     ) : (
-      <ul class="feedContainer">
+      <section class="feedContainer">
         {feedItems.map((item) => (
-          <li>
+          <article>
             <a target="_blank" href={item.link}>
               <h2 class="title">{item.title}</h2>
               <p>{item.feed}</p>
               <FormattedDate date={item.date} />
             </a>
-          </li>
+          </article>
         ))}
-      </ul>
+      </section>
     )}
 </Layout>
