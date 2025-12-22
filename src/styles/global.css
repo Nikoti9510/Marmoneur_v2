@@ -557,7 +557,7 @@
 			gap: var(--s-xs);
 
 			& .published-date,
-			& .last-upadated-on {
+			& .last-updated-on {
 				font-size: small;
 			}
 
