@@ -546,5 +546,12 @@
 			height: 100%;
 			background-color: var(--surface);
 		}
+
+		& .meta {
+
+			& .tags {
+				
+			}
+		}
 	}
 }
