@@ -539,7 +539,6 @@
 		text-align: center;
 		background-color: var(--surface);
 		padding-block: var(--s-xxl);
-		margin-block-end: var(--s-xxl);
 
 		&::after {
 			content: "";
@@ -555,7 +554,6 @@
 		& .meta {
 			display: grid;
 			gap: var(--s-s);
-			margin-block-start: var(--s-m);
 
 			& .published-date,
 			& .last-updated-on {
@@ -565,6 +563,7 @@
 			& .tags {
 				list-style: none;
 				display: flex;
+				justify-content: center;
 				gap: var(--s-s);
 
 				& li {
@@ -576,5 +575,9 @@
 				}
 			}
 		}
+	}
+
+	.back {
+		margin-block-end: var(--s-xxl);
 	}
 }
