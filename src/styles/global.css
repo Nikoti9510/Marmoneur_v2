@@ -512,16 +512,20 @@
 		}
 	}
 
+	body:has(.post_header) {
+		margin-block-start: 0;
+	}
 	.post_header {
 		position: relative;
 
-		padding: var(--s-l);
-    	background-color: var(--surface);
+		background-color: var(--surface);
+		padding-block: var(--s-xxl);
 		margin-block-end: var(--s-xxl);
 
 		&::after {
 			content: "";
 			position: absolute;
+			z-index: -1;
 			left: -200vw;
 			top: 0;
 			width: 600vw;
