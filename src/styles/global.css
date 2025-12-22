@@ -500,6 +500,10 @@
 			text-decoration-thickness: 2px;
 			text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
 			margin-block: 0;
+
+			&::after {
+				content: none;
+			}
 		}
 	}
 
