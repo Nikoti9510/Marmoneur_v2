@@ -466,7 +466,7 @@
 			transition: opacity var(--transition);
 		}
 
-		&:hover article:not(:is(:hover, :has(>*[disabled]))) {
+		&:hover article:not(:is(:hover, :has(> *[disabled]), :has(+ *[disabled]), :has(~ *[disabled]))) {
 			opacity: .66;
 		}
 	}
