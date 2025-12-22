@@ -536,7 +536,7 @@
 
 	.post-header {
 		position: relative;
-
+		text-align: center;
 		background-color: var(--surface);
 		padding-block: var(--s-xxl);
 		margin-block-end: var(--s-xxl);
@@ -554,7 +554,7 @@
 
 		& .meta {
 			display: grid;
-			gap: var(--s-xs);
+			gap: var(--s-s);
 			margin-block-start: var(--s-m);
 
 			& .published-date,
