@@ -555,6 +555,7 @@
 		& .meta {
 			display: grid;
 			gap: var(--s-xs);
+			margin-block-start: var(--s-m);
 
 			& .published-date,
 			& .last-updated-on {
