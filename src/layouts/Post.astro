@@ -26,9 +26,9 @@ const { title, pubDate, updatedDate, tags } = Astro.props;
 			</ul>
 		</div>
 		<h1>{title}</h1>
+		<a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
 	</header>
 	<div class="stack">
-		<a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
 		<slot />
 	</div>
 	<p class="visibility-hidden" aria-hidden="true">
