@@ -467,7 +467,7 @@
 		}
 
 		&:hover article:not(:is(:hover, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
-			opacity: .66;
+			opacity: .5;
 		}
 	}
 
