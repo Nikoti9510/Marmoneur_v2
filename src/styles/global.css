@@ -467,7 +467,8 @@
 	}
 
 	.posts-collection,
-	.feeds-collection {
+	.feeds-collection,
+	.feedContainer {
 		display: grid;
 		gap: var(--s-m);
 
@@ -501,7 +502,7 @@
 		}
 	}
 
-	.feedContainer {
+	/* .feedContainer {
 		& li {
 			display: grid;
 			gap: var(--s-xs);
@@ -524,7 +525,7 @@
 				font-style: italic;
 			}
 		}	
-	}
+	} */
 
 	.site-title {
 		& a {
