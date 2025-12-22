@@ -511,4 +511,22 @@
 			font-style: italic;
 		}
 	}
+
+	.post_header {
+		position: relative;
+
+		padding: var(--s-l);
+    	background-color: var(--surface);
+		margin-block-end: var(--s-xxl);
+
+		&::after {
+			content: "";
+			position: absolute;
+			left: -200vw;
+			top: 0;
+			width: 600vw;
+			height: 100%;
+			background-color: var(--surface);
+		}
+	}
 }

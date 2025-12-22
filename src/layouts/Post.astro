@@ -7,14 +7,14 @@ const { title, pubDate, updatedDate, tags } = Astro.props;
 ---
 
 <Layout>
-	<header class="title">
+	<header class="post_header">
 		<a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
 		<div class="meta">
 			<FormattedDate date={pubDate} />
 			{
 				updatedDate && (
 					<div class="last-updated-on">
-						Last updated on <FormattedDate date={updatedDate} />
+						Dernière mise à jour : <FormattedDate date={updatedDate} />
 					</div>
 				)
 			}
