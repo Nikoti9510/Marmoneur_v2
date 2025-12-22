@@ -466,13 +466,13 @@
 			transition: opacity var(--transition);
 		}
 
-		&:hover article:not(:is(:hover, :has(> *[disabled]), :has(+ *[disabled]), :has(~ *[disabled]))) {
+		&:hover article:not(:is(:hover, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
 			opacity: .66;
 		}
 	}
 
 	.posts-collection,
-	.feeds {
+	.feeds-collection {
 		display: grid;
 		gap: var(--s-m);
 
