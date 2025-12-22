@@ -44,6 +44,20 @@
 		font-size: xxx-large;
 	}
 
+	h2 {
+		position: relative;
+
+		&::after {
+			content: "";
+			height: 1px;
+			width: 100%;
+			display: block;
+			background-color: var(--surface-darker);
+			margin-block-end: var(--s-s);
+			margin-block-start: var(--s-s);
+		}
+	}
+
 	h1,
 	h2 {
 		color: var(--text-heading);
@@ -403,17 +417,6 @@
 
 @layer layout {
 	body {
-		/* --max-content-width: var(--max-inline-size, 80ch);
-		--breakout-difference: 0.4;
-		--breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
-		display: grid;
-		grid-template-columns:
-			[grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)),
-				1fr) [content-end] 1fr [grid-end];
-		width: min(100% - 2rem, var(--breakout-grid-width));
-		row-gap: var(--s-m);
-		margin: var(--s-xl) auto 0 auto; */
-
 		margin: var(--s-xl) auto 0 auto;
 		max-width: var(--max-inline-size);
 	}
@@ -423,11 +426,9 @@
 		flex-direction: column;
 		justify-content: flex-start;
 	}
-
 	.stack>*:not(:is(h1, h2, h3, h4, h5, h6)) {
 		margin-block: 0;
 	}
-
 	.stack>*:not(:is(h1, h2, h3, h4, h5, h6))+*:not(:is(h1, h2, h3, h4, h5, h6)) {
 		margin-block-start: var(--space, var(--s-m));
 	}
@@ -447,20 +448,6 @@
 
 @layer sections {
 	.highlighted-title {
-		& h2 {
-			position: relative;
-
-			&::after {
-				content: "";
-				height: 1px;
-				width: 100%;
-				display: block;
-				background-color: var(--surface-darker);
-				margin-block-end: var(--s-s);
-				margin-block-start: var(--s-s);
-			}
-		}
-
 		@media (hover) and (prefers-reduced-motion: no-preference) {
 			& article {
 				opacity: 1;
@@ -528,18 +515,6 @@
 
 @layer prose {
 	.prose {
-		h2 {
-			position: relative;
-
-			&::after {
-				content: "";
-				height: 1px;
-				width: 100%;
-				display: block;
-				background-color: var(--surface-darker);
-				margin-block-end: var(--s-s);
-				margin-block-start: var(--s-s);
-			}
-		}
+		
 	}
 }
