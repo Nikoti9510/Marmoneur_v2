@@ -461,13 +461,14 @@
 			}
 		}
 
-		& article {
-			opacity: 1;
-			transition: opacity var(--transition);
-		}
-
-		&:hover article:not(:is(:hover, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
-			opacity: .5;
+		@media (hover) and (prefers-reduced-motion: no-preference) {
+			& article {
+				opacity: 1;
+				transition: opacity var(--transition);
+			}
+			&:is(:hover, :focus-within) article:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
+				opacity: .5;
+			}
 		}
 	}
 
