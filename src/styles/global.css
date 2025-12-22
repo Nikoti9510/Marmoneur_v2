@@ -553,9 +553,13 @@
 		}
 
 		& .meta {
-			font-size: small;
 			display: grid;
-			gap: var(--s-s);
+			gap: var(--s-xs);
+
+			& .published-date,
+			& .last-upadated-on {
+				font-size: small;
+			}
 
 			& .tags {
 				list-style: none;
