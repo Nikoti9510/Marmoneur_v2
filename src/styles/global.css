@@ -464,10 +464,10 @@
 		& article {
 			opacity: 1;
 			transition: opacity var(--transition);
-			
-			&:hover:not(:hover) {
-				opacity: .5;
-			}
+		}
+
+		&:hover article:not(:hover) {
+			opacity: .5;
 		}
 	}
 
