@@ -501,22 +501,29 @@
 		}
 	}
 
-	.feedContainer li {
-		display: grid;
+	.feedContainer {
+		& li {
+			display: grid;
+			gap: var(--s-xs);
 
-		& a::after {
-			content: '↗';
-			margin-inline-start: var(--s-xs);
-			display: inline-block;
-			font-size: small;
-			vertical-align: super;
-		}
+			& a {
+				line-height: 100%;
+				text-wrap: balance;
+			
+				&::after {
+					content: '↗';
+					margin-inline-start: var(--s-xs);
+					display: inline-block;
+					font-size: small;
+					vertical-align: super;
+				}
+			}
 
-		& p {
-			margin: 0;
-			font-size: var(--font-size-h3);
-			font-style: italic;
-		}
+			& p {
+				margin: 0;
+				font-style: italic;
+			}
+		}	
 	}
 
 	.site-title {
