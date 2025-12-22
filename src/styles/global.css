@@ -100,7 +100,7 @@
 
 		&>span {
 			display: inline-block;
-			font-size: 70%;
+			font-size: small;
 			vertical-align: super;
 			padding-inline-start: .2em;
 		}
@@ -111,13 +111,13 @@
 
 		& i {
 			display: inline-block;
-			color: var(--color_link);
+			color: var(--surface-darker);
 			margin-inline-end: var(--s-xs);
 		}
 
 		&:not(:is(:hover, :focus)),
 		&:not(:is(:hover, :focus))>span:not(.arrow) {
-			text-decoration-color: color-mix(in srgb, var(--color_link), transparent 50%);
+			text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
 		}
 	}
 
@@ -168,7 +168,7 @@
 		}
 
 		::marker {
-			color: var(--color_link);
+			color: var(--surface-darker);
 		}
 	}
 
@@ -260,7 +260,7 @@
 	}
 
 	time {
-		font-size: 70%;
+		font-size: small;
 	}
 
 	svg {
@@ -395,7 +395,7 @@
 		--text-body: light-dark(#323232, #e4e0e0);
 		--surface: light-dark(#eeeeee, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
-		--color_link: light-dark(#8b8b8b, #e8f800);
+		--color_accent: light-dark(#8b8b8b, #e8f800);
 		--max-inline-size: 55ch;
 		--font-stack: Synonym-Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
@@ -496,7 +496,7 @@
 			text-decoration-line: underline;
 			text-underline-offset: 2px;
 			text-decoration-thickness: 2px;
-			text-decoration-color: color-mix(in srgb, var(--color_link), transparent 50%);
+			text-decoration-color: color-mix(in srgb, currentColor, transparent 50%);
 			margin-block: 0;
 		}
 	}
@@ -508,7 +508,7 @@
 			content: '↗';
 			margin-inline-start: var(--s-xs);
 			display: inline-block;
-			font-size: 70%;
+			font-size: small;
 			vertical-align: super;
 		}
 
@@ -519,7 +519,7 @@
 		}
 	}
 
-	.blog-title {
+	.site-title {
 		& a {
 			display: inline-block;
 
@@ -564,6 +564,7 @@
 			& li {
 				line-height: 1;
 				border: solid 1px var(--surface-darker);
+				margin: 0;
 				padding: var(--s-xs) var(--s-s);
 				border-radius: var(--border-radius);
 			}
