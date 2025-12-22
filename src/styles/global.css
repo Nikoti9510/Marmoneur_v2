@@ -9,6 +9,7 @@
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
+		overflow: hidden;
 	}
 
 	body {
@@ -522,7 +523,7 @@
 		}
 	}
 
-	body:has(.post_header) {
+	body:has(.post-header) {
 		margin-block-start: 0;
 		padding-block-start: 0;
 	}

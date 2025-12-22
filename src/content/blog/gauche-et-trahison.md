@@ -1,5 +1,5 @@
 ---
-title: "La gauche et la trahison"
+title: "Gauche et trahison"
 description: "Ma vision (sans doute naive) de la gauche en france en 2025, et des discussions tournant autour de la trahison."
 pubDate: '2025-12-11'
 tags: ["politique"]
