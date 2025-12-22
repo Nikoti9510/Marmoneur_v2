@@ -9,7 +9,7 @@
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
-		overflow: hidden;
+		overflow-x: clip;
 	}
 
 	body {
@@ -36,7 +36,7 @@
 		margin-block-start: var(--s-xl);
 		margin-block-end: var(--s-s);
 
-		&+ :is(h1, h2, h3, h4, h5, h6) {
+		& + :is(h1, h2, h3, h4, h5, h6) {
 			margin-block-start: var(--s-m);
 		}
 	}
@@ -250,6 +250,8 @@
 
 	mark {
 		padding: var(--s-xs) var(--s-s);
+		background-color: var(--surface);
+    	color: currentColor;
 	}
 
 	abbr {
