@@ -556,9 +556,9 @@
 			display: grid;
 			gap: var(--s-s);
 
-			& *:not(h1, .tags) {
+			/* & *:not(h1, .tags) {
 				font-size: small;
-			}
+			} */
 
 			& .tags {
 				list-style: none;
