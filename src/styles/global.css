@@ -514,6 +514,7 @@
 
 	body:has(.post_header) {
 		margin-block-start: 0;
+		padding-block-start: 0;
 	}
 	.post_header {
 		position: relative;
