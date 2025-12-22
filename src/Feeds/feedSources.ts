@@ -78,6 +78,8 @@ const ttrpgFeed = [
   "https://mekhami.substack.com/feed",
   "https://patchworkpaladin.com/feed/",
   "https://castlegrief.substack.com/feed",
+  "https://tbr.bearblog.dev/feed/",
+  "https://beeboobubie.substack.com/feed",
 ]
 
 export const feedSource = new Map<string, string[]>([
