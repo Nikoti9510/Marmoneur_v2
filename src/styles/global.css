@@ -454,16 +454,7 @@
 
 @layer sections {
 	.highlighted-title {
-		@media (hover) and (prefers-reduced-motion: no-preference) {
-			& article {
-				opacity: 1;
-				transition: opacity var(--transition);
-			}
 
-			&:is(:hover, :focus-within) article:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
-				opacity: .5;
-			}
-		}
 	}
 
 	.posts-collection,
@@ -503,6 +494,17 @@
 
 			&::after {
 				content: none;
+			}
+		}
+
+		@media (hover) and (prefers-reduced-motion: no-preference) {
+			& > * {
+				opacity: 1;
+				transition: opacity var(--transition);
+			}
+
+			&:is(:hover, :focus-within) & > *:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
+				opacity: .5;
 			}
 		}
 	}
