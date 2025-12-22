@@ -1,6 +1,7 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import { getFeedItems } from "../Feeds/getFeeds.ts";
+import FormattedDate from "../components/FormattedDate.astro";
 
 const { feed } = Astro.props;
 const [feedName, feedUrls] = feed;
@@ -8,12 +9,12 @@ const feedItems = await getFeedItems(feedName, feedUrls);
 ---
 
 <Layout>
-  <header class="title">
+  <header class="post-header">
     <a class="back" href="/">
       <span class="arrow">←</span><span>Retour à l'accueil</span>
     </a>
+    <h1>{feedName}</h1>
   </header>
-  <h1>{feedName}</h1>
   <div class="feedContainer">
     {feedItems.length === 0 ? (
       <p>Aucun article récent trouvé.</p>
@@ -21,9 +22,12 @@ const feedItems = await getFeedItems(feedName, feedUrls);
       <ul>
         {feedItems.map((item) => (
           <li>
-            <a target="_blank" href={item.link}>{item.title}</a>
+            <a target="_blank" href={item.link}>
+              <h2>{item.title}</h2>
+            </a>
             <p>{item.feed}</p>
-            <time datetime={item.date.toLocaleDateString("fr-FR")}>{item.date.toLocaleDateString("fr-FR")}</time>
+            <FormattedDate date={item.date} />
+            <!-- <time datetime={item.date.toLocaleDateString("fr-FR")}>{item.date.toLocaleDateString("fr-FR")}</time> -->
           </li>
         ))}
       </ul>
