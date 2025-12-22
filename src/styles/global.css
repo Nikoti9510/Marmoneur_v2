@@ -512,11 +512,21 @@
 		}
 	}
 
+	.blog-title {
+		& a {
+			display: inline-block;
+
+			& h1 {
+				display: inline;
+			}
+		}
+	}
+
 	body:has(.post_header) {
 		margin-block-start: 0;
 		padding-block-start: 0;
 	}
-	.post_header {
+	.post-header {
 		position: relative;
 
 		background-color: var(--surface);
