@@ -22,7 +22,7 @@ const feedItems = await getFeedItems(feedName, feedUrls);
         {feedItems.map((item) => (
           <li>
             <a target="_blank" href={item.link}>
-              <h2>{item.title}</h2>
+              <h2 class="title">{item.title}</h2>
               <p>{item.feed}</p>
               <FormattedDate date={item.date} />
             </a>
