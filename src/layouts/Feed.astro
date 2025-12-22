@@ -10,7 +10,9 @@ const feedItems = await getFeedItems(feedName, feedUrls);
 
 <Layout>
   <header class="post-header">
-    <a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
+    <div class="meta">
+      <a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
+    </div>
     <h1>{feedName}</h1>
   </header>
   <div class="feedContainer">
@@ -21,11 +23,10 @@ const feedItems = await getFeedItems(feedName, feedUrls);
         {feedItems.map((item) => (
           <li>
             <a target="_blank" href={item.link}>
-              <h2>{item.title}</h2>
+              {item.title}
             </a>
             <p>{item.feed}</p>
             <FormattedDate date={item.date} />
-            <!-- <time datetime={item.date.toLocaleDateString("fr-FR")}>{item.date.toLocaleDateString("fr-FR")}</time> -->
           </li>
         ))}
       </ul>
