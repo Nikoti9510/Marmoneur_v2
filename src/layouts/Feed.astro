@@ -15,21 +15,19 @@ const feedItems = await getFeedItems(feedName, feedUrls);
     </div>
     <h1>{feedName}</h1>
   </header>
-  <div class="feedContainer">
+  <ul class="feedContainer">
     {feedItems.length === 0 ? (
       <p>Aucun article récent trouvé.</p>
     ) : (
-      <ul>
-        {feedItems.map((item) => (
-          <li>
-            <a target="_blank" href={item.link}>
-              {item.title}
-            </a>
+      {feedItems.map((item) => (
+        <li>
+          <a target="_blank" href={item.link}>
+            <h2>{item.title}</h2>
             <p>{item.feed}</p>
             <FormattedDate date={item.date} />
-          </li>
-        ))}
-      </ul>
+          </a>
+        </li>
+      ))}
     )}
-  </div>
+  </ul>
 </Layout>

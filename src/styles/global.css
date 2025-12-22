@@ -471,6 +471,7 @@
 	.feedContainer {
 		display: grid;
 		gap: var(--s-m);
+		list-style: none;
 
 		& a {
 			border: var(--surface-darker) 1px dashed;
