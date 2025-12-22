@@ -382,6 +382,7 @@
 		--font-stack: Synonym-Variable, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
 		--border-radius: var(--s-s);
+		--transition: .3s ease;
 
 		--s-xs: .2rem;
 		--s-s: .4rem;
@@ -461,6 +462,8 @@
 		}
 
 		& article {
+			opacity: 1;
+			transition: opacity var(--transition);
 			
 			&:hover:not(:hover) {
 				opacity: .5;
