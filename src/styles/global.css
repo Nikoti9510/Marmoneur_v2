@@ -503,7 +503,7 @@
 				transition: opacity var(--transition);
 			}
 
-			&:is(:hover, :focus-within) & > *:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
+			&:is(:hover, :focus-within) > *:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
 				opacity: .5;
 			}
 		}
