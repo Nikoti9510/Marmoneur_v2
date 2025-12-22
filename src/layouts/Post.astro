@@ -3,13 +3,13 @@ import type { CollectionEntry } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 type Props = CollectionEntry<"blog">["data"];
-const { title, pubDate, updatedDate } = Astro.props;
+const { title, pubDate, updatedDate, tags } = Astro.props;
 ---
 
 <Layout>
 	<header class="title">
 		<a class="back" href="/"><i class="arrow">←</i>Retour à l'accueil</a>
-		<div class="date">
+		<div class="meta">
 			<FormattedDate date={pubDate} />
 			{
 				updatedDate && (
@@ -18,10 +18,13 @@ const { title, pubDate, updatedDate } = Astro.props;
 					</div>
 				)
 			}
+			<div class="tags">
+				{tags.map(tag => <li>{tag}</li>)}
+			</div>
 		</div>
-	</header>
-	<div class="prose stack">
 		<h1>{title}</h1>
+	</header>
+	<div class="stack">
 		<slot />
 	</div>
 	<p class="visibility-hidden" aria-hidden="true">
