@@ -467,11 +467,6 @@
 			display: block;
 			container-type: inline-size;
 
-			@container (inline-size > 500px) {
-				background-color: red;
-				padding: var(--s-l);
-			}
-
 			&:is(:hover, :focus) .title {
 				text-decoration-color: currentColor;
 			}
@@ -508,6 +503,13 @@
 			&:is(:hover, :focus-within) > article:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
 				opacity: .5;
 			}
+		}
+
+		@container (inline-size > 500px) {
+			& a {
+				background-color: red;
+				padding: var(--s-l);
+			}	
 		}
 	}
 
