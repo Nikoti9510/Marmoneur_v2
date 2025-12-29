@@ -469,7 +469,8 @@
 
 			@container (inline-size > 15em) {
 				/* test */
-				a {
+				& h3 {
+					background-color: red;
 					padding: var(--s-l);
 				}
 				
