@@ -460,7 +460,7 @@
 		gap: var(--s-m);
 		list-style: none;
 
-		& a {
+		a {
 			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
 			padding: var(--s-m);
