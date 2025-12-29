@@ -466,9 +466,9 @@
 			padding: var(--s-m);
 			display: block;
 			container-type: inline-size;
-			container-name: test;
+			container-name: post;
 
-			@container test (inline-size > 15em) {
+			@container post (inline-size > 15em) {
 				padding: var(--s-l);
 			}
 
