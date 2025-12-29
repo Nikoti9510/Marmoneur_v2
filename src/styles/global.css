@@ -459,18 +459,17 @@
 		display: grid;
 		gap: var(--s-m);
 		list-style: none;
+		container-type: inline-size;
 
-		a {
+		@container post (inline-size > 15em) {
+			padding: var(--s-l);
+		}
+
+		& a {
 			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
 			padding: var(--s-m);
 			display: block;
-			container-type: inline-size;
-			container-name: post;
-
-			@container post (inline-size > 15em) {
-				padding: var(--s-l);
-			}
 
 			&:is(:hover, :focus) .title {
 				text-decoration-color: currentColor;
