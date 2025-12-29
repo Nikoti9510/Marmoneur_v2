@@ -467,13 +467,9 @@
 			display: block;
 			container-type: inline-size;
 
-			@container (inline-size > 15em) {
-				/* test */
-				& h3 {
-					background-color: red;
-					padding: var(--s-l);
-				}
-				
+			@container (inline-size > 500px) {
+				background-color: red;
+				padding: var(--s-l);
 			}
 
 			&:is(:hover, :focus) .title {
