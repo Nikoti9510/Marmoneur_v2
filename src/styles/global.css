@@ -504,13 +504,6 @@
 				opacity: .5;
 			}
 		}
-
-		@container (inline-size > 500px) {
-			& a {
-				background-color: red;
-				padding: var(--s-l);
-			}	
-		}
 	}
 
 	.site-title {
