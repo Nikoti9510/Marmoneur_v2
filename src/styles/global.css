@@ -463,10 +463,10 @@
 		& a {
 			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
-			padding: var(--s-s);
+			padding: var(--s-m);
 			display: block;
 
-			@container (width > 30em) {
+			@container (width > 15em) {
 				padding: var(--s-l);
 			}
 
