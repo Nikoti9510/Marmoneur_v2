@@ -463,8 +463,12 @@
 		& a {
 			border: var(--surface-darker) 1px dashed;
 			border-radius: var(--border-radius);
-			padding: var(--s-l);
+			padding: var(--s-s);
 			display: block;
+
+			@container (width > 30em) {
+				padding: var(--s-l);
+			}
 
 			&:is(:hover, :focus) .title {
 				text-decoration-color: currentColor;
