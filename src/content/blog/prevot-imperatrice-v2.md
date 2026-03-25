@@ -282,12 +282,14 @@ Lancez 3d6 (ou piochez au hasard). Changez l’ordre ou adaptez les résultats p
 5. Plo  
 6. Kero
 
+
 1. Trel  
 2. Juv  
 3. Lequol  
 4. Fjill  
 5. Hecrin  
 6. Bralt
+
 
 1. le Fort  
 2. l’Inconsidéré  
