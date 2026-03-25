@@ -72,26 +72,26 @@ La partie prend fin si une des quatre ***Jauges*** de l’avant-poste est épuis
 |  | Nom | Coût de construction | Revenu/mois |
 | :---- | :---- | :---- | :---- |
 | 0 | Centre ville  | 2 Population | \- |
-| 1 | Tour de guet | 4 Matériaux | 2 Population | ***\+1 Protection*** |
-| 2 | Marché | 4 Nourriture | 2 Richesse | ***\+1 Richesse*** |
-| 3 | Plantation | 4 Population | 2 Matériaux | ***\+1 Nourriture*** |
-| 4 | Habitation | 4 Matériaux | 2 Richesse | ***\+1 Population*** |
-| 5 | Auberge | 4 Haut-fait | 2 Nourriture | ***\+1 Santé*** |
-| 6 | Atelier | 4 Matériaux | 2 Information | ***\+1 Technologie*** |
-| 7 | Entrepôt | 4 Richesse | 2 Population | ***\+1 Matériaux*** |
-| 8 | Cabaret | 4 Population | 2 Richesse | ***\+1 Moral*** |
-| 9 | Bibliothèque | 4 Information | 2 Population | ***\+1 Haut-fait*** |
-| 10 | Bureau de guilde | 4 Population | 2 Matériaux | ***\+1 Information*** |
-| 11 | Relais commercial | 4 Nourriture | 4 Matériaux | 2 Population | ***\+1 Santé** et **Information*** |
-| 12 | Hôpital | 4 Information | 4 Nourriture | 2 Population | ***\+1 Santé** et **Population*** |
-| 13 | Port | 4 Population | 4 Matériaux | 2 Information | ***\+1 Population** et **Nourriture*** |
-| 14 | Phare | 4 Matériaux | 4 Haut-fait | 2 Richesse | ***\+1 Information** et **Matériaux*** |
-| 15 | Mine | 4 Population | 4 Matériaux | 2 Population | ***\+1 Matériaux** et **Richesse*** |
-| 16 | Université | 6 Information | 4 Richesse | 2 Haut-fait | ***\+1d6 Information*** |
-| 17 | Lieu de culte | 6 Matériaux | 4 Population | 2 Haut-fait | ***\+1d6 Richesse*** |
-| 18 | Jardin botanique | 6 Haut-fait | 4 Moral | 2 Population | ***\+1d6 Haut-fait*** |
-| 19 | Grand bazar | 6 Nourriture | 4 Population | 2 Richesse  | ***\+1d6 Matériaux*** |
-| 20 | Amphithéâtre | 6 Richesse | 4 Matériaux | 2 Santé | ***\+1d6 Population*** |
+| 1 | Tour de guet | 4 Matériaux ; 2 Population | ***\+1 Protection*** |
+| 2 | Marché | 4 Nourriture ; 2 Richesse | ***\+1 Richesse*** |
+| 3 | Plantation | 4 Population ; 2 Matériaux | ***\+1 Nourriture*** |
+| 4 | Habitation | 4 Matériaux ; 2 Richesse | ***\+1 Population*** |
+| 5 | Auberge | 4 Haut-fait ; 2 Nourriture | ***\+1 Santé*** |
+| 6 | Atelier | 4 Matériaux ; 2 Information | ***\+1 Technologie*** |
+| 7 | Entrepôt | 4 Richesse ; 2 Population | ***\+1 Matériaux*** |
+| 8 | Cabaret | 4 Population ; 2 Richesse | ***\+1 Moral*** |
+| 9 | Bibliothèque | 4 Information ; 2 Population | ***\+1 Haut-fait*** |
+| 10 | Bureau de guilde | 4 Population ; 2 Matériaux | ***\+1 Information*** |
+| 11 | Relais commercial | 4 Nourriture ; 4 Matériaux ; 2 Population | ***\+1 Santé** et **Information*** |
+| 12 | Hôpital | 4 Information ; 4 Nourriture ; 2 Population | ***\+1 Santé** et **Population*** |
+| 13 | Port | 4 Population ; 4 Matériaux ; 2 Information | ***\+1 Population** et **Nourriture*** |
+| 14 | Phare | 4 Matériaux ; 4 Haut-fait ; 2 Richesse | ***\+1 Information** et **Matériaux*** |
+| 15 | Mine | 4 Population ; 4 Matériaux ; 2 Population | ***\+1 Matériaux** et **Richesse*** |
+| 16 | Université | 6 Information ; 4 Richesse ; 2 Haut-fait | ***\+1d6 Information*** |
+| 17 | Lieu de culte | 6 Matériaux ; 4 Population ; 2 Haut-fait | ***\+1d6 Richesse*** |
+| 18 | Jardin botanique | 6 Haut-fait ; 4 Moral ; 2 Population | ***\+1d6 Haut-fait*** |
+| 19 | Grand bazar | 6 Nourriture ; 4 Population ; 2 Richesse  | ***\+1d6 Matériaux*** |
+| 20 | Amphithéâtre | 6 Richesse ; 4 Matériaux ; 2 Santé | ***\+1d6 Population*** |
 
 11 – 15 → Technologie \>= à 12  
 16 – 20 → Technologie \>= à 24
