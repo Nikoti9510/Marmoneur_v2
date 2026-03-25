@@ -275,24 +275,21 @@ Quel surnom donne-t-on au prévôt dans la capitale ? (1d6)
 
 Lancez 3d6 (ou piochez au hasard). Changez l’ordre ou adaptez les résultats pour trouver un nom qui vous inspire.
 
+
 1. Mar  
-2. Guir  
+2. Guir
 3. Medil  
 4. Armo  
 5. Plo  
 6. Kero
-
-     
-
+---
 1. Trel  
 2. Juv  
 3. Lequol  
 4. Fjill  
 5. Hecrin  
 6. Bralt
-
-
-    
+---
 1. le Fort  
 2. l’Inconsidéré  
 3. la Sanglante  
