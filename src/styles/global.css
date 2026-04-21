@@ -397,7 +397,7 @@
 	:root {
 		--text-heading: light-dark(#000, #fff);
 		--text-body: light-dark(#323232, #e4e0e0);
-		--bg: light-dark(#efefef, #0e0e0e);
+		--bg: light-dark(#ffffff, #0e0e0e);
 		--surface: light-dark(#eeeeee, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_accent: light-dark(#8b8b8b, #e8f800);
