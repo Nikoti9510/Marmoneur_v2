@@ -462,8 +462,7 @@
 
 	model-viewer {
 		position: fixed;
-		top: 15vh;
-		left: -15vw; 
+		inset: 0;
 		width: 50vw;
 		height: 100vh;
 		z-index: 0;
