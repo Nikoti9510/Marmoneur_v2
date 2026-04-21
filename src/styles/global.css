@@ -186,7 +186,6 @@
 	caption,
 	blockquote {
 		border-radius: var(--border-radius);
-		box-shadow: var(--box-shadow);
 		outline: 1px solid var(--surface);
 	}
 
