@@ -397,7 +397,8 @@
 	:root {
 		--text-heading: light-dark(#000, #fff);
 		--text-body: light-dark(#323232, #e4e0e0);
-		--surface: light-dark(#fcfcfc, #212121);
+		--bg: light-dark(#efefef, #0e0e0e);
+		--surface: light-dark(#eeeeee, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_accent: light-dark(#8b8b8b, #e8f800);
 		--max-inline-size: 55ch;
@@ -488,7 +489,7 @@
 			padding: var(--s-m);
 			display: block;
 			container-type: inline-size;
-			background-color: var(--surface);
+			background-color: var(--bg);
 
 			&:is(:hover, :focus) .title {
 				text-decoration-color: currentColor;
