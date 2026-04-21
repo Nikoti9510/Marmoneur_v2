@@ -430,6 +430,7 @@
 	}
 
 	main {
+		position: relative;
 		z-index: 1;
 	}
 
@@ -461,9 +462,10 @@
 
 	model-viewer {
 		position: fixed;
-		inset: 0;
+		top: 25vh;
+		left: -25vw; 
 		width: 50vw;
-		height: 125vh;
+		height: 100vh;
 		z-index: 0;
     }
     /* Hide children until element loads */
