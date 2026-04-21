@@ -397,7 +397,7 @@
 	:root {
 		--text-heading: light-dark(#000, #fff);
 		--text-body: light-dark(#323232, #e4e0e0);
-		--surface: light-dark(#eeeeee, #212121);
+		--surface: light-dark(#fcfcfc, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_accent: light-dark(#8b8b8b, #e8f800);
 		--max-inline-size: 55ch;
@@ -458,8 +458,9 @@
 	model-viewer {
 		position: fixed;
 		inset: 0;
-        width: 100vw;
-        height: 100vh;
+		width: 50vw;
+		height: 125vh;
+		z-index: -1;
     }
     /* Hide children until element loads */
 	:not(:defined) > * {
@@ -511,12 +512,12 @@
 
 		@media (hover) and (prefers-reduced-motion: no-preference) {
 			& article {
-				opacity: 1;
+				background-color: var(--surface);
 				transition: opacity var(--transition);
 			}
 
 			&:is(:hover, :focus-within) > article:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
-				opacity: .5;
+				background-color: var(--surface-darker);
 			}
 		}
 	}
