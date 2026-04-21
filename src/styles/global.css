@@ -559,7 +559,6 @@
 			top: 0;
 			width: 600vw;
 			height: 100%;
-			background-color: var(--surface);
 		}
 
 		& .meta {
