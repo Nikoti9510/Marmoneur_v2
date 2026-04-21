@@ -11,7 +11,10 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
     <body>
         <model-viewer id="model"
             src="/models/tree.glb" 
-            alt="A 3D model">
+            alt="Modele 3D d'un cheine vert."
+            camera-controls
+            ar
+            shadow-intensity="1">
         </model-viewer>
         <main>
             <slot />

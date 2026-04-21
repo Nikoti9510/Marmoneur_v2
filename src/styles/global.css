@@ -454,6 +454,17 @@
 			font-size: medium;
 		}
 	}
+
+	model-viewer {
+		position: fixed;
+		inset: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    /* Hide children until element loads */
+	:not(:defined) > * {
+		display: none;
+	}
 }
 
 @layer sections {
