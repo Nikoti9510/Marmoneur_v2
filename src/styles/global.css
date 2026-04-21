@@ -482,6 +482,7 @@
 			padding: var(--s-m);
 			display: block;
 			container-type: inline-size;
+			background-color: var(--surface);
 
 			&:is(:hover, :focus) .title {
 				text-decoration-color: currentColor;
@@ -511,14 +512,14 @@
 		}
 
 		@media (hover) and (prefers-reduced-motion: no-preference) {
-			& article {
+			/* & article {
 				background-color: var(--surface);
 				transition: opacity var(--transition);
 			}
 
 			&:is(:hover, :focus-within) > article:not(:is(:hover, :focus-within, :has(> *[disabled]), :has(+ * > *[disabled]), :has(~ * > *[disabled]))) {
 				background-color: var(--surface-darker);
-			}
+			} */
 		}
 	}
 
