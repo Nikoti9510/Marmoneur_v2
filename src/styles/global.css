@@ -548,7 +548,6 @@
 	.post-header {
 		position: relative;
 		text-align: center;
-		background-color: var(--surface);
 		padding-block: var(--s-xxl);
 		margin-block-end: var(--s-xxl);
 
