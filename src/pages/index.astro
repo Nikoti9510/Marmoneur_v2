@@ -2,44 +2,18 @@
 import Layout from "../layouts/Layout.astro";
 import PostsList from "../components/PostsList.astro";
 import FeedsList from "../components/FeedsList.astro";
+
+const tags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
+
 ---
 
 <Layout>
-	<section class="site-title">
-	<a href="/">
-		<h1>Marmoneur</h1>
-	</a>
-	</section>
 	<section class="posts-collection">
 		<h2>Blog.</h2>
-		<PostsList headingType="h3" />
-	</section>
-	<section class="feeds-collection">
-		<h2>BlogRoll</h2>
-		<FeedsList headingType="h3" />
-
-		<!-- à supprimer -->
-		<!-- <article>
-			<a href="#" disabled inert>
-				<h3 class="title">Webdesign</h3>
-			</a>
-		</article>
-		<article>
-			<a href="#" disabled inert>
-				<h3 class="title">Everything28</h3>
-			</a>
-		</article>
-		<article>
-			<a href="#" disabled inert>
-				<h3 class="title">Photographie</h3>
-			</a>
-		</article>
-		<article>
-			<a href="#" disabled inert>
-				<h3 class="title">Mode</h3>
-			</a>
-		</article> -->
-		<!-- à supprimer -->
-		 
+		  <div>
+    		{tags.map((tag) => (
+      			<p><a href={`/tags/${tag}`}>{tag}</a></p>
+    		))}
+  		</div>
 	</section>
 </Layout>
