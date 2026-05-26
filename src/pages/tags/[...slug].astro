@@ -1,13 +1,39 @@
 ---
-import Layout from "../../layouts/Layout.astro";
-let title = 'Tags';
-const allPosts = await Astro.fetchContent('../content/blog/*.md');
-const tags = [...new Set([].concat.apply([],allPosts.map(post => post.tags)))]
+import BaseLayout from '../layouts/Layout.astro';
+
+export async function getStaticPaths({ }) {
+  const allPosts = Astro.fetchContent('../content/blog/*.md');
+  const sortedPosts = allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+  const allTags = new Set();
+  sortedPosts.map(post => {
+      post.tags && post.tags.map(tag => allTags.add(tag))
+  })
+
+  return Array.from(allTags).map((tag) => {
+    const filteredPosts = sortedPosts.filter((post) => post.tags.includes(tag))
+    return {
+      params: { tag },
+      props: {
+        posts: filteredPosts
+      }
+    };
+  });
+}
 ---
+
+const { posts } = Astro.props;
+const { tag } = Astro.request.params;
+
+let title = tag;
+---
+
 <Layout>
-    <div >
-        {tags.sort().map((tag) => (
-            <p><a href={`/tags/${tag}`}>{tag}</a></p>
-        ))}
-    </div>
+    <main>
+        <p>Posts tagged with {title}</p>
+        {posts.map(post =>
+            <p>{post.date} - <a href={post.url}>{post.title}</a></p>
+        )}
+        <hr />
+        <p><a href ="/tags/">See all tags...</a></p>
+    </main>
 </Layout>
