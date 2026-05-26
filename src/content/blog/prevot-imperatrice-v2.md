@@ -1,5 +1,5 @@
 ---
-title: "Prévot de l'Imprératrive - v2"
+title: "Prévot de l'Impératrice - v2"
 description: "Le texte (en français) de la v2 de Prévot de l'impératrice."
 pubDate: '2026-03-25'
 tags: ["jdr"]
