@@ -1,7 +1,7 @@
 ---
 // Import the global.css file here so that it is included on
 // all pages through the use of the <BaseHead /> component.
-import '../styles/global.css';
+<!-- import '../styles/global.css'; -->
 import type { ImageMetadata } from 'astro';
 import { SITE_TITLE } from '../consts';
 
@@ -29,12 +29,13 @@ const { title, description } = Astro.props;
 <meta name="generator" content={Astro.generator} />
 
 <!-- Font preloads -->
-<link rel="preload" href="/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin="">
+<!-- <link rel="preload" href="/fonts/geist-variable.woff2" as="font" type="font/woff2" crossorigin=""> -->
 
 <!-- Canonical URL -->
 <link rel="canonical" href={canonicalURL} />
 
 <!-- Model viewer -->
+<!--
 <script async src="https://ga.jspm.io/npm:es-module-shims@1.7.1/dist/es-module-shims.js"></script>
 <script type="importmap">
 {
@@ -45,6 +46,7 @@ const { title, description } = Astro.props;
 </script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer/dist/model-viewer-module.min.js"></script>
 <script type="module" src="https://cdn.jsdelivr.net/npm/@google/model-viewer-effects/dist/model-viewer-effects.min.js"></script>
+-->
 
 <!-- Primary Meta Tags -->
 <title>{title}</title>
