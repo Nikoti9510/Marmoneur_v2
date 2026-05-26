@@ -8,9 +8,6 @@ draft: false
 
 > Bon là, j'ai **un peu** dépassé le nombre de page autorisé. Mais osef.
 
-
-# PRÉVÔT DE L’IMPÉRATRICE
-
 *SOLO TTRPG CITY BUILDER*
 
 Notable à la cour de l’Impératrice, les intrigues du gouvernement vous ont conduit à être écarté du pouvoir central. Isolé aux frontières de l’empire, vous avez été nommé Prévôt d’un avant-poste tout juste ajouté aux cartes officielles. 

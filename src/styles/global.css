@@ -156,10 +156,10 @@
 		ol,
 		dl {
 			padding-inline-start: 2ch;
-			margin-block-end: 1em;
+			/* margin-block-end: 1em; */
 		}
 
-		li>p {
+		/* li>p {
 			display: inline;
 		}
 
@@ -169,7 +169,7 @@
 
 		li:has(p)+li {
 			margin-block-start: 1em;
-		}
+		} */
 
 		::marker {
 			color: var(--surface-darker);
@@ -302,7 +302,7 @@
 		padding: var(--s-l);
 	}
 
-	/* hr {
+	hr {
 		position: relative;
 		margin-block: var(--s-xl);
 		border: none;
@@ -311,10 +311,10 @@
 		color: var(--surface-darker);
 		pointer-events: none;
 
-		&::before {
+		/* &::before {
 			content: "***";
-		}
-	} */
+		} */
+	}
 
 	:target {
 		scroll-margin: 3rlh;
