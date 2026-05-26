@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 let title = 'Tags';
 const allPosts = await Astro.fetchContent('../content/blog/*.md');
 const tags = [...new Set([].concat.apply([],allPosts.map(post => post.tags)))]
