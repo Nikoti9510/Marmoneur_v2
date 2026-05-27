@@ -34,7 +34,7 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 18. tasse de café
 19. ours en peluche
 20. stylo plume
-21. photo encadrée d'un politicien datant d'avant l'effondrement
+21. photo encadrée d'un politicien 
 22. menu de restaurant
 23. petite voiture
 24. bigoudis
@@ -42,25 +42,25 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 26. nouilles séchées
 27. bouteille de whisky vide
 28. grande chambre à air
-29. livre intact
-30. bottes
+29. livre intact (romance)
+30. bottes de cuir
 31. plaque d'immatriculation
-32. bouteille de coca vide
+32. bouteille de cola vide
 33. 1d20 perles de verre ornementales
-34. poche de pièces
-35. volant
-36. tricycle
-37. Miroir à main
+34. porte-monnaie plein
+35. volant de voiture
+36. tricycle bleu
+37. Miroir personnel
 38. lecteur CD cassé
 39. petite cellule énergétique
 40. parapluie
 41. brassière
 42. poisson empaillé
-43. disque vinyle
+43. disque vinyle (Country)
 44. sac à dos
 45. pot plein de sable colorée
 46. boîte en plomb 6cm x 6cm x 30cm
-47. 1d6 blocs de bois
+47. 6d6 blocs de bois
 48. boîte d'allumettes
 49. sac de billes contenant 2d6 billes
 50. livre d'histoires pour enfants
@@ -73,19 +73,19 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 57. cercueil taille bébé
 58. radio portable
 59. canard en caoutchouc
-60. torchon
+60. torchon taché
 61. squelette éparpillé
 62. calendrier d'avant l'effondrement
-63. oreiller
+63. oreiller jaunie
 64. chaise de jardin
-65. louche
+65. louche en bois
 66. une ration de nourriture
 67. ceinture en cuir
 68. boîte d'ampoules - 1d6 intacts
 69. sac de ciment usagé
 70. pot contenant 1d6 dents
 71. fœtus mariné
-72. canif
+72. Opinel
 73. briquet zippo
 74. tringle à rideau
 75. lampe de poche
@@ -99,9 +99,9 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 83. couteau
 84. eau croupie dans une bouteille de vin
 85. diagramme de puce électronique
-86. poupée parlante à ficelle
+86. marionnette parlante
 87. boîte à déjeuner
-88. peinture endommagée par l'eau
+88. tableau endommagée par l'eau
 89. boîte noire avec lumière rouge clignotante
 90. panneau du Père Noël buvant du cola
 91. bouteille d'huile 
@@ -116,15 +116,15 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 100. talkie walkie
 101. photo d'enfants, usée et abîmée
 102. chat empaillé
-103. coffre-fort de taille personnelle (verrouillé)
-104. appareil photo - 1d6 \[ 1/2 casser ; 3/4 détériorer ; 5/6 contient un film déroutant]
+103. coffre-fort de petite taille (verrouillé)
+104. appareil photo - 1d6 [ 1/2 casser ; 3/4 détériorer ; 5/6 contient un film déroutant]
 105. carte topographique sous-marine des lacs les plus proches
 106. plante morte en pot
 107. pot contenant 1d6 yeux préservés
 108. robe de mariée sale
 109. bouteille de whisky pleine
 110. Tête réduite tribal
-111. caisse
+111. caisse en plastique
 112. cerveau positronique
 113. levier de machine à sous
 114. poignée de porte
@@ -134,7 +134,7 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 118. bouteille de cola brisée
 119. objectif de caméra
 120. tête de mannequin
-121. carré de fourrure de chien
+121. fourrure de chien
 122. crucifix
 123. bidon d'huile moteur vide
 124. baguette de batterie
@@ -152,26 +152,26 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 136. médicament antiradiation
 137. photo d'une explosion nucléaire
 138. nez de clown
-139. champignon 
+139. champignon répugnant 
 140. rasoir de barbier
 141. note avec des codes étranges
 142. toile de peinture, recouverte de déjections d'oiseaux
-143. bible
+143. bible mormonne
 144. main squelettique recouverte de moule
 145. eau sale
 146. mini tour Eiffel 
 147. scalpel
-148. jouet camion cola
+148. petit camion en plastique
 149. gant de dentelle blanche
 150. almanach de sportif
-151. boîte à craquelins en métal
+151. cafetière à piston
 152. tabatière en étain
 153. interrupteur
 154. haut-parleur radio
 155. dessin médical
 156. aimant
 157. 1d6 munition pour pistolet à fusé 
-158. canne ou bâton de marche
+158. bâton de marche
 159. carcasses de coléoptères
 160. carapace de cafard
 161. boîte de lessive
@@ -179,23 +179,23 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 163. catalogue de vente
 164. annuaire
 165. loupe
-166. bol
+166. bol fendu
 167. marqueur desséché
 168. livre sur la conservation de la chair
 169. eau purifiée
-170. robot jouet
-171. cartes ferroviaires désuète
+170. petit robot humanoïde (c'est un jouet) 
+171. carte ferroviaire désuète
 172. livre de réparation automobile de base
 173. petite barque
 174. eau irradiée
 175. manteau d'hiver
 176. boussole
 177. cerveau préservé
-178. tête d'animal de taxidermie
+178. "Le guide du taxidermiste amateur"
 179. photo d'un modèle d’avion ancien
 180. sève durcie
-181. guitare
-182. canon de fusil cassé
+181. guitare folk
+182. canon de fusil scié
 183. lunettes de soleil
 184. boîte de conserve avariée
 185. carré de lin
@@ -210,21 +210,21 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 194. grenade vide
 195. bouteille de vin
 196. cassette vidéo cassée
-197. photographie fanée
-198. deltaplane cassé
+197. photographie sepia
+198. deltaplane en morceau
 199. 1d6 dent de rat
-200. cœur humain frais
+200. cœur humain (frais)
 201. pochette contenant 2d6 dents en or
 202. manche de veste déchirée
 203. pièces d'armes cassées
-204. kamasutra
+204. "Gagner en souplesse avec le kamasutra"
 205. collier d'esclave
 206. larve de fourmi
 207. bordereau de livre de bibliothèque, bien en retard
 208. rouge à lèvres, trace de dent
 209. poudre cicatrisante
 210. récepteur téléphonique
-211. rations de l'armée OEU
+211. rations de l'armée de l'OEU
 212. collier de capsules de bouteilles
 213. livre sur les religions
 214. pot de cornichon vide
@@ -233,46 +233,46 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 217. jambe de bois
 218. clou de voie ferrée
 219. chapelet
-220. balle de caoutchouc
+220. balle en caoutchouc
 221. boule à neige vide
 222. tableau ABC
 223. trousse de médicament antiradiation vide
-224. couteau de poche
+224. chaisse de bureau (ensanglantée)
 225. balle de tennis
 226. patte de crabe à moitié mangée
 227. tabac à chiquer
 228. ceinture à outils
-229. perruque
+229. perruque (mullet)
 230. épée en bois
 231. roman tragique
 232. 2d6 mètres de tube de cuivre
 233. trépied cassé
-234. circuit électronique cassé
+234. circuit électronique
 235. avis de recherche illisible
 236. jeu de fléchettes
-237. pagaie et balle
+237. pagaie en résine
 238. 1d3 cartouche de fusil de chasse 
 239. rouleau à pâtisserie
 240. patte de loup préservée
 241. gants de jardinage
 242. carnet d'adresses en cuir
 243. 1d6 boîte de pansements adhésifs 
-244. tuyau de compresseur d'air
+244. tuyau de compresseur
 245. ressort de matelas
 246. pompe à eau manuelle
 247. filtre de masque à gaz
-248. bloc-notes
+248. bloc-notes (liste de course)
 249. bouteille d'anti venin
 250. biberon en verre
 251. portable pour enfant
 252. gant de baseball
-253. balle de base-ball
+253. balle de baseball
 254. batte de baseball
 255. pommeau de douche
-256. boîte de petite bille en plastique
+256. cable RJ45
 257. draps de lit
 258. rembourrage de matelas
-259. clochette
+259. 1d6 clochette en cuivre
 260. panier de vélo
 261. jumelles
 262. brassard de tensiomètre
@@ -281,13 +281,13 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 265. cutter rouillé
 266. gant de boxe
 267. coupe-câbles
-268. mât de tente
+268. tente de trek
 269. ouvre-boîte
 270. tiroir-caisse
-271. bâton de craie
+271. boite de craie
 272. pince mécanique
 273. combinaison antiradiation, casque manquant
-274. ciseau
+274. ciseau à bois
 275. Lame de scie circulaire
 276. arrache-clou
 277. fer à repasser
@@ -328,12 +328,12 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 312. 1d6 clé USB
 313. souffleur de feuilles
 314. valise
-315. Maillet en caoutchouc
-316. hangar à vêtements en métal
-317. avion jouet
+315. marteau de juge
+316. ceintre tordu
+317. avion miniature
 318. serrure à loquet
 319. pinceau
-320. puits d'encre
+320. pot d'encre
 321. crayon
 322. cadre
 323. bouteille de pilules vide
@@ -349,10 +349,10 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 333. bougie d'allumage
 334. 1d6 boîte de 100 agrafes
 335. stéthoscope
-336. passoire à pâtes
+336. passoire
 337. masque chirurgical
 338. lunettes de plongée
-339. coffre à pêche
+339. filet de pêche
 340. raquette de tennis
 341. thermomètre à mercure
 342. grille-pain
@@ -362,9 +362,9 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 346. essence de térébenthine
 347. horloge murale cassée
 348. masque de soudure
-349. buse à vide
+349. pompe à vélo
 350. fauteuil roulant
-351. montre-bracelet
+351. montre casio
 352. pelote de laine
 353. compteur Geiger défectueux
 354. dard de scorpion
@@ -372,24 +372,24 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 356. porte-clés plein de clés
 357. amortisseur cassé
 358. 2d6m de corde
-359. urne de cendres
+359. urne funéraire
 360. flacon de vodka
-361. plaques d'identité de soldat
+361. plaques d'identification de soldat
 362. fleurs séchées
 363. boîte à pain
-364. ticket de caisse d’un mètre
-365. moule biolumineux
+364. ticket de caisse long comme le bras
+365. moule bioluminessante
 366. presse-papiers
 367. cartouche d’imprimante vide
 368. dossier médical
 369. chronomètre
 370. silex
 371. balle magique
-372. poteau de métal
-373. mine terrestre désarmée
-374. flacon de poison
+372. poteau en métal
+373. mine anti-personnelle (sans doute) désarmée
+374. flacon de cyanure
 375. robot motivateur
-376. carte d'arpentage
+376. carte topographique des environs
 377. bâillon-boule
 378. revue de chimie
 379. chapeau bob
@@ -400,7 +400,7 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 384. jeu de cartes à jouer, marqué
 385. oreille humaine
 386. badge de police
-387. petite figurine
+387. petite figurine de plomb
 388. talisman religieux
 389. nettoyant abrasif
 390. figurine d’anime
@@ -412,10 +412,10 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 396. crâne humain énorme
 397. couteau à beurre
 398. carton de cigarettes contenant 1d6 packs
-399. assiette de dîner
-400. pétard
+399. assiette en porcelaine
+400. 2d6 pétard
 401. échiquier
-402. conducteur électrique
+402. bobine de fil en étain
 403. planche à découper
 404. nain de jardin cassé
 405. griffe d'ours
@@ -440,63 +440,63 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 424. livre de partitions
 425. verre à liqueur
 426. spatule
-427. violon, 1d6 \[1/2 intact ; 3/4 endommagé ; 5/6 cassé]
+427. violon, 1d6 \[1/2 intact ; 3/4 endommagé ; 5/6 détruit]
 428. ensemble de jauge à vapeur
-429. tube chirurgical
-430. triangle
+429. tube à essai
+430. triangle de cuivre
 431. pince à épiler
 432. superglue
 433. 2d6 jetons de poker
 434. passeport
-435. dinosaure jouet
+435. dinosaure en plastique
 436. minuteur
 437. forceps
 438. sachet de levure
 439. livre "S'occuper des jeunes enfants"
 440. tambour cymbale
 441. livre "Faire face au Syndrome post-traumatique"
-442. fusée jouet
+442. fusée en légo
 443. ophtalmoscope
 444. sac de poudre à canon
 445. livre détaillant les empires historiques
-446. module capteur de base
+446. capteur éléctronique
 447. panneau stop
 448. roman policier (mauvais)
 449. chevalet pour la peinture
-450. masque Donald Duck
-451. masque squelette
+450. masque de Donald Duck
+451. masque de squelette
 452. masque de Père Noël
 453. dentiers
 454. 1d6 pétards 
 455. sac de graines de graminées 
 456. pommade
-457. 1d6 nouilles instantanées
+457. 1d6 paquets de nouilles instantanées
 458. cric automobile
 459. jean délavé
-460. puzzle
-461. combinaison bleue
-462. chapeau de femme
-463. livre de mathématiques
+460. puzzle ringard
+461. combinaison de travail bleue
+462. chapeau en feutre vert
+463. livre de mathématique
 464. vieux drapeau déchiré
-465. cravate
+465. cravate à motif
 466. moulin à poivre
 467. saxophone
 468. dissertation sur la purification de l'eau
-469. poussette
-470. trombone
-471. bretelles
+469. poussette rose
+470. trombone rouillé
+471. bretelles 
 472. machine à écrire
-473. tube d'encre
-474. vase
+473. tube d'encre rouge
+474. vase antique
 475. longue perruque blonde
-476. 1d6 grenades à fragmentation déguisées
+476. 1d6 grenades à fragmentation artisanales
 477. bâche utilitaire effilochée
 478. bocal de légumes en fermentation
 479. sachet de colorants séchés
 480. ruban à mesurer en tissu
-481. générateur portable cassé
+481. générateur portable hors service
 482. pot de peinture rouge, séché
-483. couverture déchirée
+483. couverture en laine déchirée
 484. grille de cuisson
 485. ballon de Football dégonflé
 486. uniforme militaire
@@ -505,12 +505,12 @@ Vous pouvez utiliser cette collection dans n'importe quel système de jeu. Accor
 489. plâtre à bras ouvert
 490. tête d'arrosage
 491. sac de charbon de bois
-492. panneau solaire cassé
+492. panneau solaire
 493. siège de toilette
 494. couvercle de poubelle
 495. sac de maïs fourrager
 496. charrue cassée
-497. bouteille de cire de préservation
+497. bouteille de cire
 498. bougeoir avec 1d6 bougies
 499. presse purée
 500. brouette
