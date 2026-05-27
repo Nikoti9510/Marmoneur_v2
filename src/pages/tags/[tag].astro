@@ -1,6 +1,5 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { Debug } from 'astro:components';
 
 export async function getStaticPaths() {
   // Récupère tout les posts dans le dossier "content".
@@ -25,6 +24,6 @@ const { posts } = Astro.props;
 <Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
-    {posts.map((post: any) =>  <Debug {post} /><li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    {posts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
   </ul>
 </Layout>
