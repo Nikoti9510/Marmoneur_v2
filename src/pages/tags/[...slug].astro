@@ -6,7 +6,7 @@ export async function getStaticPaths() {
     const posts = await getCollection("content");
     const publishedPosts = posts.filter((post) => post.data.draft === false);
     return publishedPosts.map((post) => ({
-        params: { slug: post.tag },
+        params: { slug: post.tags },
         props: post,
     }));
 }
