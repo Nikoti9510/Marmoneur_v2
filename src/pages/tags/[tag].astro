@@ -2,28 +2,28 @@
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
+  // Récupère tout les posts dans /content
   const allPosts = Object.values(import.meta.glob('../content/**/*.md', { eager: true }));
 
-  return [
-    {params: {tag: "astro"}, props: {posts: allPosts}},
-    {params: {tag: "successes"}, props: {posts: allPosts}},
-    {params: {tag: "community"}, props: {posts: allPosts}},
-    {params: {tag: "blogging"}, props: {posts: allPosts}},
-    {params: {tag: "setbacks"}, props: {posts: allPosts}},
-    {params: {tag: "learning in public"}, props: {posts: allPosts}}
-  ];
+  // Fait la liste de tout les tags existant dans les posts
+  Const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
 }
 
 const { tag } = Astro.params;
 const { posts } = Astro.props;
-
-// filtrer les posts pour n'afficher que ceux avec un tag donné.
-const filteredPosts = posts.filter((post: any) => post.frontmatter.tags?.includes(tag));
 ---
 
 <Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
-    {filteredPosts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    {Posts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
   </ul>
 </Layout>
