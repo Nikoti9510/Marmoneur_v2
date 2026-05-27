@@ -2,7 +2,7 @@
 import Layout from '../../layouts/Layout.astro';
 
 export async function getStaticPaths() {
-  // Récupère tout les posts dans /content
+  // Récupère tout les posts dans le dossier "content".
   const allPosts = Object.values(import.meta.glob('../content/**/*.md', { eager: true }));
 
   // Fait la liste de tout les tags existant dans les posts
