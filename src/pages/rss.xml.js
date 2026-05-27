@@ -3,7 +3,7 @@ import rss from '@astrojs/rss';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 
 export async function GET(context) {
-	const posts = await getCollection('blog');
+	const posts = await getCollection('content');
 	// posts.filter((post) => post.frontmatter.draft !== true);
 	posts.filter(post => !(post?.frontmatter?.draft ?? false))
 	return rss({
@@ -12,7 +12,7 @@ export async function GET(context) {
 		site: context.site,
 		items: posts.map((post) => ({
 			...post.data,
-			link: `/blog/${post.id}/`,
+			link: `/content/${post.id}/`,
 		})),
 	});
 }
