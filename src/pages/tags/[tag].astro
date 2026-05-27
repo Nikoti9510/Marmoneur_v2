@@ -24,6 +24,7 @@ const { posts } = Astro.props;
 <Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
+    <!-- liste des page tag -->
     {posts.map((post: any) => <li><a href={post.id}>{post.frontmatter.title}</a></li>)}
   </ul>
 </Layout>
