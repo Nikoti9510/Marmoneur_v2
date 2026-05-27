@@ -3,8 +3,8 @@ import { type CollectionEntry, getCollection, render } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 
 export async function getStaticPaths() {
-    const posts = await getCollection("content");
-    const publishedPosts = posts.filter((post) => post.data.draft === false);
+    const content = await getCollection("content");
+    const publishedPosts = content.filter((post) => post.data.draft === false);
     return publishedPosts.map((post) => ({
         params: { slug: post.tags },
         props: post,
@@ -18,7 +18,7 @@ const { Content } = await render(post);
 
 <Layout>
     <main>
-        {posts.map(post =>
+        {content.map(post =>
             <p>{post.date} - <a href={post.url}>{post.title}</a></p>
         )}
     </main>
