@@ -1,5 +1,5 @@
 ---
-import Layout from "../layouts/Layout.astro";
+import Layout from "../../layouts/Layout.astro";
 
 // Récupère tout les posts dans le dossier "content".
 const allPosts = Object.values(import.meta.glob('../../content/*.md', { eager: true }));
