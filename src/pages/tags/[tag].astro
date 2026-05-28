@@ -12,7 +12,6 @@ export async function getStaticPaths() {
     const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
     return {
       params: { tag },
-      params: { allPostpost.url },
       props: { posts: filteredPosts },
     };
   });
