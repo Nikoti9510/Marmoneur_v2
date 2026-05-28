@@ -5,7 +5,8 @@ import { getCollection } from 'astro:content';
 export async function getStaticPaths() {
   const allPosts = await getCollection('content');
   // Fait la liste de tout les tags existant dans les posts (en excluant le tag "vide").
-  // const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags.filter(item => !item.includes("vide"))).flat())];
+  const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags.filter(item => !item.includes("vide"))).flat())];
+
   return uniqueTags.map((tag) => {
     const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
     return {
