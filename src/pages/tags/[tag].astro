@@ -4,16 +4,17 @@ import { getCollection } from 'astro:content';
 
 const contents = await getCollection(
   'content',
-  (e) => e.data.tags !=== 'vide' && !e.data.draft
+  (e) => e.data.tags !== 'vide' && e.data.includes({tag}) && !e.data.draft
 );
 
 const { contents } = Astro.props;
+const { tag } = Astro.params;
 ---
 
 <Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
-    <!-- liste des page tag -->
+    <!-- liste des pages avec le tag -->
     {contents.map((content: any) => <li><a href={content.url}>{content.frontmatter.title}</a></li>)}
   </ul>
 </Layout>
