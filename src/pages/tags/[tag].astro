@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import Content from '../components/Content.astro';
+import Content from '../../components/Content.astro';
 
 export async function getStaticPaths() {
   const allPosts = Object.values(import.meta.glob('../posts/*.md', { eager: true }));
