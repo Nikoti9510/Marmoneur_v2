@@ -4,7 +4,7 @@ import { z } from "astro/zod";
 
 const content = defineCollection({
 	// Load Markdown and MDX files in the `src/pages/content/` directory.
-	loader: glob({ base: './src/pages/content', pattern: '*.{md,mdx}' }),
+	loader: glob({ base: './src/pages/content/', pattern: '*.{md,mdx}' }),
 	// Type-check frontmatter using a schema
 	schema: ({}) =>
 		z.object({
