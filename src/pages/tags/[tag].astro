@@ -2,28 +2,18 @@
 import Layout from '../../layouts/Layout.astro';
 import { getCollection } from 'astro:content';
 
-export async function getStaticPaths() {
-  const allPosts = await getCollection('content');
-  // Fait la liste de tout les tags existant dans les posts (en excluant le tag "vide").
-  const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags.filter(item => !item.includes("vide"))).flat())];
+const contents = await getCollection(
+  'content',
+  (e) => e.data.tags !=== 'vide' && !e.data.draft
+);
 
-  return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
-    return {
-      params: { tag },
-      props: { posts: filteredPosts },
-    };
-  });
-}
-
-const { tag } = Astro.params;
-const { posts } = Astro.props;
+const { contents } = Astro.props;
 ---
 
 <Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
     <!-- liste des page tag -->
-    {posts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+    {contents.map((content: any) => <li><a href={content.url}>{content.frontmatter.title}</a></li>)}
   </ul>
 </Layout>
