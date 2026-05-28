@@ -1,9 +1,26 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
-const posts = await getCollection('content');
+import { getCollection, render } from 'astro:content';
+import { Debug } from 'astro:components';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('content', ({ data }) => {
+    return data;
+  });
+  // const publishedPosts = posts.filter((post) => post.data.draft === false);
+
+  return posts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+// const { post } = Astro.props;
+// const { Content } = await render(post);
 ---
+
 <Layout pageTitle={tag}>
+  <Debug {posts} />
   <p>Posts tagged with {tag}</p>
   <ul>
     {posts.map((post: any) => <li><a href={post.url}>post.title</a></li> )}
