@@ -1,19 +1,27 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import Content from '../components/Content.astro';
 
-const contents = await getCollection(
-  'content',
-  (e) => e.data.tags !== 'vide' && e.data.includes({tag}) && !e.data.draft
-);
+export async function getStaticPaths() {
+  const allPosts = Object.values(import.meta.glob('../posts/*.md', { eager: true }));
+
+  const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
+
+  return uniqueTags.map((tag) => {
+    const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
+    return {
+      params: { tag },
+      props: { posts: filteredPosts },
+    };
+  });
+}
 
 const { tag } = Astro.params;
+const { posts } = Astro.props;
 ---
-
 <Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
   <ul>
-    <!-- liste des pages avec le tag -->
-    {contents.map((content: any) => <li><a href={content.url}>{content.frontmatter.title}</a></li>)}
+    {posts.map((post: any) => <Content url={post.url} title={post.frontmatter.title}/>)}
   </ul>
 </Layout>
