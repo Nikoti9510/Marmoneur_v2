@@ -7,7 +7,6 @@ const contents = await getCollection(
   (e) => e.data.tags !== 'vide' && e.data.includes({tag}) && !e.data.draft
 );
 
-const { contents } = Astro.props;
 const { tag } = Astro.params;
 ---
 
