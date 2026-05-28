@@ -1,22 +1,7 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-
-export async function getStaticPaths() {
-  const allPosts = Object.values(import.meta.glob('../pages/content/*.md', { eager: true }));
-
-  const uniqueTags = [...new Set(allPosts.map((post: any) => post.frontmatter.tags).flat())];
-
-  return uniqueTags.map((tag) => {
-    const filteredPosts = allPosts.filter((post: any) => post.frontmatter.tags.includes(tag));
-    return {
-      params: { tag },
-      props: { posts: filteredPosts },
-    };
-  });
-}
-
-const { tag } = Astro.params;
-const { posts } = Astro.props;
+import { getCollection } from 'astro:content';
+const posts = await getCollection('blog');
 ---
 <Layout pageTitle={tag}>
   <p>Posts tagged with {tag}</p>
