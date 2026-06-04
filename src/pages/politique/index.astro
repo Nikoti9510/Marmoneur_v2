@@ -2,9 +2,9 @@
 import { getCollection } from 'astro:content';
 import { Debug } from 'astro:components';
 
-const Posts = await getCollection('content', ({ data }) => {
+const posts = await getCollection('content', ({ data }) => {
   return data.draft === false && data.tags == "politique";
 });
 ---
 
-<Debug {post.data}/>
+<Debug {posts}/>
