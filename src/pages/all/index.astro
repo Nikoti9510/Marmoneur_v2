@@ -3,10 +3,10 @@ import { getCollection } from 'astro:content';
 import { Debug } from 'astro:components';
 
 const posts = await getCollection('content', ({ data }) => {
-  return data.draft === false && data.tags == "jdr";
+  return data.draft === false;
 });
 ---
 
 {posts.map((post) => (
-      <li><a href={`/jdr/${post.data.id}`}>{post.data.title}</a></li>
+      <li><a href={`/all/${post.data.id}`}>{post.data.title}</a></li>
 ))}
