@@ -13,13 +13,14 @@ export async function getStaticPaths() {
 
 const { post } = Astro.props;
 const { Content } = await render(post);
+
 ---
 <Layout>
 	<h1> Politique </h1>
     <p>Liste des posts de la catégorie</p> 
     <nav>
         <ul>
-            {posts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+            <li><a href={post.url}>{post.frontmatter.title}</a></li>
         </ul>
 	</nav>
 </Layout>
