@@ -1,8 +1,25 @@
 ---
-import Layout from "../../layouts/Layout.astro";
----
+import Post from "../../layouts/Post.astro";
+import { getCollection, render } from 'astro:content';
 
+export async function getStaticPaths() {
+  const posts = await getCollection('content');
+  const publishedPosts = posts.filter((post) => post.data.draft === false && post.data.tags == "politique");
+  return publishedPosts.map(post => ({
+    params: { id: post.id },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await render(post);
+---
 <Layout>
 	<h1> Politique </h1>
     <p>Liste des posts de la catégorie</p> 
+    <nav>
+        <ul>
+            {posts.map((post: any) => <li><a href={post.url}>{post.frontmatter.title}</a></li>)}
+        </ul>
+	</nav>
 </Layout>
