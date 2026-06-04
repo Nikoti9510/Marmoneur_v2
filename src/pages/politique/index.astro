@@ -1,12 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
-import { Debug } from 'astro:components';
+import Layout from "../layouts/Layout.astro";
 
 const posts = await getCollection('content', ({ data }) => {
   return data.draft === false && data.tags == "politique";
 });
 ---
-
-{posts.map((post) => (
-      <li><a href={`/politique/${post.id}`}>{post.data.title}</a></li>
-))}
+<Layout>
+  {posts.map((post) => (
+        <li><a href={`/politique/${post.id}`}>{post.data.title}</a></li>
+  ))}
+</layout>
