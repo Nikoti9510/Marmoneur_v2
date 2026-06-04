@@ -8,5 +8,5 @@ const posts = await getCollection('content', ({ data }) => {
 ---
 
 {posts.map((post) => (
-      <li><a href={`/jdr/${post.data.id}`}>{post.data.title}</a></li>
+      <li><a href={`/content/${post.data.id}`}>{post.data.title}</a></li>
 ))}
