@@ -7,4 +7,6 @@ const posts = await getCollection('content', ({ data }) => {
 });
 ---
 
-<Debug {posts.url}/>
+{posts.map((post) => (
+      <li><a href={`/politique/${post.data.id}`}>{post.data.title}</a></li>
+))}
