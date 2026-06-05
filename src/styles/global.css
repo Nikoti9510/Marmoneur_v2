@@ -368,7 +368,7 @@
 		margin-block-end: var(--s-xl);
 
 		.meta {
-			--prose-flow: var(--s-s, .5em);
+			--stack-gap: var(--s-s, .5em);
 		}
 	}
 
