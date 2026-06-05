@@ -366,10 +366,6 @@
 
 	.post-header {
 		margin-block-end: var(--s-xl);
-
-		.meta {
-			--stack-gap: var(--s-s, .5em);
-		}
 	}
 
 	.post-content {
