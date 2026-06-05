@@ -376,6 +376,9 @@
 		}
 		:is(ul, ol, dl) {
 			--prose-flow: .5em;
+			:is(ul, ol, dl) {
+				--prose-flow: .25em;
+			}
 		}
 	}
 	
