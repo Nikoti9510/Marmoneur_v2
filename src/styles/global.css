@@ -93,13 +93,14 @@
 	dl {
 
 		> li + li {
-			margin-block-start: var(--prose-flow, .5em);
+			margin-block-start: var(--prose-flow, var(--s-s, .5em));
 		}
 
 		ul,
 		ol,
 		dl {
 			padding-inline-start: 2ch;
+			margin-block-start: var(--prose-flow, var(--s-xs, .25em));
 		}
 
 		::marker {
@@ -371,12 +372,7 @@
 		margin-block-end: var(--s-xl);
 	}
 	.post-content {
-		> :is(ul, ol, dl) {
-			--prose-flow: var(--s-s);
-			> :is(ul, ol, dl) {
-				--prose-flow: var(--s-xs);
-			}
-		}
+
 	}
 	
 	footer {
