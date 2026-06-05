@@ -372,16 +372,16 @@
 		ul,
 		ol,
 		dl {
-			margin-block-start: var(--prose-flow, var(--s-s, .5em));
+			--prose-flow: var(--s-s, .5em);
 
-			>li+* {
-				margin-block-start: var(--prose-flow, var(--s-xs, .25em));
+			li+* {
+				--prose-flow: var(--s-xs, .25em);
 			}
 
 			ul,
 			ol,
 			dl {
-				margin-block-start: var(--prose-flow, var(--s-xs, .25em));
+				--prose-flow: var(--s-xs, .25em);
 			}
 		}
 	}
