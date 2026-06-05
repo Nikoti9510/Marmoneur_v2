@@ -200,7 +200,7 @@
 
 	blockquote {
 		background-color: var(--surface);
-		padding: var(--s-m);
+		padding: var(--s-s) var(--s-m);
 		margin-inline: 0;
 	}
 
@@ -374,7 +374,7 @@
 		dl {
 			margin-block-start: var(--prose-flow, var(--s-s, .5em));
 
-			>li+li {
+			>li+* {
 				margin-block-start: var(--prose-flow, var(--s-xs, .25em));
 			}
 
