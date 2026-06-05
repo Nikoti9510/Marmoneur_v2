@@ -30,6 +30,7 @@
 	h4,
 	h5,
 	h6
+
 	/* FUTURE :heading */
 		{
 		text-wrap: balance;
@@ -91,17 +92,11 @@
 	ul,
 	ol,
 	dl {
-		margin-block-start: var(--prose-flow, var(--s-s, .5em));
-
-		> li + li {
-			margin-block-start: var(--prose-flow, var(--s-xs, .25em));
-		}
 
 		ul,
 		ol,
 		dl {
 			padding-inline-start: 2ch;
-			margin-block-start: var(--prose-flow, var(--s-xs, .25em));
 		}
 
 		::marker {
@@ -359,7 +354,7 @@
 		gap: var(--stack-gap, var(--s-m, 1em));
 	}
 
-	.prose * + * {
+	.prose *+* {
 		margin-block-start: var(--prose-flow, var(--s-m, 1em));
 	}
 }
@@ -372,10 +367,25 @@
 	.post-header {
 		margin-block-end: var(--s-xl);
 	}
-	.post-content {
 
+	.post-content {
+		ul,
+		ol,
+		dl {
+			margin-block-start: var(--prose-flow, var(--s-s, .5em));
+
+			>li+li {
+				margin-block-start: var(--prose-flow, var(--s-xs, .25em));
+			}
+
+			ul,
+			ol,
+			dl {
+				margin-block-start: var(--prose-flow, var(--s-xs, .25em));
+			}
+		}
 	}
-	
+
 	footer {
 		margin-block-start: var(--s-xl);
 	}
