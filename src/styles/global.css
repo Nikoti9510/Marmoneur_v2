@@ -373,7 +373,7 @@
 	.post-content {
 		:is(ul, ol, dl) {
 			--prose-flow: var(--s-s);
-			> :is(ul, ol, dl) {
+			> * {
 				--prose-flow: var(--s-xs);
 			}
 		}
