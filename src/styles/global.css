@@ -358,7 +358,7 @@
 	}
 
 	.prose * + * {
-		margin-block-start: var(--prose-flow, var(--s-l, 1em));
+		margin-block-start: var(--prose-flow, var(--s-m, 1em));
 	}
 }
 
