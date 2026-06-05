@@ -370,7 +370,12 @@
 	.post-header {
 		margin-block-end: var(--s-xl, 2rem);
 	}
-
+	.post-content {
+		:is(ul, ol, dl) {
+			--prose-flow: .5em;
+		}
+	}
+	
 	footer {
 		margin-block-start: var(--s-xl, 2rem);
 	}
