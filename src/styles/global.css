@@ -91,7 +91,10 @@
 	ul,
 	ol,
 	dl {
-		list-style-position: inside;
+
+		> li + li {
+			margin-block-start: var(--prose-flow, .5em);
+		}
 
 		ul,
 		ol,
@@ -363,7 +366,7 @@
 	body {
 		max-width: var(--max-inline-size);
 	}
-	
+
 	.post-header {
 		margin-block-end: var(--s-xl, 2rem);
 	}
