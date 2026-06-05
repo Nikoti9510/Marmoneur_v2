@@ -358,7 +358,7 @@
 	}
 
 	.prose * + * {
-		margin-block-start: var(--prose-flow, 1.2em);
+		margin-block-start: var(--prose-flow, 1em);
 	}
 }
 
@@ -371,6 +371,9 @@
 		margin-block-end: var(--s-xl, 2rem);
 	}
 	.post-content {
+		:is(h1,h2,h3,h4,h5,h6) {
+			--prose-flow: 1.4em;
+		}
 		:is(ul, ol, dl) {
 			--prose-flow: .5em;
 		}
