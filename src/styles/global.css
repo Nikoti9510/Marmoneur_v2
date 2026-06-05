@@ -91,9 +91,10 @@
 	ul,
 	ol,
 	dl {
+		margin-block-start: var(--prose-flow, var(--s-s, .5em));
 
 		> li + li {
-			margin-block-start: var(--prose-flow, var(--s-s, .5em));
+			margin-block-start: var(--prose-flow, var(--s-xs, .25em));
 		}
 
 		ul,
