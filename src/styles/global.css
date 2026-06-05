@@ -333,12 +333,12 @@
 		--border-radius: var(--s-s);
 		--transition: .3s ease;
 
-		--s-xs: .3rem;
-		--s-s: .6rem;
-		--s-m: 1rem;
-		--s-l: 1.5rem;
-		--s-xl: 2.6rem;
-		--s-xxl: 3.6rem;
+		--s-xs: .3em;
+		--s-s: .6em;
+		--s-m: 1em;
+		--s-l: 1.6em;
+		--s-xl: 2.6em;
+		--s-xxl: 3.6em;
 	}
 
 	html[data-theme="light"] {
@@ -354,11 +354,11 @@
 	.stack {
 		display: flex;
 		flex-direction: column;
-		gap: var(--stack-gap, --s-m);
+		gap: var(--stack-gap, var(--s-m, 1em));
 	}
 
 	.prose * + * {
-		margin-block-start: var(--prose-flow, --s-l);
+		margin-block-start: var(--prose-flow, var(--s-l, 1em));
 	}
 }
 
