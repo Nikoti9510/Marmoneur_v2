@@ -30,15 +30,14 @@
 	h4,
 	h5,
 	h6
-
 	/* FUTURE :heading */
 		{
 		text-wrap: balance;
-		line-height: 1.2;
+		line-height: 1.1;
 	}
 
 	h1 {
-		font-size: var(--s-xxl);
+		font-size: var(--s-xl);
 	}
 
 	h1,
@@ -360,6 +359,12 @@
 	}
 
 	.prose > * + * {
-		margin-block-start: var(--prose-flow, 1em);
+		margin-block-start: var(--prose-flow, 1.2em);
+	}
+}
+
+@layer content {
+	.post-header {
+		margin-block-end: var(--s-xl, 2rem);
 	}
 }
