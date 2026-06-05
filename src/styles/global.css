@@ -357,7 +357,7 @@
 		gap: var(--stack-gap, --s-m);
 	}
 
-	.prose * + * {
+	.prose > * + * {
 		margin-block-start: var(--prose-flow, --s-l);
 	}
 }
