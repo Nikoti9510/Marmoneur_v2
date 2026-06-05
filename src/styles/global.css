@@ -333,12 +333,12 @@
 		--border-radius: var(--s-s);
 		--transition: .3s ease;
 
-		--s-xs: .3rem;
-		--s-s: .6rem;
-		--s-m: 1rem;
-		--s-l: 1.8rem;
-		--s-xl: 2.6rem;
-		--s-xxl: 3.6rem;
+		--s-xs: .3em;
+		--s-s: .6em;
+		--s-m: 1em;
+		--s-l: 1.5em;
+		--s-xl: 2.6em;
+		--s-xxl: 3.6em;
 	}
 
 	html[data-theme="light"] {
@@ -358,31 +358,28 @@
 	}
 
 	.prose * + * {
-		margin-block-start: var(--prose-flow, 1em);
+		margin-block-start: var(--prose-flow, --s-l);
 	}
 }
 
 @layer content {
 	body {
-		max-width: var(--max-inline-size);
+		max-width: var(--max-inline-size, 70ch);
 	}
 
 	.post-header {
-		margin-block-end: var(--s-xl, 2rem);
+		margin-block-end: var(--s-xl, 2em);
 	}
 	.post-content {
-		:is(h1,h2,h3,h4,h5,h6) {
-			--prose-flow: 1.4em;
-		}
 		:is(ul, ol, dl) {
-			--prose-flow: .5em;
+			--prose-flow: var(--s-s, .5em);
 			:is(ul, ol, dl) {
-				--prose-flow: .25em;
+				--prose-flow: var(--s-xs, .5em);
 			}
 		}
 	}
 	
 	footer {
-		margin-block-start: var(--s-xl, 2rem);
+		margin-block-start: var(--s-xl, 2em);
 	}
 }
