@@ -143,5 +143,3 @@ Tableaux d'1d6 :
 - Supprimer des coûts de construction des bâtiments les jauges de la ville. Contre intuitif.
 - Ajouter une action pour ajouter ou remplacer une carte dans la pile d'événement.
 - Ajouter une action supplémentaire pour mettre à profit les arcanes majeurs de manière plus intéressante que l'action "Pousser sa chance". Cette action n'est pas intéressante, 1 chance sur 22 de perdre la partie, le reste des résultats offres des ressources sans aucun prompt narratif. 
-
-## Modifications apportées

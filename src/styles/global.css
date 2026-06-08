@@ -55,6 +55,14 @@
 		font-weight: 400;
 	}
 
+	h2 {
+		margin-block-start: var(--s-l);
+	}
+
+	h3 {
+		margin-block-start: var(--s-m);
+	}
+
 	p,
 	li,
 	dd {
@@ -228,16 +236,6 @@
 		background: CanvasText;
 		color: Canvas;
 		padding: var(--s-l);
-	}
-
-	hr {
-		position: relative;
-		margin-block: var(--s-xl);
-		border: none;
-		text-align: center;
-		font-size: var(--s-l);
-		color: var(--surface-darker);
-		pointer-events: none;
 	}
 
 	:target {
