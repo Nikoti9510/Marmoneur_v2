@@ -56,11 +56,11 @@
 	}
 
 	h2 {
-		margin-block-start: var(--s-l);
+		--prose-flow: var(--s-xl);
 	}
 
 	h3 {
-		margin-block-start: var(--s-m);
+		--prose-flow: var(--s-l);
 	}
 
 	p,
