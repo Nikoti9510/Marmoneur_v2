@@ -12,7 +12,7 @@ Voilà la manière correct d'importer du contenu dans une page (merci à [manges
 
 ## Définir une collection
 
-Dans le fichier `src/content.config.ts` (ou `src/content/config.ts`), on définit la structure de la collection. Par défaut, toutes les collections doivent se trouver dans le dossier `src/content`, mais il est aussi possible de créer une collection dans un autre dossier, en associant un fichier `config.ts` dans celui-ci.
+Dans le fichier `src/content.config.ts` (ou `src/content/config.ts`), on définit la structure de la collection. Toutes les collections doivent se trouver dans le dossier `src/content`. (Il est possible de faire autrement, mais c'est plus compliqué. Me demandez pas j'en sais rien. Merci.)
 
 ```typescript
 import { defineCollection, z } from "astro:content";
