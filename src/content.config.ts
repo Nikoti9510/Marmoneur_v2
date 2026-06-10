@@ -15,7 +15,7 @@ const allPages = defineCollection({
 		}),
 });
 const jdr = defineCollection({
-	loader: glob({ base: './src/content/jdr/', pattern: '*.{md,mdx}' }),
+	loader: glob({ base: './src/content/jdr', pattern: '*.{md,mdx}' }),
 	schema: ({}) =>
 		z.object({
 			title: z.string(),
@@ -27,7 +27,7 @@ const jdr = defineCollection({
 		}),
 });
 const politique = defineCollection({
-	loader: glob({ base: './src/content/politique/', pattern: '*.{md,mdx}' }),
+	loader: glob({ base: './src/content/politique', pattern: '*.{md,mdx}' }),
 	schema: ({}) =>
 		z.object({
 			title: z.string(),
