@@ -8,6 +8,6 @@ const posts = await getCollection('autres', ({ data }) => {
 ---
 <Layout>
   {posts.map((post) => (
-        <li><a href={`/jdr/${post.id}`}>{post.data.title}</a></li>
+        <li><a href={`/autres/${post.id}`}>{post.data.title}</a></li>
   ))}
 </layout>
