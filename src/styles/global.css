@@ -172,7 +172,7 @@
 	}
 
 	pre,
-	code,
+	code:not(:has(>code)),
 	kbd,
 	samp {
 		font-family: ui-monospace, SFMono-Regular, monospace;
