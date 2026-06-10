@@ -7,7 +7,11 @@ const posts = await getCollection('autres', ({ data }) => {
 });
 ---
 <Layout>
-  {posts.map((post) => (
+  { (posts.size === 0) 
+    ? 
+      <p>Pas de page à ce sujet</p> 
+    : 
+      posts.map((post) => (
         <li><a href={`/autres/${post.id}`}>{post.data.title}</a></li>
-  ))}
-</layout>
+      )) 
+  }

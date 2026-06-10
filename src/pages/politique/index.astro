@@ -7,17 +7,12 @@ const posts = await getCollection('politique', ({ data }) => {
 });
 ---
 <Layout>
-
-{ (posts.size === 0) 
-  ? 
-    <p>Pas de page à ce sujet</p> 
-  : 
-    posts.map((post) => (
-      <li><a href={`/politique/${post.id}`}>{post.data.title}</a></li>
-    )) 
-}
-
-  <!-- {posts.map((post) => (
+  { (posts.size === 0) 
+    ? 
+      <p>Pas de page à ce sujet</p> 
+    : 
+      posts.map((post) => (
         <li><a href={`/politique/${post.id}`}>{post.data.title}</a></li>
-  ))} -->
+      )) 
+  }
 </layout>

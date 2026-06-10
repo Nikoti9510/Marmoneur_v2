@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 
-const posts = await getCollection('jdr', ({ data }) => {
+const posts = await getCollection('tech', ({ data }) => {
   return data.draft === false;
 });
 ---
@@ -12,6 +12,7 @@ const posts = await getCollection('jdr', ({ data }) => {
       <p>Pas de page à ce sujet</p> 
     : 
       posts.map((post) => (
-        <li><a href={`/jdr/${post.id}`}>{post.data.title}</a></li>
+        <li><a href={`/tech/${post.id}`}>{post.data.title}</a></li>
       )) 
   }
+</layout>
