@@ -34,7 +34,7 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 ## Images
 
 test 
-![Un test](/images/markdown-style-guide/test.jpg "Un test")
+![Un test](../autres/images/markdown-style-guide/test.jpg "Un test")
 
 ### Syntax
 

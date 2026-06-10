@@ -2,13 +2,10 @@
 import Post from "../../layouts/Post.astro";
 import { getCollection, render } from 'astro:content';
 
-export async function getStaticPaths( routePattern ) {
+export async function getStaticPaths() {
   const posts = await getCollection("autres");
-
-  console.log(routePattern);
-
   return posts.map((post) => ({
-    params: { id: post.id },
+    params: { id: post.id }, // Pourquoi il y a .md dans le nom de mes dossiers lors du build ?
     props: { post },
   }));
 }
