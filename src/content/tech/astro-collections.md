@@ -36,6 +36,9 @@ export const collections = { blog };
 
 La collection a un nom identique au dossier présent dans `src/content` contenant les éléments à récupérer. Par exemple ici, pour le dossier `src/content/blog`, la collection doit être nommé `blog`. La casse doit être respecté. Il ne reste qu'a créer des éléments dans la collection, en ajoutant des fichiers `.md` (ou autres comme `.mdx`, `.JSON`, etc..) respectant la structure définit dans le schema. 
 
+
+Dans le fichier `src/content/blog/test.md` :
+
 ```typescript
 ---
 title: 'Markdown Style Guide'
@@ -55,7 +58,7 @@ The following HTML `<h1>`—`<h6>` elements represent six levels of section head
 
 ## Importer une collection 
 
-Il suffit ensuite d'importer la collection dans une page pour accéder aux contenus des éléments qui la compose. Par exemple pour lister tout les posts présents dans la collection `blog` et rediriger vers chacuns d'eux :
+Il suffit ensuite d'importer la collection dans une page pour accéder aux contenus des éléments qui la compose. Par exemple, pour lister tout les posts présents dans la collection `blog` et rediriger vers chacuns d'eux : 
 
 ```js
 ---
@@ -80,6 +83,9 @@ const posts = await getCollection(blog, ({ data }) => { // Appel de la collectio
 
 Une fois la collection créé, il faut générer dynamiquement une page pour chaque éléments de la collection. Pour se faire, on fait appel à [getStaticPaths](https://docs.astro.build/en/reference/routing-reference/#getstaticpaths) de l'API d'Astro.
 
+Dans le fichier `src/pages/blog/[id].astro` 
+(Ici `[id]` entre crochet remplace l'url des éléments de la collection. On peut le remplacer par le nom que l'on souhaite (`[slug]` ou `[url]` sont communs), tant que celui ci est identique au `params` définit dans `getStaticpaths`. Et ouais, je fais des doubles paranthèses).
+
 ```js
 ---
 import Post from "../../layouts/Post.astro"; // Appel d'un layout pour la mise en page de chaque éléments de la collection 
@@ -103,8 +109,8 @@ const { Content } = await post.render(); // Pour injecter le contenu dans le lay
 ```
 
 Dans le fichier de layout `Post`, il suffit de faire appel aux contenus des éléments de la collection pour récupérer les informations souhaitées :
-(dans `src/layouts/Post.astro`)
 
+`src/layouts/Post.astro` :
 ```js
 ---
 ...
