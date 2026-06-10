@@ -55,4 +55,4 @@ const content = defineCollection({
 // 		}),
 // });
 
-export const collections = { allPages/*, jdr, politique*/ };
+export const collections = { content/*, jdr, politique*/ };
