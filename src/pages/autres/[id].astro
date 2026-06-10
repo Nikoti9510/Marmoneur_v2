@@ -2,13 +2,17 @@
 import Post from "../../layouts/Post.astro";
 import { getCollection, render } from 'astro:content';
 
-export async function getStaticPaths() {
+export async function getStaticPaths( routePattern ) {
   const posts = await getCollection("autres");
+
+  console.log(routePattern);
+
   return posts.map((post) => ({
-    params: { id: post.data.title },
+    params: { id: post.id },
     props: { post },
   }));
 }
+
 
 const { post } = Astro.props;
 const { Content } = await post.render();
