@@ -96,7 +96,12 @@ The blockquote element represents content that is quoted from another source, op
 
 ### Syntax
 
+To denote a word or phrase as code, enclose it in backticks (`).
 we can use 3 backticks ``` in new line and write snippet and close with 3 backticks on new line and to highlight language specific syntax, write one word of language name after first 3 backticks, for eg. html, javascript, css, markdown, typescript, txt, bash
+
+````markdown
+A `test' phrase.
+````
 
 ````markdown
 ```html
@@ -127,6 +132,8 @@ we can use 3 backticks ``` in new line and write snippet and close with 3 backti
   </body>
 </html>
 ```
+
+A `test' phrase.
 
 ## List Types
 
