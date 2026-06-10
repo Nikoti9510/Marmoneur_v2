@@ -34,12 +34,12 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 ## Images
 
 test 
-![Un champ de spore dans les balkans, par sixmorevodka.](../assets/images/Degenesis-steles-d-echos/degenesis-steles_echos.jpg "Un champ de sport dans les balkans, par sixmorevodka.")
+![Un test](/images/markdown-style-guide/test.jpg "Un test")
 
 ### Syntax
 
 ```markdown
-![Alt text](./full/or/relative/path/of/image "Title")
+![Un test](/images/markdown-style-guide/test.jpg "Un test")
 ```
 
 ## Blockquotes
