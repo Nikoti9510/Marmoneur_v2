@@ -1,0 +1,16 @@
+---
+import { getCollection } from "astro:content"; // Importation de l'utilitaire
+const posts = await getCollection(test, ({ data }) => { // Appel de la collection 
+  return data.draft === false; // On ne retourne que les posts qui ne sont pas en draft
+});
+---
+
+<main>
+  {
+    posts.map((post) => ( // On boucle sur chaque éléments de la collection et on récupère l'id (ici l'url) de chaque post
+      <li>
+        <a href={`test/${post.id}`}>{post.data.title}</a>
+      </li>
+    ))
+  }
+</main>
