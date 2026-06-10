@@ -2,7 +2,7 @@
 import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 
-const posts = await getCollection('content', ({ data }) => {
+const posts = await getCollection('politique', ({ data }) => {
   return data.draft === false && data.tags == "politique";
 });
 ---
