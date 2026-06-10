@@ -1,6 +1,6 @@
 ---
 import Feed from "../../layouts/Feed.astro";
-import { feedSource } from "..././Feeds/feedSources.ts";
+import { feedSource } from "../../Feeds/feedSources.ts";
 
 export function getStaticPaths() {
   return [...feedSource].map(([key, urls]) => ({
