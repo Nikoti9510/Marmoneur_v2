@@ -24,6 +24,18 @@ const jdr = defineCollection({
 	}),
 })
 
+const tech = defineCollection({
+	type: "content",
+	schema: z.object({
+		title: z.string(),
+		description: z.string(),
+		pubDate: z.coerce.date(),
+		updatedDate: z.coerce.date().optional(),
+		tags: z.array(z.string()),
+		draft: z.boolean().optional(),
+	}),
+})
+
 const autres = defineCollection({
 	type: "content",
 	schema: z.object({
@@ -36,4 +48,4 @@ const autres = defineCollection({
 	}),
 })
 
-export const collections = { jdr, politique, autres };
+export const collections = { jdr, politique, tech, autres };

@@ -1,17 +1,6 @@
 ---
-import { getCollection } from 'astro:content';
-import Layout from "../../layouts/Layout.astro";
-
-const posts = await getCollection('autres', ({ data }) => {
-  return data.draft === false;
-});
+import Categorie from "../../layouts/Categorie.astro";
+const categorie = "autres";
 ---
-<Layout>
-  { (posts.size === 0) 
-    ? 
-      <p>Pas de page à ce sujet</p> 
-    : 
-      posts.map((post) => (
-        <li><a href={`/autres/${post.id}`}>{post.data.title}</a></li>
-      )) 
-  }
+
+<Categorie {categorie}/>

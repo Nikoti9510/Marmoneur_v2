@@ -1,0 +1,18 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+const { categorie } = Astro.props;
+const posts = await getCollection(categorie, ({ data }) => {
+  return data.draft === false;
+});
+---
+
+<Layout>
+  {
+    posts.map((post) => (
+      <li>
+        <a href={`/${categorie}/${post.id}`}>{post.data.title}</a>
+      </li>
+    ))
+  }
+</Layout>
