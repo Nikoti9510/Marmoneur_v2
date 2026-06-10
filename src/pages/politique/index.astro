@@ -7,7 +7,15 @@ const posts = await getCollection('politique', ({ data }) => {
 });
 ---
 <Layout>
-  {posts.map((post) => (
+  if isEmptyObjecct(posts) {
+    <p>Pas de page à ce sujet</p>
+  }
+  else {
+    posts.map((post) => (
+      <li><a href={`/politique/${post.id}`}>{post.data.title}</a></li>
+    ))
+  }
+  <!-- {posts.map((post) => (
         <li><a href={`/politique/${post.id}`}>{post.data.title}</a></li>
-  ))}
+  ))} -->
 </layout>
