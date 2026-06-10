@@ -338,18 +338,18 @@ L’idée de mener une enquête en amoureux avec Betty est plaisante, mais il fa
 
 ## Annexes
 
-![Plan de la mine](/images/Enquete-a-new_elness/mine-plan.jpg "Carte de la mine")
+![Plan de la mine](../jdr/images/Enquete-a-new_elness/mine-plan.jpg "Carte de la mine")
 
-![Carte de la mine avec indication de Wayne Richardson](/images/Enquete-a-new_elness/map-indication.png "Carte de la mine avec indication de Wayne Richardson")
+![Carte de la mine avec indication de Wayne Richardson](../jdr/images/Enquete-a-new_elness/map-indication.png "Carte de la mine avec indication de Wayne Richardson")
 
-![Télégraphe d'un expéditeur inconnu](/images/Enquete-a-new_elness/telegraphe.png "Télégraphe d'un expéditeur inconnu")
+![Télégraphe d'un expéditeur inconnu](../jdr/images/Enquete-a-new_elness/telegraphe.png "Télégraphe d'un expéditeur inconnu")
 
-![Liste des décès durant l'exploitation de la mine](/images/Enquete-a-new_elness/liste-deces.png "Liste des décès durant l'exploitation de la mine")
+![Liste des décès durant l'exploitation de la mine](../jdr/images/Enquete-a-new_elness/liste-deces.png "Liste des décès durant l'exploitation de la mine")
 
-![Le rituel non traduit](/images/Enquete-a-new_elness/rituel-de-la-mere.jpg "Le rituel non traduit")
+![Le rituel non traduit](../jdr/images/Enquete-a-new_elness/rituel-de-la-mere.jpg "Le rituel non traduit")
 
-![Traduction du rituel](/images/Enquete-a-new_elness/rituel_maj.png "Traduction du rituel")
+![Traduction du rituel](../jdr/images/Enquete-a-new_elness/rituel_maj.png "Traduction du rituel")
 
-![Inversion du rituel](/images/Enquete-a-new_elness/anti-rituel_maj.png "Inversion du rituel")
+![Inversion du rituel](../jdr/images/Enquete-a-new_elness/anti-rituel_maj.png "Inversion du rituel")
 
-![Lettre de Harvey](/images/Enquete-a-new_elness/lettre-harvey.png "Lettre de Harvey")
+![Lettre de Harvey](../jdr/images/Enquete-a-new_elness/lettre-harvey.png "Lettre de Harvey")
