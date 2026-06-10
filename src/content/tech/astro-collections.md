@@ -2,7 +2,7 @@
 title: "Les collections de contenus dans AstroJS"
 description: "Utilisation des collections dans AstroJS sans passer par Glob, car visiblement Astro ne veut pas mettre sa documentation à jour."
 pubDate: '2026-06-10'
-tags: ["tech, web, astro"]
+tags: ["tech", "web", "astro"]
 draft: false
 ---
 
