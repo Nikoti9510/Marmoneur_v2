@@ -2,19 +2,13 @@
 import Post from "../../layouts/Post.astro";
 import { getCollection, render } from 'astro:content';
 
-export async function getStaticPaths() {
-  const posts = await getCollection('allPages');
-  const publishedPosts = posts.filter((post) => post.data.draft === false);
-  return publishedPosts.map(post => ({
-    params: { id: post.id },
-    props: { post },
-  }));
-}
+const allPost = await getCollection("content", ({ data }) => {
+  return data.draft !== true;
+});
 
-const { post } = Astro.props;
-const { Content } = await render(post);
+const { Content } = await render(allPost);
 ---
 
-<Post {...post.data}>
+<Post {...allPost.data}>
 	<Content />
 </Post>

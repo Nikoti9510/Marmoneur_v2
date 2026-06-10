@@ -8,6 +8,6 @@ const posts = await getCollection('allPages', ({ data }) => {
 ---
 <Layout>
   {posts.map((post) => (
-        <li><a href={`/all/${post.data.id}`}>{post.data.title}</a></li>
+        <li><a href={`/all/${post.id}`}>{post.data.title}</a></li>
   ))}
 </layout>
