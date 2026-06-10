@@ -2,10 +2,32 @@ import { defineCollection } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
-const content = defineCollection({
-	// Load Markdown and MDX files in the `src/content/` directory.
-	loader: glob({ base: './src/content/', pattern: '*.{md,mdx}' }),
-	// Type-check frontmatter using a schema
+const allPages = defineCollection({
+	loader: glob({ base: './src/content/', pattern: '**/*.{md,mdx}' }),
+	schema: ({}) =>
+		z.object({
+			title: z.string(),
+			description: z.string(),
+			pubDate: z.coerce.date(),
+			updatedDate: z.coerce.date().optional(),
+			tags: z.array(z.string()),
+			draft: z.boolean().optional(),
+		}),
+});
+const jdr = defineCollection({
+	loader: glob({ base: './src/content/jdr/', pattern: '*.{md,mdx}' }),
+	schema: ({}) =>
+		z.object({
+			title: z.string(),
+			description: z.string(),
+			pubDate: z.coerce.date(),
+			updatedDate: z.coerce.date().optional(),
+			tags: z.array(z.string()),
+			draft: z.boolean().optional(),
+		}),
+});
+const politique = defineCollection({
+	loader: glob({ base: './src/content/politique/', pattern: '*.{md,mdx}' }),
 	schema: ({}) =>
 		z.object({
 			title: z.string(),
@@ -17,4 +39,4 @@ const content = defineCollection({
 		}),
 });
 
-export const collections = { content };
+export const collections = { allPages, jdr, politique };
