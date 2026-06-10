@@ -1,13 +1,13 @@
-<!-- ---
+---
 import { getCollection } from 'astro:content';
 import Layout from "../../layouts/Layout.astro";
 
 const posts = await getCollection('jdr', ({ data }) => {
-  return data.draft === false && data.tags == "jdr";
+  return data.draft === false;
 });
 ---
 <Layout>
   {posts.map((post) => (
-        <li><a href={`/jdr/${post.id}`}>{post.data.title}</a></li>
+        <li><a href={`/all/${post.id}`}>{post.data.title}</a></li>
   ))}
-</layout> -->
+</layout>
