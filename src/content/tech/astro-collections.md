@@ -72,7 +72,7 @@ const posts = await getCollection(blog, ({ data }) => { // Appel de la collectio
   {
     posts.map((post) => ( // On boucle sur chaque éléments de la collection et on récupère l'id (ici l'url) de chaque post
       <li>
-        <a href={`posts/${post.id}`}>{post.data.title}</a>
+        <a href={`posts/${post.slug}`}>{post.data.title}</a>
       </li>
     ))
   }
@@ -94,7 +94,7 @@ import { getCollection, render } from 'astro:content'; // Appel des utilitaires 
 export async function getStaticPaths() { // Plus d'information ici : https://docs.astro.build/en/reference/routing-reference/#getstaticpaths
   const posts = await getCollection("blog"); // On récupère notre collection
   return posts.map((post) => ({
-    params: { id: post.id }, 
+    params: { id: post.slug }, 
     props: { post },
   }));
 }
