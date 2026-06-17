@@ -1,12 +1,12 @@
 ---
-title: "Mon Portfolio, inspirations, méthode et ressources"
+title: "Création de mon portfolio - inspirations, méthode et ressources"
 description: "Une présentation de mon processus de création pour mon portfolio, de mes inspirations et des outils utilisés."
 pubDate: '2025-10-27'
 tags: ["tech", "web"]
 draft: false
 ---
 
-# Création de mon portfolio - inspirations, méthode et ressources 
+
 J'ai cherché pendant un long moment quel style choisir pour mon portfolio. J'ai passé des dizaines d'heures sur [awwwards](https://www.awwwards.com/websites/nominees/), [onepagelove](https://onepagelove.com/), [godly](https://godly.website/), [deadsimplesites](https://deadsimplesites.com/), Pinterest et Dribbble à la recherche du design parfait. Après de nombreux aller retour, des prototypes foireux et beaucoup de remise en question, je me suis arrêté sur les douze sites suivants pour définir mon design : 
 - [https://bravoure.nl/en](https://bravoure.nl/en)
 - [https://www.instrument.com/](https://www.instrument.com/)

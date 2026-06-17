@@ -1,12 +1,10 @@
 ---
-title: "Stopper le scrapping des agents IA"
+title: "Stopper le scan d'un site par des agents IA"
 description: "Stopper le scan d'un site par les agents IA."
 pubDate: '2025-12-08'
 tags: ["tech", "web", "IA"]
 draft: false
 ---
-
-# Stopper le scan d'un site par des agents IA
 
 Pour bloquer de mannière légitime les agents, en partant du principe qu'ils respectent les indications du fichier `Robots.txt` : 
 
