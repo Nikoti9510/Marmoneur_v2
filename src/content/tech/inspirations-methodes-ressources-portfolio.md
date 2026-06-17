@@ -23,7 +23,7 @@ J'ai cherché pendant un long moment quel style choisir pour mon portfolio. J'ai
 
 Je voulais trois choses pour mon portfolio. Une page d'accueil sans scroll avec un sens de lecture circulaire, un design minimaliste et brutaliste, et une lecture agréable des contenus. Avec ces idées en tête et mes sites d'inspirations, je me suis lancé dans le prototypage. D'abord sur papier, parfois dans Codepen ou dans un environnement de test pour m'assurer de la faisabilité d'une idée. Ensuite sur [Penpot](https://penpot.app/) pour définir la structure plus en détail. Cet outil permet de mettre en place des layout Flex et Grid directement lors de la création graphique, ce qui c'est avéré très utile lors de l'intégration. 
 
-![Les différents écrans pour mon portfolio, lors du prototypage dans Penpot](../tech/images/Board.png" Les différents écrans pour mon portfolio, lors du prototypage dans Penpot")
+![Les différents écrans pour mon portfolio, lors du prototypage dans Penpot](../tech/images/Board.png "Les différents écrans pour mon portfolio, lors du prototypage dans Penpot")
 
 ## Méthode, ou l'absence de
 Ce qui m'a causé la plus grande perte de temps lors de la création de mon portfolio, c'est mon manque d'organisation. En plus de découvrir les outils (Penpot, Hugo, ThreeJS, Netlify, etc..) que je n'avais jamais utilisé, je découvrais aussi la réalité de créer un site en partant de zéro. J'ai fais beaucoup d'aller retour et de faux départ avant d'en arriver à la maquette présenté plus haut. 
