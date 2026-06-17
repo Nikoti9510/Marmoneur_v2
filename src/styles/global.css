@@ -227,6 +227,10 @@
 		color: Canvas;
 		padding: var(--s-l);
 	}
+	.astro-debug-header,
+	pre.astro-code {
+		margin: auto;
+	}
 
 	:target {
 		scroll-margin: 3rlh;
