@@ -35,7 +35,9 @@ J'ai hésité, en plein milieu de l'intégration du site, à changer de Framewor
 ## Le modèle 3D 
 Un élément important que je voulais intégrer était un modèle 3D basé sur mon visage. Pour le créer, j'ai d'abord réalisé un avatar via le site [avaturn.me](https://avaturn.me/), que j'ai ensuite importé dans [blender](https://www.blender.org/) pour supprimer les textures prédéfinit et (*essayer d'*) optimiser le modèle. Une fois cela fait, j'ai importé le modèle dans le site en utilisant [threejs](https://threejs.org/). (Cette vidéo m'a bien aidé : [Loading Models (using Three.js) - Both Static and Animated! (via Youtube)](https://www.youtube.com/watch?v=8n_v1aJmLmc)). J'ai associé au modèle une animation trouvée dans la librairie d'animation libre de droit [Mixamo](https://www.mixamo.com/#/?page=1&query=looking&type=Motion%2CMotionPack). (Gratuit, libre de droit et qui appartient à Adobe, allez savoir). Après quelques passages de filtre et shaders, l'effet est plutôt satisfaisant. 
 
-![Vidéo d'un modele 3D animé](../tech/images/model_noaudio.mp4)
+<video controls width="100%" height="400">
+  <source src="../../../public/contents/model_noaudio.mp4" type="video/mp4" />
+</video>
 
 Mais, parce qu'il faut bien un mais quelque part dans cette histoire, impossible de faire charger le modèle convenablement dans mon site. Quoi que je fasse, l'ajout du modèle cause toujours un "freeze" du navigateur pendant quelques centaines de millisecondes. Je me suis donc résolu à déplacer le modèle dans une page peu visitée du site. (Je vous laisse le retrouver, ça ne devrait pas être trop compliqué).
 
