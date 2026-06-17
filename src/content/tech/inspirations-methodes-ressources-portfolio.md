@@ -1,14 +1,5 @@
 ---
 title: "Mon Portfolio, inspirations, méthode et ressources"
-date: 2025-10-27
-description: ""
-type: blog
-tags:
-- Webdesign
----
-
----
-title: "Mon Portfolio, inspirations, méthode et ressources"
 description: "Une présentation de mon processus de création pour mon portfolio, de mes inspirations et des outils utilisés."
 pubDate: '2025-10-27'
 tags: ["tech", "web"]
