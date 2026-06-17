@@ -23,7 +23,7 @@ J'ai cherché pendant un long moment quel style choisir pour mon portfolio. J'ai
 
 Je voulais trois choses pour mon portfolio. Une page d'accueil sans scroll avec un sens de lecture circulaire, un design minimaliste et brutaliste, et une lecture agréable des contenus. Avec ces idées en tête et mes sites d'inspirations, je me suis lancé dans le prototypage. D'abord sur papier, parfois dans Codepen ou dans un environnement de test pour m'assurer de la faisabilité d'une idée. Ensuite sur [Penpot](https://penpot.app/) pour définir la structure plus en détail. Cet outil permet de mettre en place des layout Flex et Grid directement lors de la création graphique, ce qui c'est avéré très utile lors de l'intégration. 
 
-![Les différents écrans pour mon portfolio, lors du prototypage dans Penpot](../tech/images/Board.png"Les différents écrans pour mon portfolio, lors du prototypage dans Penpot")
+![Les différents écrans pour mon portfolio, lors du prototypage dans Penpot](../tech/images/Board.png" Les différents écrans pour mon portfolio, lors du prototypage dans Penpot")
 
 ## Méthode, ou l'absence de
 Ce qui m'a causé la plus grande perte de temps lors de la création de mon portfolio, c'est mon manque d'organisation. En plus de découvrir les outils (Penpot, Hugo, ThreeJS, Netlify, etc..) que je n'avais jamais utilisé, je découvrais aussi la réalité de créer un site en partant de zéro. J'ai fais beaucoup d'aller retour et de faux départ avant d'en arriver à la maquette présenté plus haut. 
@@ -35,7 +35,7 @@ J'ai hésité, en plein milieu de l'intégration du site, à changer de Framewor
 ## Le modèle 3D 
 Un élément important que je voulais intégrer était un modèle 3D basé sur mon visage. Pour le créer, j'ai d'abord réalisé un avatar via le site [avaturn.me](https://avaturn.me/), que j'ai ensuite importé dans [blender](https://www.blender.org/) pour supprimer les textures prédéfinit et (*essayer d'*) optimiser le modèle. Une fois cela fait, j'ai importé le modèle dans le site en utilisant [threejs](https://threejs.org/). (Cette vidéo m'a bien aidé : [Loading Models (using Three.js) - Both Static and Animated! (via Youtube)](https://www.youtube.com/watch?v=8n_v1aJmLmc)). J'ai associé au modèle une animation trouvée dans la librairie d'animation libre de droit [Mixamo](https://www.mixamo.com/#/?page=1&query=looking&type=Motion%2CMotionPack). (Gratuit, libre de droit et qui appartient à Adobe, allez savoir). Après quelques passages de filtre et shaders, l'effet est plutôt satisfaisant. 
 
-<video controls width="400px" height="400px">
+<video controls width="100%" height="400px">
   <source src="../../../public/contents/model_noaudio.mp4" type="video/mp4" />
 </video>
 
