@@ -6,7 +6,7 @@ import { Debug } from 'astro:components';
 export async function getStaticPaths() {
   const posts = await getCollection("autres");
   return posts.map((post) => ({
-    params: { id: post.id }, // Pourquoi il y a .md dans le nom de mes dossiers lors du build ?
+    params: { id: post.slug }, // Pourquoi il y a .md dans le nom de mes dossiers lors du build ?
     props: { post },
   }));
 }
