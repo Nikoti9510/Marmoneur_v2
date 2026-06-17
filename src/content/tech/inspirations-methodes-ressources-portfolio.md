@@ -38,6 +38,7 @@ Un élément important que je voulais intégrer était un modèle 3D basé sur m
 <video controls width="100%" height="400">
   <source src="../../../public/contents/model_noaudio.mp4" type="video/mp4" />
 </video>
+
 ![test video](../../../public/contents/model_noaudio.mp4 "retest là")
 
 Mais, parce qu'il faut bien un mais quelque part dans cette histoire, impossible de faire charger le modèle convenablement dans mon site. Quoi que je fasse, l'ajout du modèle cause toujours un "freeze" du navigateur pendant quelques centaines de millisecondes. Je me suis donc résolu à déplacer le modèle dans une page peu visitée du site. (Je vous laisse le retrouver, ça ne devrait pas être trop compliqué).
