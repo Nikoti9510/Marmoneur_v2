@@ -1,0 +1,91 @@
+---
+title: "Traduction FR de l'article Landmark, Hidden, Secret de DIY & Dragon"
+description: "Traduction FR de l'article Landmark, Hidden, Secret de DIY & Dragon"
+pubDate: '2026-07-01'
+tags: ["jdr"]
+draft: false
+---
+
+Traduction en français de l'article [Landmark, Hidden, Secret](https://diyanddragons.blogspot.com/2019/10/landmark-hidden-secret.html) de [DIY & Dragon](https://diyanddragons.blogspot.com/).
+
+> Disclaimer : Je ne suis pas traducteur professionnel, ni même amateur. Et je n'ai pas demandé l'autorisation parce que ça fait peur.
+
+# *Repère*, *Cachée* et *Secrète* - DIY & Dragons
+J’aborde l’information dans le jeu de rôle de trois manières différentes. L’information peut être un *Repère*, elle peut être *Cachée* ou elle peut être *Secrète*. 
+
+Cette division de l’information peut s’appliquer à plusieurs niveaux : à des lieux sur une carte, des objets dans un donjon, ou encore à des détails ou objets au sein d’un lieu que les joueurs visitent. 
+
+**L’information *Repère*** est obtenue automatiquement et gratuitement. Les joueurs l’obtiennent sans même la demander, et s’ils la redemandent plus tard, je la redonne comme s’ils l'obtenaient pour la première fois. Apprendre ou découvrir une information *Repère* ne prend aucun temps fictionnel et ne présente aucun risque pour les personnages.
+
+Dans un Hexcrawl, les lieux listés sont des *Repères*, et l'environnement qui les composent le sont également. Dans un donjon, le contenu général d’une pièce, ainsi que sa forme et ses dimensions, sont des informations gratuites. Il n’y a pas besoin de demander pour obtenir ces informations - car c'est celles-ci qui définissent le contexte permettant de poser des questions pertinentes pour faire avancer le jeu. C’est ce qui définit le début d’un tour, ce qui dresse le décor dans lequel va se dérouler la suite de la scène. Si une aventure pré-écrite inclut des textes à lire, ce sont des informations *Repères*.
+
+Par exemple, une porte ordinaire est une information *Repère*. Le maître de jeu (MJ) informe les joueurs de la présence de cette porte durant la description initiale de la pièce. Plus tard, si un joueur le demande, le MJ peut décrire de nouveau la porte en détail, comme si le personnage parcourait la pièce du regard ou faisait appel à sa mémoire. 
+
+***
+
+**L’information *Caché*** n’est pas obtenue automatiquement - les joueurs doivent poser des questions pour l’obtenir. La plupart du temps, elle n’est pas gratuite - un coût fictionnel (c'est-à-dire un coût dans la fiction) doit être acquitté pour son obtention. Cependant, à la différence d’une information *Secrète*, il n’y pas de risque d’échec. Si un joueur pose une question et s’acquitte du coût, il obtient *toujours* l’information *Caché*.
+
+Une information *Repère* est gratuite car les personnages peuvent la découvrir à distance, d’un seul coup d'œil. Au contraire, les informations *Cachées* sont plus coûteuses car plus intimes. Pour l’apprendre, un personnage doit être au contact de ce qui l’intéresse, il doit pouvoir le toucher. 
+
+L’information *Repère* est obtenue passivement, alors que l’information *Cachées* est acquise activement.
+
+Il y a deux types de coût associé à l’obtention d’une information *Cachée*. Le premier, qui est possible mais pas obligatoire, est le **temps**. Si vous effectuez un suivi du temps durant le jeu, il est alors possible que l’acquisition d’information *Cachée* requière l’écoulement d’un laps de temps (plus ou moins long). Un tour de jeu passe, une piste[^1] est incrémentée, une table de rencontre aléatoire est consultée, etc..
+
+Le deuxième coût est le **risque**. Ce qui est *Caché* n’est pas forcément bénéfique, ou peut inclure un bénéfice et un danger (comme un piège, une alarme ou une embuscade par exemple). Découvrir ce qui est *Caché* ne constitue pas toujours un danger, mais il expose toujours au danger, il n’est pas possible de découvrir ce qui est *Caché* sans prendre un risque.
+
+Le contenu de chaque coffre, chaque placard, chaque tiroir, sont des informations *Cachées*. Rechercher et découvrir ce qui est dissimulé est un des buts premiers du jeu de rôle. Les personnages ne s'arrêtent pas simplement à ce qu’il y a d’évident dans une pièce avant de passer à la suivante. Ils explorent.
+
+Une porte dissimulée derrière des rideaux est un exemple d’information *Cachée*. Les rideaux sont des *Repères*, mais ce qui se cache derrière est *Caché* et le MJ ne l’annonce pas. Pour découvrir ce qui se cache au-delà, le joueur doit le demander au MJ, et son personnage devra s’exposer pour le découvrir.
+
+***
+
+**L’information *Secrète*** n’a aucune garantie, c’est l’exact opposé de l’information *Repère*, elle a toujours un coût. Il ne faut pas seulement qu’un joueur pose une question pour l’obtenir, comme c’est le cas pour une information *Cachée* ; Il y a aussi une chance que le joueur n’obtienne pas l’information, au contraire des deux types précédents. Pour acquérir les informations *Secrètes*, les joueurs doivent lancer des dés et surmonter un obstacle. Ce risque supplémentaire, qui n’est plus seulement de s’exposer au danger, mais aussi de s’exposer à l’échec, est ce qui la rend plus coûteuse à obtenir. 
+
+Le simple fait que les personnages puissent connaître l'existence d’une information *Secrète* est sujet de discorde entre les MJ. Certains argumentent que prouver l’existence de ce secret et le révéler devrait s’effectuer dans le même temps - s’il n’est pas possible de révéler l’information, alors il n’est pas possible de savoir qu’il y a une information à révéler. D’autres disent que découvrir la présence d’une information *Secrète* et acquérir celle-ci sont deux étapes différentes, faisant appel à des compétences différentes. Ces deux approches semblent concorder sur une chose - l’existence d’un secret est un secret en soi.
+
+Mon point de vue est le suivant : L’existence d’un secret devrait être une information *Cachée*. Je pense que les joueurs devraient être capables de prouver l’existence d’un secret en posant des questions et en prenant des risques.
+
+Découvrir la nature du secret devrait nécessiter un jet de dé, mais découvrir qu’un secret existe ne devrait pas être un secret en soi. 
+
+Un des avantages de cette hiérarchie est qu'elle me permet de penser comment mes joueurs devraient obtenir de l’information : **On découvre des informations *Cachée* en explorant des *Repères*. On apprend des informations *Secrètes* en examinant des informations *Cachées*.** 
+
+Pour les joueurs interagissant avec un MJ faisant d’une information *Secrète* un secret en soi, il est toujours possible de suspecter l’existence d’une information *Secrète*, même si son personnage ne peut le prouver. C’est plus ou moins ce que certains MJ veulent dire quand ils parlent de « compétence du joueur ». (“player skill”). 
+
+Un mécanisme qui enclenche l’ouverture d’une porte *Cachée* derrière une bibliothèque lorsqu’une séquence particulière de livres est incliné est un exemple d’information *Secrète*. La bibliothèque est le *Repère*. Le mécanisme est *Caché*, mais n’importe quel personnage qui l’inspecte de plus près remarquera que la bibliothèque est parfaitement alignée avec le mur, et que le sol est éraflé en arc de cercle devant celle-ci. La séquence d’activation du mécanisme quant-à-elle est *Secrète*. Il n’est pas suffisant de passer du temps pour l’activer, il y a une chance d’essayer et d’échouer.
+
+***
+
+Je pense qu’il y a deux avantages à penser l’information de cette façon. Penser à la différence entre information *Repère* et *Cachée* aide à écrire et décrire de façon plus efficace. Penser à la différence entre information *Cachée* et *Secrète* permet de résoudre plus facilement les actions des joueurs. 
+
+**La différence entre une information *Repère* et *Cachée*** n’est pas uniquement la différence entre ce qui est dit quand les joueurs entrent dans une pièce et ce qu’ils doivent demander pour en découvrir plus. C’est aussi la différence entre l’information qui est gratuite et celle qui a un  coût.
+
+Il n’est pas nécessaire de donner une description détaillée de tout ce que peuvent voir les personnages quand ils rentrent dans une pièce. D’ailleurs, vous ne devriez probablement pas. Car cette route mène à la folie, et aux monologues de dix minutes. Il est préférable que votre description initiale soit courte et évocatrice, qu’elle donne le ton et liste les éléments disponibles pour une investigation plus approfondie, puis qu’elle laisse la parole aux joueurs. Cela ne veut pas dire que toutes les autres informations sont *Cachées*. Parmi les éléments présentés lors de la description initiale, une description approfondie sera aussi gratuite, mais uniquement donnée quand joueur y prête de l’intérêt. Mais cela veut dire que certaines informations sont *Cachées* et que vous devriez savoir lesquelles sont gratuites, et lesquelles présentent un risque ou prennent du temps à obtenir.   
+
+Cela aide aussi à se rendre compte des occasions où l’information ne devrait pas être gratuite. Quand un personnage n’est pas familier avec le fonctionnement d’une technologie ou de la magie, la description de celui-ci devrait être familière pour le joueur, mais étrange pour le personnage. Quand un lieu est obscur, peut-être que la seule chose qu’un personnage puisse obtenir gratuitement est la forme et la taille des objets, et dans ces circonstances plus d’informations peuvent être *Cachées* et risquées. L’obscurité totale n’est pas intéressante. Au contraire, repensez à ces moments dans les contes pour enfants où l’on se rend compte que “l'intrus” dans la pièce n’est en fait qu’une veste sur un porte-manteau, ou que le “monstre” n’est qu’un tas de vêtements sur une chaise. Ces moments se produisent tout le temps dans les œuvres de fiction, mais presque jamais lors d’une partie de jeu de rôle. Mais s’ils étaient appliqués à des sujets plus palpitants que des porte-manteaux, ils pourraient apporter une certaine ambiance de mystère et de suspense lors de phase d’exploration dans l’obscurité. Les ténèbres sont l’absence totale d’information, alors que tout ne devrait pas être *Cachées*. Que certaines informations nécessitent plus d’effort pour les collecter les font sortir du lot. C’est la difficulté même qui la met en valeur et lui donne de l’attrait.  
+
+**La différence entre l’information *Cachée* et *Secrète*** réside dans le fait que la première nécessite uniquement de s’approcher et que le personnage y passe du temps. Alors que les informations *Secrètes* requiert quelque chose de plus, un extra. Idéalement, cela nécessite l’application d’une compétence qui ne peut pas être - ou difficilement - modélisée par la description d’un joueur. Dans mon exemple précédent avec le passage secret derrière la bibliothèque, si le mécanisme consistait simplement à incliner un livre, plutôt qu’une combinaison de plusieurs livres, alors cette information n’aurait pas été *Secrète*, mais *Cachée*. Car si c’était le cas, le seul facteur serait le temps, sans aucune chance d'échec. Alors qu’essayer de deviner une combinaison prend beaucoup trop de temps, plus de temps que les personnages n’ont à leur disposition, et il y a de nombreuses opportunités d’échec. Il est donc logique de laisser les dés décider de la suite des événements.
+
+Si la seule chose nécessaire pour mener à bien une recherche est du temps, et si les personnages ont assez de temps, alors ce qu’ils cherchent est simplement *Caché*, et ils peuvent le trouver sans lancer de dé. Fouiller toutes les urnes funéraires dans une crypte, creuser une tombe, démolir un mur masquant un passage : ces choses prennent toutes du temps - et parfois font beaucoup de bruit - mais elles ne nécessitent pas de compétence particulière, n’implique pas le risque de faire une erreur ou de passer à côté de quelque chose. 
+
+Quelque chose peut devenir secret simplement parce qu’il n’y a pas assez de temps pour le trouver. Une recherche méthodique étalée sur une journée est presque garantie de trouver ce que l’on cherche - mais trouver la même chose dans un seul tour d’exploration de dix minutes fait appel à la chance, la compétence ou la perspicacité. Cela nécessite donc de jeter les dés. Pour qu’il n’y ait pas assez de temps, il faut qu’il y ait une contrainte de temps, une sorte de décompte ou d’échéance, qu’elle soit narrative ou mécanique, une raison pour que les personnages ne puissent pas y passer toute une journée. Souvenez-vous, pour les joueurs, cette fouille peut prendre autant de temps qu’il faut pour obtenir ce qu’ils recherchent. Sans conséquence, pas de tension.
+
+Il se peut aussi qu’il n’y ait pas assez de temps en raison des compétences requises pour effectuer la recherche. Tous les problèmes n’ont pas de solution simple. Essayer de les résoudre simplement en y passant du temps pourrait ne pas prendre quelques heures, mais quelques années, voire des siècles. Savoir résoudre ce genre de problème efficacement est une compétence. C’est une connaissance particulière que tout le monde - tous les personnages - n’ont pas. Et même si un personnage a la bonne compétence, il y a toujours une chance qu’il échoue. Alors lancez les dés. lancez les dés car l’alternative est de laisser les joueurs décrire en détail leurs tentatives. Lancez les dés car même si les personnages ont toute la journée, les joueurs eux ne l’ont pas. Et leur temps, votre temps, vaut plus que de débattre sur la meilleure méthode de fouille. 
+
+Pour réitérer, toute information qui n’est pas un *Repère* ne devrait pas forcément être *Secrète*. Certaines choses sont simplement *Cachées*. Devoir demander des détails sur un objet est déjà une barrière suffisante pour les joueurs. La barrière supplémentaire d’un jet de dés est parfois justifiée dans certains cas, mais pas dans tous. Avant de lancer les dés, décidez si l’information est *Caché* ou *Secrète* - décidez ce qu’implique l’échec d’un personnage. Si vous ne pensez pas qu'il peut échouer, alors ce n’est pas vraiment un secret, et vous n’avez pas besoin de lancer les dés.
+
+**Certains jeux incluent des informations conditionnelles**, à mi-chemin entre *Cachées* et *Secrètes*. Comme les informations *Secrètes*, elles ne peuvent pas simplement être découvertes par un personnage qui les observe. Mais dans certaines conditions, elles peuvent être trouvées, sans risque d’échec, comme une information *Cachée*. Les compétences dans **Trail of Cthulhu**[^2] et les autres jeux de cette gamme fonctionnent de cette façon. Si vous avez la bonne compétence et que vous recherchez un indice, vous le trouverez. Mais si vous n’avez pas la compétence, alors impossible pour vous de trouver l’indice. L’équipement dans beaucoup de jeux-vidéos fonctionne de cette manière. Dans **A Link to the Past**, si Link est équipé d’un gant magique en particulier, il peut soulever des rochers pour dégager le passage. Mais sans eux, le chemin restera bloqué. Dans **Super Metroid**, Samus a besoin d’un type de munition spécifique pour abattre certaines portes ; sans ces munitions, les portes restent closes quoi qu’il arrive. 
+
+**Pour conclure**, certains jeux n’ont que des informations *Secrètes*, sans aucunes informations *Cachées* pouvant être apprises sans test de compétences. Dans les tout premiers donjons, vous ne pouviez même pas ouvrir de porte sans réussir un test de compétences. Je pense que la difficulté à obtenir une information devrait être basée sur son importance pour le jeu.
+
+Si les joueurs doivent connaitre cette information, alors c’est une *Repère*. C’est vrai pour toutes les descriptions visuelles nécessaires à la création d’une image mentale collective du jeu.
+
+Si l’information est vraiment importante, elle devrait probablement être un *Repère* ou à défaut *Cachée*. Aucun joueur ne souhaite qu’un MJ “triche” et mente sur le résultat d’un jet de dé, ou ne souhaite être “mis sur le droit chemin” (“sur des rails”, ou “railroad” dans l’article original[^3]) et forcé dans une direction particulière. Mais personne ne veut non plus annuler l’exploration en cours et rebrousser chemin car le groupe a échoué à trouver LA porte *Secrète* qui permet d'accéder à la suite du donjon.
+
+L’information peut être classifiée comme *Secrète* sans crainte si elle remplit deux conditions. Premièrement si cette information est véritablement optionnelle. Si les joueurs la trouvent, cela leur sera sans doute très bénéfique, mais le jeu ne s’arrêtera pas pour autant s’ils ne la trouvent pas. La deuxième condition est qu’il existe plusieurs manières d’obtenir une information. S’il existe au moins trois manières différentes d’arriver à la même conclusion, et que les personnages ratent les trois, alors il est sans doute acceptable qu’ils ne l'obtiennent pas. Personne ne souhaite que l’entièreté du groupe soit stoppé par un seul mauvais lancer de dés, mais trois jets consécutif accompagné de trois tours de planifications et de descriptions indique que le jeu n’est pas à l’arrêt, mais que les joueurs observent leurs personnages échouer au sein de leur histoire - au moins pour cette séance et pour cette information. 
+
+
+[^1] : Introduit par Apocalypse World et grandement popularisé par Blades in the Dark, les pistes sont un système de représentation populaire. Appelée “horloge” en anglais, elle prend la forme d’une division arbitraire d’une action ou d’un événement. Les actions des joueurs, des personnages non-joueurs, le passage du temps ou des événements naturels sont autant de facteurs pouvant faire progresser une piste vers sa conclusion. Celle-ci est souvent définie en amont et clairement communiquée à l’ensemble des joueurs à la table.
+
+[^2] : https://pelgranepress.com/trail-of-cthulhu/ 
+
+[^3] : Quand un scénario de jeu de rôle est complètement linéaire, sans aucune considération pour les actions et décisions des joueurs. Quelle que soit la conclusion d’une scène ou d’une interaction, l’aventure va suivre le cours défini en amont par le maître de jeu (ou l’auteur). D’où le terme “sur des rails” de l’anglais.
