@@ -35,7 +35,7 @@ Le deuxième coût est le **risque**. Ce qui est *Caché* n’est pas forcément
 
 Le contenu de chaque coffre, chaque placard, chaque tiroir, sont des informations *Cachées*. Rechercher et découvrir ce qui est dissimulé est un des buts premiers du jeu de rôle. Les personnages ne s'arrêtent pas simplement à ce qu’il y a d’évident dans une pièce avant de passer à la suivante. Ils explorent.
 
-Une porte dissimulée derrière des rideaux est un exemple d’information *Cachée*. Les rideaux sont des *Repères*, mais ce qui se cache derrière est *Caché* et le MJ ne l’annonce pas. Pour découvrir ce qui se cache au-delà, le joueur doit le demander au MJ, et son personnage devra s’exposer pour le découvrir.
+Une porte dissimulée derrière des rideaux est un exemple d’information *Cachée*. Les rideaux sont des *Repères*, mais ce qui se trouve derrière est *Caché* et le MJ ne l’annonce pas. Pour découvrir ce qui se cache au-delà, le joueur doit le demander au MJ, et son personnage devra s’exposer pour le découvrir.
 
 ***
 
@@ -75,9 +75,9 @@ Pour réitérer, toute information qui n’est pas un *Repère* ne devrait pas f
 
 **Certains jeux incluent des informations conditionnelles**, à mi-chemin entre *Cachées* et *Secrètes*. Comme les informations *Secrètes*, elles ne peuvent pas simplement être découvertes par un personnage qui les observe. Mais dans certaines conditions, elles peuvent être trouvées, sans risque d’échec, comme une information *Cachée*. Les compétences dans **Trail of Cthulhu**[^2] et les autres jeux de cette gamme fonctionnent de cette façon. Si vous avez la bonne compétence et que vous recherchez un indice, vous le trouverez. Mais si vous n’avez pas la compétence, alors impossible pour vous de trouver l’indice. L’équipement dans beaucoup de jeux-vidéos fonctionne de cette manière. Dans **A Link to the Past**, si Link est équipé d’un gant magique en particulier, il peut soulever des rochers pour dégager le passage. Mais sans eux, le chemin restera bloqué. Dans **Super Metroid**, Samus a besoin d’un type de munition spécifique pour abattre certaines portes ; sans ces munitions, les portes restent closes quoi qu’il arrive. 
 
-**Pour conclure**, certains jeux n’ont que des informations *Secrètes*, sans aucunes informations *Cachées* pouvant être apprises sans test de compétences. Dans les tout premiers donjons, vous ne pouviez même pas ouvrir de porte sans réussir un test de compétences. Je pense que la difficulté à obtenir une information devrait être basée sur son importance pour le jeu.
+**Pour conclure**, certains jeux n’ont que des informations *Secrètes*, sans aucunes informations *Cachées* pouvant être apprises sans test de compétences. Dans les tous premiers donjons, vous ne pouviez même pas ouvrir de porte sans réussir un test de compétences. Je pense que la difficulté à obtenir une information devrait être basée sur son importance pour le jeu.
 
-Si les joueurs doivent connaitre cette information, alors c’est une *Repère*. C’est vrai pour toutes les descriptions visuelles nécessaires à la création d’une image mentale collective du jeu.
+Si les joueurs doivent connaitre cette information, alors c’est un *Repère*. C’est vrai pour toutes les descriptions visuelles nécessaires à la création d’une image mentale collective du jeu.
 
 Si l’information est vraiment importante, elle devrait probablement être un *Repère* ou à défaut *Cachée*. Aucun joueur ne souhaite qu’un MJ “triche” et mente sur le résultat d’un jet de dé, ou ne souhaite être “mis sur le droit chemin” (“sur des rails”, ou “railroad”[^3] dans l’article original) et forcé dans une direction particulière. Mais personne ne veut non plus annuler l’exploration en cours et rebrousser chemin car le groupe a échoué à trouver LA porte *Secrète* qui permet d'accéder à la suite du donjon.
 
