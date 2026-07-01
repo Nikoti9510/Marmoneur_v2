@@ -54,6 +54,11 @@
 		--prose-flow: var(--s-l);
 	}
 
+	hr,
+	.footnotes {
+		border-block-start: var(--text-body) 1px solid;
+	}
+
 	p,
 	li,
 	dd {
@@ -267,7 +272,8 @@
 	}
 
 	.screenreader-only:not(:focus):not(:active),
-	.visibility-hidden {
+	.visibility-hidden,
+	.sr-only {
 		clip: rect(0 0 0 0);
 		clip-path: inset(50%);
 		height: 1px;
