@@ -29,7 +29,7 @@ Une information *Repère* est gratuite car les personnages peuvent la découvrir
 
 L’information *Repère* est obtenue passivement, alors que l’information *Cachées* est acquise activement.
 
-Il y a deux types de coût associé à l’obtention d’une information *Cachée*. Le premier, qui est possible mais pas obligatoire, est le **temps**. Si vous effectuez un suivi du temps durant le jeu, il est alors possible que l’acquisition d’information *Cachée* requière l’écoulement d’un laps de temps (plus ou moins long). Un tour de jeu passe, une <cite>piste[^1]</cite> est incrémentée, une table de rencontre aléatoire est consultée, etc..
+Il y a deux types de coût associé à l’obtention d’une information *Cachée*. Le premier, qui est possible mais pas obligatoire, est le **temps**. Si vous effectuez un suivi du temps durant le jeu, il est alors possible que l’acquisition d’information *Cachée* requière l’écoulement d’un laps de temps (plus ou moins long). Un tour de jeu passe, une piste[^1] est incrémentée, une table de rencontre aléatoire est consultée, etc..
 
 Le deuxième coût est le **risque**. Ce qui est *Caché* n’est pas forcément bénéfique, ou peut inclure un bénéfice et un danger (comme un piège, une alarme ou une embuscade par exemple). Découvrir ce qui est *Caché* ne constitue pas toujours un danger, mais il expose toujours au danger, il n’est pas possible de découvrir ce qui est *Caché* sans prendre un risque.
 
@@ -79,11 +79,9 @@ Pour réitérer, toute information qui n’est pas un *Repère* ne devrait pas f
 
 Si les joueurs doivent connaitre cette information, alors c’est une *Repère*. C’est vrai pour toutes les descriptions visuelles nécessaires à la création d’une image mentale collective du jeu.
 
-Si l’information est vraiment importante, elle devrait probablement être un *Repère* ou à défaut *Cachée*. Aucun joueur ne souhaite qu’un MJ “triche” et mente sur le résultat d’un jet de dé, ou ne souhaite être “mis sur le droit chemin” (“sur des rails”, ou <cite>“railroad”[^3]</cite> dans l’article original) et forcé dans une direction particulière. Mais personne ne veut non plus annuler l’exploration en cours et rebrousser chemin car le groupe a échoué à trouver LA porte *Secrète* qui permet d'accéder à la suite du donjon.
+Si l’information est vraiment importante, elle devrait probablement être un *Repère* ou à défaut *Cachée*. Aucun joueur ne souhaite qu’un MJ “triche” et mente sur le résultat d’un jet de dé, ou ne souhaite être “mis sur le droit chemin” (“sur des rails”, ou “railroad”[^3] dans l’article original) et forcé dans une direction particulière. Mais personne ne veut non plus annuler l’exploration en cours et rebrousser chemin car le groupe a échoué à trouver LA porte *Secrète* qui permet d'accéder à la suite du donjon.
 
 L’information peut être classifiée comme *Secrète* sans crainte si elle remplit deux conditions. Premièrement si cette information est véritablement optionnelle. Si les joueurs la trouvent, cela leur sera sans doute très bénéfique, mais le jeu ne s’arrêtera pas pour autant s’ils ne la trouvent pas. La deuxième condition est qu’il existe plusieurs manières d’obtenir une information. S’il existe au moins trois manières différentes d’arriver à la même conclusion, et que les personnages ratent les trois, alors il est sans doute acceptable qu’ils ne l'obtiennent pas. Personne ne souhaite que l’entièreté du groupe soit stoppé par un seul mauvais lancer de dés, mais trois jets consécutif accompagné de trois tours de planifications et de descriptions indique que le jeu n’est pas à l’arrêt, mais que les joueurs observent leurs personnages échouer au sein de leur histoire - au moins pour cette séance et pour cette information. 
-
-***
 
 [^1]: Introduit par Apocalypse World et grandement popularisé par Blades in the Dark, les pistes sont un système de représentation populaire. Appelée “horloge” en anglais, elle prend la forme d’une division arbitraire d’une action ou d’un événement. Les actions des joueurs, des personnages non-joueurs, le passage du temps ou des événements naturels sont autant de facteurs pouvant faire progresser une piste vers sa conclusion. Celle-ci est souvent définie en amont et clairement communiquée à l’ensemble des joueurs à la table.
 
