@@ -232,6 +232,7 @@
 		color: Canvas;
 		padding: var(--s-l);
 	}
+
 	.astro-debug-header,
 	pre.astro-code {
 		margin: auto;
@@ -367,6 +368,7 @@
 	}
 
 	.post-content {
+
 		ul,
 		ol,
 		dl {
