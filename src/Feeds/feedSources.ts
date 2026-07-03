@@ -80,6 +80,7 @@ const ttrpgFeed = [
   "https://castlegrief.substack.com/feed",
   "https://tbr.bearblog.dev/feed/",
   "https://beeboobubie.substack.com/feed",
+  "https://www.monde-diplomatique.fr/rss/"
 ]
 
 export const feedSource = new Map<string, string[]>([
