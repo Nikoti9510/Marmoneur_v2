@@ -1,6 +1,6 @@
 ---
-title: "Traduction FR de l'article Landmark, Hidden, Secret de DIY & Dragon"
-description: "Traduction FR de l'article Landmark, Hidden, Secret de DIY & Dragon"
+title: "Traduction FR de l'article "Landmark, Hidden, Secret" de DIY & Dragon"
+description: "Traduction FR de l'article "Landmark, Hidden, Secret" de DIY & Dragon"
 pubDate: '2026-07-01'
 tags: ["jdr"]
 draft: false
@@ -8,7 +8,7 @@ draft: false
 
 Traduction en français de l'article [Landmark, Hidden, Secret](https://diyanddragons.blogspot.com/2019/10/landmark-hidden-secret.html) de [DIY & Dragon](https://diyanddragons.blogspot.com/).
 
-> Disclaimer : Je ne suis pas traducteur professionnel, ni même amateur. Et je n'ai pas demandé l'autorisation parce que ça fait peur.
+> Disclaimer : Je ne suis pas traducteur professionnel, ni même amateur. Et je n'ai pas demandé l'autorisation à l'auteur de l'article (ça fait peur hé).
 
 # *Repère*, *Cachée* et *Secrète* - DIY & Dragons
 J’aborde l’information dans le jeu de rôle de trois manières différentes. L’information peut être un *Repère*, elle peut être *Cachée* ou elle peut être *Secrète*. 

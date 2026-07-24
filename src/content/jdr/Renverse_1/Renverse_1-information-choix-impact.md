@@ -1,6 +1,6 @@
 ---
-title: "Traduction FR de l'article The ICI Doctrine: Information, Choice, Impact de Bastionland"
-description: "Traduction FR de l'article The ICI Doctrine: Information, Choice, Impact de Bastionland"
+title: "Traduction FR de l'article "The ICI Doctrine: Information, Choice, Impact" par Bastionland"
+description: "Traduction FR de l'article "The ICI Doctrine: Information, Choice, Impact" par Bastionland"
 pubDate: '2026-07-24'
 tags: ["jdr"]
 draft: false
@@ -8,7 +8,7 @@ draft: false
 
 Traduction en français de l'article [The ICI Doctrine: Information, Choice, Impact](https://www.bastionland.com/2018/09/the-ici-doctrine-information-choice.html) de [Bastionland](https://www.bastionland.com/).
 
-> Disclaimer : Je ne suis pas traducteur professionnel, ni même amateur. Et je n'ai pas demandé l'autorisation parce que ça fait peur.
+> Disclaimer : Je ne suis pas traducteur professionnel, ni même amateur. Et je n'ai pas demandé l'autorisation à l'auteur de l'article (ça fait peur hé).
 
 # La doctrine ICI : Information, Choix, Impact.
 
