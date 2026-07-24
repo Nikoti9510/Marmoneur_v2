@@ -1,6 +1,6 @@
 ---
-title: "Traduction FR de l'article "Landmark, Hidden, Secret" de DIY & Dragon"
-description: "Traduction FR de l'article "Landmark, Hidden, Secret" de DIY & Dragon"
+title: "Traduction FR de l'article Landmark, Hidden, Secret de DIY & Dragon"
+description: "Traduction FR de l'article Landmark, Hidden, Secret de DIY & Dragon"
 pubDate: '2026-07-01'
 tags: ["jdr"]
 draft: false
