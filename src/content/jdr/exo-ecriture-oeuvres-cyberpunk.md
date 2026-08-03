@@ -1,6 +1,6 @@
 ---
-title: "Exercice d'écriture - Oeuvre d'art Cyberpunk"
-description: "Une courte liste d'oeuvre d'art étrange, rencontré dans le hall d'entrée d'une Mega Corporation, dans les toilettes d'un charcudoc ou dans la villa d'un NéoNepoBaby"
+title: "Exercice d'écriture - Oeuvres d'arts Cyberpunk"
+description: "Une courte liste d'oeuvres d'art étranges, rencontrées dans le hall d'entrée d'une Mega Corporation, dans les toilettes d'un charcudoc ou dans la villa d'un NéoNepoBaby"
 pubDate: '2026-08-03'
 tags: ["jdr"]
 draft: false
