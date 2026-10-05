@@ -308,7 +308,7 @@
 @layer variables {
 	@font-face {
 		font-family: 'Libron-Regular';
-		src: url('../../fonts/Libron-Regular.woff2') format('woff2');
+		src: url('../assets/fonts/Libron-Bold.woff2') format('woff2');
 		font-weight: 400;
 		font-display: swap;
 		font-style: normal;
