@@ -306,15 +306,13 @@
 }
 
 @layer variables {
-	/* @font-face {
-		font-family: 'Synonym-Variable';
-		src: url('../../fonts/Synonym-Variable.woff2') format('woff2'),
-			url('../../fonts/Synonym-Variable.woff') format('woff'),
-			url('../../fonts/Synonym-Variable.ttf') format('truetype');
-		font-weight: 200 700;
+	@font-face {
+		font-family: 'Libron-Regular';
+		src: url('../../fonts/Libron-Regular.woff2') format('woff2');
+		font-weight: 400;
 		font-display: swap;
 		font-style: normal;
-	} */
+	}
 
 	:root {
 		--text-heading: light-dark(#000, #fff);
@@ -324,7 +322,7 @@
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_accent: light-dark(#8b8b8b, #e8f800);
 		--max-inline-size: 75ch;
-		--font-stack: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+		--font-stack: Libron-Regular, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
 		--border-radius: var(--s-xs);
 		--transition: .3s ease;
