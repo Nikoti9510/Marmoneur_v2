@@ -6,7 +6,7 @@ tags: ["tech", "web", "IA"]
 draft: false
 ---
 
-Pour bloquer de mannière légitime les agents, en partant du principe qu'ils respectent les indications du fichier `Robots.txt` : 
+Pour bloquer de manière légitime les agents, en partant du principe qu'ils respectent les indications du fichier `Robots.txt` : 
 
 ```txt
 User-agent: *
