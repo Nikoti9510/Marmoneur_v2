@@ -211,7 +211,7 @@
 	}
 
 	blockquote {
-		--prose-flow: var(--s-l);
+		margin-block-end: var(--s-l);
 		background-color: var(--surface);
 		padding: var(--s-s) var(--s-m);
 		margin-inline: 0;
