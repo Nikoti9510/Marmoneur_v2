@@ -391,6 +391,7 @@
 		ol,
 		dl {
 			--prose-flow: var(--s-xs, .5em);
+			margin-block-end: var(--s-s);
 
 			ul,
 			ol,
