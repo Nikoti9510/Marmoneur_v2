@@ -127,7 +127,6 @@
 	table,
 	caption,
 	blockquote {
-		border-radius: var(--border-radius);
 		outline: 1px solid var(--surface);
 	}
 
@@ -215,7 +214,7 @@
 		background-color: var(--surface);
 		padding: var(--s-s) var(--s-m);
 		margin-inline: 0;
-		margin-block-end: var(--s-m);
+		margin-block-end: var(--s-L);
 	}
 
 	[aria-disabled="true" i],
