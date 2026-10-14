@@ -38,7 +38,7 @@
 	}
 
 	h1 {
-		font-size: var(--s-l);
+		font-size: var(--s-xl);
 	}
 
 	h1,
@@ -48,11 +48,16 @@
 
 	h2 {
 		--prose-flow: var(--s-xl);
-		font-size: var(--s-m);
+		font-size: var(--s-l);
 	}
 
 	h3 {
 		--prose-flow: var(--s-l);
+		font-size: var(--s-m);
+	}
+
+	h3 {
+		--prose-flow: var(--s-m);
 		font-size: var(--s-s);
 	}
 
