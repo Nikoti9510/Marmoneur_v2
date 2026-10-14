@@ -397,7 +397,7 @@
 			ol,
 			dl {
 				line-height: var(--lineHeight-s);
-				margin-block-end: var(--s-m);
+				margin-block-end: var(--s-s);
 			}
 		}
 	}
