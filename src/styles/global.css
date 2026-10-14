@@ -73,7 +73,6 @@
 	li,
 	dd {
 		max-inline-size: var(--max-inline-size);
-		line-height: var(--lineHeight-s);
 	}
 
 	a {
@@ -401,6 +400,7 @@
 			ol,
 			dl {
 				--prose-flow: var(--xs-s, .25em);
+				line-height: var(--lineHeight-s);
 			}
 		}
 	}
