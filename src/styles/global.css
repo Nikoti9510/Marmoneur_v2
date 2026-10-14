@@ -34,7 +34,7 @@
 	/* FUTURE :heading */
 		{
 		text-wrap: balance;
-		line-height: 1.1;
+		line-height: 1.3;
 	}
 
 	h1,
@@ -211,10 +211,10 @@
 	}
 
 	blockquote {
+		--prose-flow: var(--s-l);
 		background-color: var(--surface);
 		padding: var(--s-s) var(--s-m);
 		margin-inline: 0;
-		margin-block-end: var(--s-L);
 	}
 
 	[aria-disabled="true" i],
