@@ -321,18 +321,18 @@
 		--surface: light-dark(#eeeeee, #212121);
 		--surface-darker: light-dark(#d4d4d4, #4d4d4d);
 		--color_accent: light-dark(#8b8b8b, #e8f800);
-		--max-inline-size: 75ch;
+		--max-inline-size: 70ch;
 		--font-stack: Libron-Regular, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
 		--box-shadow: 2px 2px 8px var(--surface);
 		--border-radius: var(--s-xs);
 		--transition: .3s ease;
 
-		--s-xs: .3em;
-		--s-s: .6em;
-		--s-m: 1em;
-		--s-l: 2em;
-		--s-xl: 2.6em;
-		--s-xxl: 3.6em;
+		--s-xs: .5em;
+		--s-s: .8em;
+		--s-m: 1.2em;
+		--s-l: 2.4em;
+		--s-xl: 3.6em;
+		--s-xxl: 4.8em;
 	}
 
 	html[data-theme="light"] {
@@ -359,6 +359,7 @@
 @layer content {
 	body {
 		max-width: var(--max-inline-size);
+		margin: auto;
 	}
 
 	.post-header {
