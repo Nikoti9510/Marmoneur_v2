@@ -37,31 +37,27 @@
 		line-height: 1.1;
 	}
 
+	h1,
+	h2,
+	h3 {
+		color: var(--text-heading);
+	}
+	
 	h1 {
 		font-size: var(--s-xl);
 	}
 
-	h1,
 	h2 {
-		color: var(--text-heading);
-	}
-
-	h2 {
-		--prose-flow: var(--s-xl);
+		--prose-flow: var(--s-l);
 		font-size: var(--s-l);
 	}
 
 	h3 {
-		--prose-flow: var(--s-l);
-		font-size: var(--s-l);
-	}
-
-	h4 {
-		--prose-flow: var(--s-l);
+		--prose-flow: var(--s-m);
 		font-size: var(--s-m);
 	}
 
-	h4::before {
+	h3::before {
 		content:"—";
 		margin-inline-end: var(--s-xs);
 	}
