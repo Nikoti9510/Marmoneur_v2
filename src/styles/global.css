@@ -5,7 +5,7 @@
 		color-scheme: light dark;
 		color: var(--text-body);
 		font:
-			clamp(1.1rem, .55rem + 0.55vw, 1.5rem) / 1.6 var(--font-stack);
+			clamp(1.1rem, .55rem + 0.55vw, 1.5rem) / 1.8 var(--font-stack);
 		tab-size: 2;
 		hanging-punctuation: first allow-end last;
 		word-break: break-word;
@@ -38,7 +38,7 @@
 	}
 
 	h1 {
-		font-size: var(--s-xl);
+		font-size: var(--s-l);
 	}
 
 	h1,
@@ -48,10 +48,12 @@
 
 	h2 {
 		--prose-flow: var(--s-xl);
+		font-size: var(--s-m);
 	}
 
 	h3 {
 		--prose-flow: var(--s-l);
+		font-size: var(--s-s);
 	}
 
 	hr,
