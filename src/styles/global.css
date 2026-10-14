@@ -377,7 +377,7 @@
 	.post-content {
 		--prose-flow: var(--s-m, 1em);
 
-		:is(h1,h2,h3,h4,h5,h6) ~ :not(:is(h1,h2,h3,h4,h5,h6)) {
+		:is(h1,h2,h3,h4,h5,h6) {
 			--prose-flow: var(--s-l, 1.5em);
 		}
 
