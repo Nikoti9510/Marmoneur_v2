@@ -48,11 +48,13 @@
 	}
 
 	h2 {
+		margin-block-start: var(--s-l);
 		--prose-flow: var(--s-l);
 		font-size: var(--s-l);
 	}
 
 	h3 {
+		margin-block-start: var(--s-m);
 		--prose-flow: var(--s-m);
 		font-size: var(--s-m);
 	}
@@ -213,6 +215,7 @@
 		background-color: var(--surface);
 		padding: var(--s-s) var(--s-m);
 		margin-inline: 0;
+		margin-block-end: var(--s-m);
 	}
 
 	[aria-disabled="true" i],
