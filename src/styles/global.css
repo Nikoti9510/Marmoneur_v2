@@ -337,10 +337,10 @@
 
 		--s-xs: .5em;
 		--s-s: .8em;
-		--s-m: 1.6em;
-		--s-l: 2.4em;
-		--s-xl: 3.6em;
-		--s-xxl: 4.8em;
+		--s-m: 1.2em;
+		--s-l: 2em;
+		--s-xl: 2.6em;
+		--s-xxl: 3.2em;
 	}
 
 	html[data-theme="light"] {
@@ -375,6 +375,7 @@
 	}
 
 	.post-content {
+		--prose-flow: var(--s-m, 1em);
 
 		ul,
 		ol,
@@ -382,13 +383,13 @@
 			--prose-flow: var(--s-s, .5em);
 
 			li+* {
-				--prose-flow: var(--s-xs, .25em);
+				--prose-flow: var(--s-s, .25em);
 			}
 
 			ul,
 			ol,
 			dl {
-				--prose-flow: var(--s-xs, .25em);
+				--prose-flow: var(--s-s, .25em);
 			}
 		}
 	}
