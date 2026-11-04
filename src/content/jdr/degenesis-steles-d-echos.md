@@ -49,6 +49,7 @@ Les cheveux couleurs ébène de Mara dansent devant ses yeux. Elle suit le blafa
 
 ### Scaphandre 
 *(25HP | 3 Armures)*
+
 Ajoute +4d pour percevoir l'environnement dans un rayon de 100 mètres autour du Lesnje.
 
 👁️ **Jet d'encre**
@@ -70,6 +71,7 @@ Les Lesnjes harmonisent leurs chants pour former une onde sonore infligeant 1d6+
 
 ### Cisailles 
 *(8HP | 1 Armures)*
+
 Le Lesnje porte à la main une cisaille rouillée mais particulièrement menaçante. Elle est fixée à sa main par un assemblage de cordes et de câbles.   
 
 🗡️**Empalement**
