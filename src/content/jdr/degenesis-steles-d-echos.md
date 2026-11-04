@@ -48,30 +48,31 @@ Les cheveux couleurs ébène de Mara dansent devant ses yeux. Elle suit le blafa
 | *Ce qui le terrorise* | Perdre son masque, ne plus entendre le chant des Dushani. |
 
 ### Scaphandre 
-*(25HP | 3 Armures)* 
+*(25HP | 3 Armures)*
 Ajoute +4d pour percevoir l'environnement dans un rayon de 100 mètres autour du Lesnje.
 
-👁️ **Jet d'encre**  
+👁️ **Jet d'encre**
 Les câbles du scaphandre projettent un écran d'encre qui flotte dans l'air vibrant et obscurcit la vision. +2d à la défense passive pour 1 tour.
 
 🤎 **Parasite** 
-*(10HP)*   
+*(10HP)*
 Le kraken a percé le crâne de son hôte, il frémit sous la lumière du jour, et la peur se lit dans ses yeux brillants et noirs.
 
 ### Stèles d'échos
-*(50HP | 4 Armures)*  
-⚡**Résonance**    
+*(50HP | 4 Armures)* 
+
+⚡**Résonance**
 Tant que les stèles sont debout, elles amplifient la matrice sonore et appliquent un malus de -2D aux attaquants. 
 
 🏹⚡**Onde sonore** 
-*(au moins 2 Lesnjes encore en vie)*   
+*(au moins 2 Lesnjes encore en vie)*
 Les Lesnjes harmonisent leurs chants pour former une onde sonore infligeant 1d6+2 traumatismes. 
 
 ### Cisailles 
 *(8HP | 1 Armures)*
 Le Lesnje porte à la main une cisaille rouillée mais particulièrement menaçante. Elle est fixée à sa main par un assemblage de cordes et de câbles.   
 
-🗡️**Empalement**   
+🗡️**Empalement**
 Inflige 1d6+2 blessures superficielles. 
 
 ## Légende
