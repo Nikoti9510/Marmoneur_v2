@@ -206,7 +206,7 @@
 }
 
 @layer blog {
-  .single-content {
+  .post-content {
     --space: 1.75rem;
     
     /* texts */
