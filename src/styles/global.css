@@ -1,27 +1,50 @@
-@layer reset, 
-  variables, 
-  base,
-  layout,
-  blog,
-  utilities;
+@layer reset,
+variables,
+base,
+layout,
+blog,
+utilities;
 
 @layer layout {
+
+  /* STACK */
   .stack {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
 
-  .stack > * {
+  .stack>* {
     margin-block: 0;
   }
 
-  .stack > * + * {
+  .stack>*+* {
     margin-block-start: var(--space, 1.5rem);
   }
 
   .stack:only-child {
     block-size: 100%;
+  }
+
+  /* BREAKOUT */
+  .smol-breakout-grid {
+    --max-content-width: 50ch;
+    --breakout-difference: 0.2;
+    /* Compute total allowed grid width to `--breakout-difference` larger than content area */
+    --breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
+    display: grid;
+    grid-template-columns: [grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)), 1fr) [content-end] 1fr [grid-end];
+    width: min(100% - 2rem, var(--breakout-grid-width));
+    row-gap: 1rem;
+    margin: 5vb auto;
+  }
+
+  .smol-breakout-grid>*:not(.breakout) {
+    grid-column: content;
+  }
+
+  .smol-breakout-grid>.breakout {
+    grid-column: grid;
   }
 }
 
@@ -93,7 +116,7 @@
   }
 
   /* Apply parent style to child spans */
-  :is(h1, h2, h3, h4, h5, h6) > span {
+  :is(h1, h2, h3, h4, h5, h6)>span {
     font-size: inherit;
     line-height: inherit;
   }
@@ -140,7 +163,7 @@
     --font-size_h3: clamp(1.25rem, -0.875rem + 6cqi, 1.75rem);
     --line-height__body: 1.7;
     --line-height__title: 1.1;
-    
+
     /* colors */
     --off-white: #fffcfb;
     --dark-green: #2d312c;
@@ -148,7 +171,7 @@
     --gray-02: #bac1b8;
     --gray-03: #3b3d3b;
     --gray-04: #151515;
-    
+
     /* theme */
     --titles-color: var(--dark-green);
     --texts-color: var(--gray-04);
@@ -169,22 +192,26 @@
     background-color: var(--background-color);
     color: var(--texts-color);
   }
+
   h1 {
     font-size: var(--font-size_h1);
     color: var(--titles-color);
   }
+
   h2 {
     font-size: var(--font-size_h2);
     color: var(--titles-color);
   }
+
   h3 {
     font-size: var(--font-size_h3);
     color: var(--titles-color);
   }
+
   a[target="blank"] {
     text-decoration: none;
     box-shadow: 0 1px 0 0 currentColor;
-    
+
     &::after {
       content: "↗";
       text-decoration: none;
@@ -198,16 +225,18 @@
 @layer blog {
   .post-content {
     --space: 1.75rem;
-    
+    max-width: 1200px;
+    margin: auto;
+
     /* texts */
     & :is(p, span) {
       font-variant-numeric: oldstyle-nums;
     }
-    
+
     /* Titles */
     & h2:not(:first-child) {
       margin-block-start: 6rem;
-      
+
       &::after {
         content: "";
         display: block;
@@ -217,20 +246,22 @@
         margin-block-start: .5rem;
       }
     }
+
     & h3 {
       margin-block-start: 4rem;
       font-style: italic;
     }
-    
+
     /* Anchors */
     & :is(h2, h3) {
       position: relative;
-      
-      & > a {
+
+      &>a {
         text-decoration: none;
         position: relative;
       }
-      & > a::before {
+
+      &>a::before {
         content: "⩉";
         position: absolute;
         top: 50%;
@@ -240,23 +271,26 @@
         opacity: 0;
         transition: ease-in-out .1s;
       }
-      &:hover > a::before {
+
+      &:hover>a::before {
         opacity: 1;
       }
     }
-    
+
     /* Lists */
-    & ol > li::marker {
+    & ol>li::marker {
       font-weight: 700;
     }
+
     & :is(ol, ul) {
       --space: 1rem;
       padding-inline-start: 1.75ch;
 
-      & > li + li,
+      &>li+li,
       & li ul {
         margin-block-start: 0.5rem;
       }
+
       & li ul {
         margin-block-end: 1.25rem;
       }
@@ -269,11 +303,11 @@
       background-color: var(--background-accent);
       border-left: solid 0.5rem currentColor;
     }
-    
+
     /* Imgs */
     & figure {
       margin-inline: 0;
-      
+
       & figcaption {
         color: var(--captions-color);
         margin-inline-start: .5rem;
@@ -281,25 +315,25 @@
         font-style: italic;
         font-size: 1rem;
         position: relative;
-        
+
         &::before {
           content: "—";
           margin-inline-end: .5rem;
         }
       }
     }
-    
+
     /* Code blocks */
     & pre {
       display: flex;
       border-top: solid .5rem currentColor;
       padding: var(--space);
-      
+
       & code {
         min-width: 35ch;
       }
     }
-    
+
     /* Tables */
     & table {
       border: .1rem solid currentColor;
@@ -314,17 +348,17 @@
       & thead {
         background-color: var(--background-accent);
         border-bottom: solid .25rem currentColor;
-        
+
         & th {
           min-width: 15ch;
         }
       }
 
-      & :is(tbody, thead) > tr > :is(td, th) + :is(td, th) {
+      & :is(tbody, thead)>tr> :is(td, th)+ :is(td, th) {
         border-left: solid 1px currentColor;
       }
 
-      & tbody > tr + tr {
+      & tbody>tr+tr {
         border-top: solid 1px currentColor;
       }
 
@@ -351,7 +385,18 @@
 }
 
 @layer utilities {
-    .overflow-container {
-      overflow: auto;
-    }
+  .overflow-container {
+    overflow: auto;
+  }
+
+  .visibility-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    /* Legacy property for Internet Explorer */
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
 }
