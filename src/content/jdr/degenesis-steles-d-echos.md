@@ -56,11 +56,11 @@ Les câbles du scaphandre projettent un écran d'encre qui flotte dans l'air vib
 🤎 **Parasite** (10HP)   
 Le kraken a percé le crâne de son hôte, il frémit sous la lumière du jour, et la peur se lit dans ses yeux brillants et noirs.
 
-### Stèles d'échos  *(50HP | 4 Armures)*  
+### Stèles d'échos *(50HP | 4 Armures)*  
 ⚡**Résonance**    
 Tant que les stèles sont debout, elles amplifient la matrice sonore et appliquent un malus de -2D aux attaquants. 
 
-🏹⚡**Onde sonore** (au moins 2 Lesnjes encore en vie)   
+🏹⚡**Onde sonore** *(au moins 2 Lesnjes encore en vie)*   
 Les Lesnjes harmonisent leurs chants pour former une onde sonore infligeant 1d6+2 traumatismes. 
 
 ### Cisailles *(8HP | 1 Armures)*
@@ -70,8 +70,8 @@ Le Lesnje porte à la main une cisaille rouillée mais particulièrement menaça
 Inflige 1d6+2 blessures superficielles. 
 
 ## Légende
-> 🤎 Point vital de l'adversaire, ce qui doit être détruit pour vaincre l'adversaire. \
-> 👁️ Cet élément n'est pas visible. Les joueurs peuvent apprendre son existence en se renseignant à l'avance, ou à leur dépens pendant l'affrontement.\
-> ⚡ Compétence spéciale de l'adversaire. \
-> 🏹 Attaque à distance.\
+> 🤎 Point vital de l'adversaire, ce qui doit être détruit pour vaincre l'adversaire.
+> 👁️ Cet élément n'est pas visible. Les joueurs peuvent apprendre son existence en se renseignant à l'avance, ou à leur dépens pendant l'affrontement.
+> ⚡ Compétence spéciale de l'adversaire.
+> 🏹 Attaque à distance.
 > 🗡️ Attaque en corps à corps.

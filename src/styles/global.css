@@ -47,7 +47,6 @@ utilities;
 }
 
 @layer reset {
-
   /* Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
   /* Box sizing rules */
   *,
@@ -131,6 +130,7 @@ utilities;
   picture {
     max-width: 100%;
     display: block;
+    height: fit-content;
   }
 
   /* Inherit fonts for inputs and buttons */
