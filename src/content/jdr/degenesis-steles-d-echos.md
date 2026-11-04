@@ -79,7 +79,11 @@ Inflige 1d6+2 blessures superficielles.
 
 ## Légende
 > 🤎 Point vital de l'adversaire, ce qui doit être détruit pour vaincre l'adversaire.
+>
 > 👁️ Cet élément n'est pas visible. Les joueurs peuvent apprendre son existence en se renseignant à l'avance, ou à leur dépens pendant l'affrontement.
+>
 > ⚡ Compétence spéciale de l'adversaire.
+>
 > 🏹 Attaque à distance.
+>
 > 🗡️ Attaque en corps à corps.
