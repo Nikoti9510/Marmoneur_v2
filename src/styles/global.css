@@ -6,15 +6,6 @@
   widgets,
   utilities;
 
-/* @layer codepen {
-  main {
-    max-width: 55ch;
-    margin: auto;
-    margin-block: 10rem;
-    padding-inline: 2rem;
-  }
-} */
-
 @layer layout {
   .stack {
     display: flex;
@@ -303,8 +294,8 @@
     /* Code blocks */
     & pre {
       display: flex;
-      border: solid 1px currentColor;
-      border-top: solid .5em currentColor;
+      border-top: solid .5rem currentColor;
+      padding: var(--space);
       
       & code {
         min-width: 35ch;
@@ -313,7 +304,7 @@
     
     /* Tables */
     & table {
-      border: .1em solid currentColor;
+      border: .1rem solid currentColor;
       height: 100%;
       width: 100%;
       table-layout: auto;
@@ -324,7 +315,7 @@
 
       & thead {
         background-color: var(--background-accent);
-        border-bottom: solid .25em currentColor;
+        border-bottom: solid .25rem currentColor;
         
         & th {
           min-width: 15ch;
