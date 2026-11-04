@@ -156,10 +156,10 @@ utilities;
 @layer variables {
   :root {
     /* fonts */
-    --font-size__body: clamp(1rem, -0.875rem + 4cqi, 1.25rem);
+    --font-size__body: clamp(1rem, .2rem + 6cqi, 1.25rem);
     --font-size_h1: clamp(2.25rem, .2rem + 6cqi, 4rem);
-    --font-size_h2: clamp(1.5rem, -0.875rem + 6cqi, 2.5rem);
-    --font-size_h3: clamp(1.25rem, -0.875rem + 6cqi, 1.75rem);
+    --font-size_h2: clamp(1.5rem, .2rem + 6cqi, 2.5rem);
+    --font-size_h3: clamp(1rem, .2rem + 6cqi, 1.25rem);
     --line-height__body: 1.7;
     --line-height__title: 1.1;
 
@@ -247,7 +247,7 @@ utilities;
     }
 
     & h3 {
-      margin-block-start: 4rem;
+      margin-block-start: 3rem;
       font-style: italic;
     }
 
