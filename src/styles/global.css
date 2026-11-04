@@ -144,7 +144,7 @@ utilities;
     --font-size_h3: clamp(1rem, .2rem + 6cqi, 1.25rem);
     --line-height__body: 1.7;
     --line-height__title: 1.1;
-    --postWidth: 70vw;
+    --postWidth: 100ch;
 
     /* colors */
     --off-white: #fffcfb;
@@ -213,7 +213,8 @@ utilities;
   }
 
   .post-header {
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
+    margin-block-end: 5rem;
   }
 
   .post-content {
