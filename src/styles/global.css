@@ -223,7 +223,7 @@ utilities;
 
 @layer blog {
   .post-content {
-    --space: 1.75rem;
+    --space: 1.25rem;
     max-width: 1200px;
     margin: auto;
 
