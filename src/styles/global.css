@@ -24,26 +24,6 @@ utilities;
   .stack:only-child {
     block-size: 100%;
   }
-
-  /* BREAKOUT */
-  .smol-breakout-grid {
-    --max-content-width: 65ch;
-    --breakout-difference: 0.2;
-    /* Compute total allowed grid width to `--breakout-difference` larger than content area */
-    --breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
-    display: grid;
-    grid-template-columns: [grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)), 1fr) [content-end] 1fr [grid-end];
-    width: min(100% - 2rem, var(--breakout-grid-width));
-    margin: 5vb auto;
-  }
-
-  .smol-breakout-grid>*:not(.breakout) {
-    grid-column: content;
-  }
-
-  .smol-breakout-grid>.breakout {
-    grid-column: grid;
-  }
 }
 
 @layer reset {
@@ -162,6 +142,7 @@ utilities;
     --font-size_h3: clamp(1rem, .2rem + 6cqi, 1.25rem);
     --line-height__body: 1.7;
     --line-height__title: 1.1;
+    --postWidth: 70vw;
 
     /* colors */
     --off-white: #fffcfb;
@@ -222,10 +203,12 @@ utilities;
 }
 
 @layer blog {
+  .post {
+    display: grid;
+    grid-template-columns: 1fr var(--postWidth) 1fr;
+  }
   .post-content {
     --space: 1.25rem;
-    max-width: 100ch;
-    margin: auto;
 
     /* texts */
     & :is(p, span) {
