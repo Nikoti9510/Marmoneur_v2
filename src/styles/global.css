@@ -6,7 +6,6 @@ blog,
 utilities;
 
 @layer layout {
-
   /* STACK */
   .stack {
     display: flex;
@@ -28,7 +27,7 @@ utilities;
 
   /* BREAKOUT */
   .smol-breakout-grid {
-    --max-content-width: 60ch;
+    --max-content-width: 65ch;
     --breakout-difference: 0.2;
     /* Compute total allowed grid width to `--breakout-difference` larger than content area */
     --breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
@@ -48,6 +47,7 @@ utilities;
 }
 
 @layer reset {
+
   /* Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
   /* Box sizing rules */
   *,
@@ -224,7 +224,7 @@ utilities;
 @layer blog {
   .post-content {
     --space: 1.25rem;
-    max-width: 1200px;
+    max-width: 100ch;
     margin: auto;
 
     /* texts */
@@ -234,7 +234,7 @@ utilities;
 
     /* Titles */
     & h2:not(:first-child) {
-      margin-block-start: 6rem;
+      margin-block-start: 5rem;
 
       &::after {
         content: "";
