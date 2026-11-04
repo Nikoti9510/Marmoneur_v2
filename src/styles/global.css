@@ -6,6 +6,7 @@ blog,
 utilities;
 
 @layer layout {
+
   /* STACK */
   .stack {
     display: flex;
@@ -27,6 +28,7 @@ utilities;
 }
 
 @layer reset {
+
   /* Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
   /* Box sizing rules */
   *,
@@ -205,9 +207,17 @@ utilities;
 @layer blog {
   .post {
     display: grid;
-    grid-template-columns: 1fr var(--postWidth) 1fr;
+    grid-template-columns: 1fr 4fr 1fr;
+    width: var(--postWidth);
+    margin: auto;
   }
+
+  .post-header {
+    grid-column: 1 / span 3;
+  }
+
   .post-content {
+    grid-column: 2;
     --space: 1.25rem;
 
     /* texts */
@@ -238,7 +248,7 @@ utilities;
     & :is(h2, h3) {
       position: relative;
 
-      
+
       &::after {
         content: "";
         display: block;
