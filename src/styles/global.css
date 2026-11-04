@@ -3,7 +3,6 @@
   base,
   layout,
   blog,
-  widgets,
   utilities;
 
 @layer layout {
@@ -265,7 +264,6 @@
 
     /* Quotes */
     & blockquote {
-      margin-block: var(--space, 1.5rem);
       margin-inline: 0;
       padding: 2rem;
       background-color: var(--background-accent);

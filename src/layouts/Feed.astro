@@ -18,7 +18,7 @@ const feedItems = await getFeedItems(feedName, feedUrls);
     {feedItems.length === 0 ? (
       <p>Aucun article récent trouvé.</p>
     ) : (
-      <section class="feedContainer">
+      <section class="feedContainer stack">
         {feedItems.map((item) => (
           <article>
             <a target="_blank" href={item.link}>
