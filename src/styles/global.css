@@ -238,6 +238,7 @@ utilities;
 
       &::after {
         height: .5rem;
+        margin-block-start: .5rem;
       }
     }
 
@@ -247,6 +248,7 @@ utilities;
 
       &::after {
         height: .25rem;
+        margin-block-start: .25rem;
       }
     }
 
@@ -257,10 +259,8 @@ utilities;
       &::after {
         content: "";
         display: block;
-        height: .5rem;
         background: currentcolor;
         width: 100%;
-        margin-block-start: .5rem;
       }
 
       /* Anchors */
