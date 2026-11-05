@@ -79,6 +79,7 @@ utilities;
   blockquote,
   pre, 
   ul, 
+  ol,
   dl,
   dd {
     margin-block: 0;
