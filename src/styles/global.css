@@ -440,8 +440,8 @@ utilities;
   }
 
   @container post-grid (width < 58rem) {
-    &>.meta,
-    &>.titre {
+    & .meta,
+    & .titre {
       grid-column: 2;
     }      
   }
