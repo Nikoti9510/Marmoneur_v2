@@ -236,10 +236,13 @@ utilities;
     margin-block-end: 5rem;
     align-items: end;
 
-    &>.meta {
-      grid-column: 3;
+    &>* {
       border-bottom: solid .5rem currentColor;
       padding-block-end: .5rem;
+    }
+
+    &>.meta {
+      grid-column: 3;
     }
 
     &>.titre {
