@@ -232,6 +232,7 @@ utilities;
 @layer blog {
   .post {
     --space: 1.25rem;
+    margin: auto;
   }
 
   .post-header {
