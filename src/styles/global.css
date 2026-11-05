@@ -288,7 +288,6 @@ utilities;
     & :is(h2, h3) {
       position: relative;
 
-
       &::after {
         content: "";
         display: block;
@@ -316,6 +315,10 @@ utilities;
       &:hover>a::before {
         opacity: 1;
       }
+    }
+
+    :is(h4, h5, h6) {
+      margin-block-start: 2rem;
     }
 
     /* Lists */
