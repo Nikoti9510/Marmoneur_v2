@@ -25,6 +25,23 @@ utilities;
   .stack:only-child {
     block-size: 100%;
   }
+
+  /* POST GRID */
+  .post-grid {
+    --max-content-width: 60ch;
+    --breakout-difference: 0.2;
+
+    /*  Compute total allowed grid width to `--breakout-difference` 
+      larger than content area  */
+    --breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
+
+    display: grid;
+    grid-template-columns: [grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)), 3fr) [content-end] 1fr [grid-end];
+    width: min(100% - 2rem, var(--breakout-grid-width));
+    row-gap: var(--space, 1rem);
+    margin: 5vb auto;
+  }
+
 }
 
 @layer reset {
@@ -206,20 +223,19 @@ utilities;
 
 @layer blog {
   .post {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    width: var(--postWidth);
-    margin: auto;
+
   }
 
   .post-header {
-    grid-column: 1 / span 2;
     margin-block-end: 5rem;
   }
 
   .post-content {
-    grid-column: 2;
     --space: 1.25rem;
+
+    & > *:not(.breakout, .aside) {
+      grid-column: 2;
+    } 
 
     /* texts */
     & :is(p, span) {
