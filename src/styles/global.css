@@ -6,7 +6,6 @@ blog,
 utilities;
 
 @layer layout {
-
   /* STACK */
   .stack {
     display: flex;
@@ -98,6 +97,7 @@ utilities;
   body {
     min-height: 100vh;
     text-wrap: pretty;
+    margin: 0;
   }
 
   /* Set shorter line heights on headings and interactive elements */
