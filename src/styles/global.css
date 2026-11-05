@@ -77,6 +77,8 @@ utilities;
   p,
   figure,
   blockquote,
+  pre, 
+  ul, 
   dl,
   dd {
     margin-block: 0;
@@ -253,13 +255,16 @@ utilities;
   }
 
   .post-content {
-
     /* texts */
     & :is(p, span) {
       font-variant-numeric: oldstyle-nums;
     }
 
     /* Titles */
+    & h1 {
+      margin-block-start: 5rem;
+    }
+
     & h2:not(:first-child) {
       margin-block-start: 5rem;
 
