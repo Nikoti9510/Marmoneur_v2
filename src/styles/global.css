@@ -36,7 +36,7 @@ utilities;
     display: grid;
     grid-template-columns: [grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)), 3fr) [content-end] 1fr [grid-end];
     width: min(100% - 2rem, var(--breakout-grid-width));
-    row-gap: var(--space, 1rem);
+    gap: var(--space, 1rem);
     margin: 5vb auto;
 
     &>*:not(.breakout) {
@@ -228,14 +228,26 @@ utilities;
 }
 
 @layer blog {
+  .post {
+    --space: 1.25rem;
+  }
+
   .post-header {
     margin-block-end: 5rem;
+    align-items: end;
 
-    & > * {
+    & > .meta {
+      grid-column: 3;
+    }
+
+    & > .titre {
       grid-column: 1 / span 2;
+      border-bottom: solid .5rem currentColor;
+      margin-block-end: .5rem;
     }
 
     &::after {
+      grid-column: 1 / span 2;
       content: "";
       display: block;
       background: currentcolor;
@@ -246,8 +258,6 @@ utilities;
   }
 
   .post-content {
-    --space: 1.25rem;
-
     /* texts */
     & :is(p, span) {
       font-variant-numeric: oldstyle-nums;

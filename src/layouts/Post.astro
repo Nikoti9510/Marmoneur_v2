@@ -27,7 +27,9 @@ const { title, pubDate, updatedDate, tags } = Astro.props;
 					{tags.map((tag) => <li>{tag}</li>)}
 				</ul>
 			</div>
-			<h1>{title}</h1>
+			<div class="titre">
+				<h1>{title}</h1>
+			</div>
 		</header>
 		<section class="post-content post-grid">
 			<slot />
