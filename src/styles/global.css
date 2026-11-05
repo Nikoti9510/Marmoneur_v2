@@ -6,18 +6,22 @@ blog,
 utilities;
 
 @layer layout {
+
   /* STACK */
   .stack {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
   }
+
   .stack>* {
     margin-block: 0;
   }
+
   .stack>*+* {
     margin-block-start: var(--space, 1.5rem);
   }
+
   .stack:only-child {
     block-size: 100%;
   }
@@ -34,10 +38,12 @@ utilities;
     width: min(100% - 2rem, var(--breakout-grid-width));
     row-gap: var(--space, 1rem);
     margin: 5vb auto;
-    & > *:not(.breakout) {
+
+    &>*:not(.breakout) {
       grid-column: 2;
     }
-    & > .breakout {
+
+    &>.breakout {
       grid-column: 1 / span 2;
     }
   }
@@ -224,6 +230,19 @@ utilities;
 @layer blog {
   .post-header {
     margin-block-end: 5rem;
+
+    & > * {
+      grid-column: 1 / span 2;
+    }
+
+    &::after {
+      content: "";
+      display: block;
+      background: currentcolor;
+      width: 100%;
+      height: .5rem;
+      margin-block-start: .5rem;
+    }
   }
 
   .post-content {
