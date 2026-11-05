@@ -243,11 +243,11 @@ utilities;
     & > .titre {
       grid-column: 1 / span 2;
       border-bottom: solid .5rem currentColor;
-      margin-block-end: .5rem;
+      padding-block-end: .5rem;
     }
 
     &::after {
-      grid-column: 1 / span 2;
+      grid-area: 2 / 3;
       content: "";
       display: block;
       background: currentcolor;
