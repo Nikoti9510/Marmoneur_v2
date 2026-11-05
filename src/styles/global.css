@@ -432,17 +432,8 @@ utilities;
     /* Notes de bas de page */
     & .footnotes {
       margin-block-start: 6rem;
-      & h2 {
-        &::after {
-          content: "";
-          height: .5rem;
-          margin-block-start: .5rem;
-          display: block;
-          background: currentcolor;
-          width: 100%;
-        }
-      }
-    }
+      border-bottom: solid .5rem currentColor;
+      padding-block-end: .5rem;
   }
 }
 
@@ -451,7 +442,8 @@ utilities;
     overflow: auto;
   }
 
-  .visibility-hidden {
+  .visibility-hidden,
+  .sr-only {
     position: absolute;
     width: 1px;
     height: 1px;
