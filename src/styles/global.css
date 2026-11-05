@@ -246,19 +246,10 @@ utilities;
       border-bottom: solid .5rem currentColor;
       padding-block-end: .5rem;
     }
-
-    &>.meta {
-      grid-row: 1;
-      grid-column: 3;
-    }
-
-    &>.titre {
-      grid-row: 1;
-      grid-column: 1 / span 2;
-    }
   }
 
   .post-content {
+
     /* texts */
     & :is(p, span) {
       font-variant-numeric: oldstyle-nums;
@@ -439,11 +430,16 @@ utilities;
     }
   }
 
-  @container post-grid (width < 58rem) {
-    & .meta,
+  @container post-grid (width > 58rem) {
+    & .meta {
+      grid-row: 1;
+      grid-column: 3;
+    }
+
     & .titre {
-      grid-column: 2;
-    }      
+      grid-row: 1;
+      grid-column: 1 / span 2;
+    }
   }
 }
 
