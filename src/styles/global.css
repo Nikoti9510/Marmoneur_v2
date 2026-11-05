@@ -430,7 +430,7 @@ utilities;
     }
   }
 
-  @container post-grid (width > 58rem) {
+  @container post-grid (width > 50rem) {
     & .meta {
       grid-row: 1;
       grid-column: 3;
