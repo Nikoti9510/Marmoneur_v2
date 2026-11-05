@@ -77,8 +77,8 @@ utilities;
   p,
   figure,
   blockquote,
-  pre, 
-  ul, 
+  pre,
+  ul,
   ol,
   dl,
   dd {
@@ -256,6 +256,7 @@ utilities;
   }
 
   .post-content {
+
     /* texts */
     & :is(p, span) {
       font-variant-numeric: oldstyle-nums;
@@ -265,6 +266,7 @@ utilities;
     & h1 {
       margin-block-start: 6rem;
     }
+
     & h2:not(:first-child) {
       margin-block-start: 4.5rem;
 
@@ -273,6 +275,7 @@ utilities;
         margin-block-start: .5rem;
       }
     }
+
     & h3 {
       margin-block-start: 3rem;
       font-style: italic;
@@ -282,6 +285,7 @@ utilities;
         margin-block-start: .25rem;
       }
     }
+
     & :is(h2, h3) {
       position: relative;
 
@@ -313,6 +317,7 @@ utilities;
         opacity: 1;
       }
     }
+
     :is(h4, h5, h6) {
       margin-block-start: var(--space, 1rem);
     }
@@ -321,6 +326,7 @@ utilities;
     & ol>li::marker {
       font-weight: 700;
     }
+
     & :is(ol, ul) {
       --space: 1rem;
       padding-inline-start: 1.75ch;
@@ -426,6 +432,16 @@ utilities;
     /* Notes de bas de page */
     & .footnotes {
       margin-block-start: 6rem;
+      & h2 {
+        &::after {
+          content: "";
+          height: .5rem;
+          margin-block-start: .5rem;
+          display: block;
+          background: currentcolor;
+          width: 100%;
+        }
+      }
     }
   }
 }
