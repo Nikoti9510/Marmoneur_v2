@@ -1,7 +1,9 @@
 import { defineCollection, z } from "astro:content";
+import { glob } from 'astro/loaders';
 
 const politique = defineCollection({
 	type: "content",
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/politique" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
@@ -14,6 +16,7 @@ const politique = defineCollection({
 
 const jdr = defineCollection({
 	type: "content",
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/jdr" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
@@ -26,6 +29,7 @@ const jdr = defineCollection({
 
 const tech = defineCollection({
 	type: "content",
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/tech" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
@@ -38,6 +42,7 @@ const tech = defineCollection({
 
 const autres = defineCollection({
 	type: "content",
+	loader: glob({ pattern: "**/*.{md,mdx}", base: "./src/content/autres" }),
 	schema: z.object({
 		title: z.string(),
 		description: z.string(),
