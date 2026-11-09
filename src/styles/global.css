@@ -52,7 +52,6 @@ utilities;
     min-height: 100vh;
     text-wrap: pretty;
     margin: 0;
-    padding: 2rem;
   }
 
   /* Set shorter line heights on headings and interactive elements */
