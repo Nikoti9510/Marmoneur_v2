@@ -238,6 +238,7 @@ utilities;
       column-gap: var(--space, 1rem);
     }
 
+    /* pine */
     .post-grid>*:not(.sidenote, .breakout) {
       grid-column: content;
     }
