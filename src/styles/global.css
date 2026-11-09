@@ -231,34 +231,31 @@ utilities;
   .post-grid>*.breakout {
     grid-column: grid-start / content-end;
   }
-
-  @container post-grid (width > 50rem) {
-    .post-grid {
-      gap: var(--space, 1rem);
-    }
-
-    .post-grid>*:not(.sidenote, .breakout, .post-header) {
-      grid-column: content;
-    }
-
-    .post-grid>*.sidenote {
-      grid-column: content-end / grid-end;
-    }
-
-    .post-header {
-      grid-column: 1 / -1;
-      grid-template-columns: subgrid;
-      margin-block-end: 5rem;
-    }
-  }
 }
 
 @layer blog {
   .post {
     --space: 1.25rem;
 
-    .post-header {
-      display: grid;
+    @container post-grid (width > 50rem) {
+      .post-grid {
+        gap: var(--space, 1rem);
+      }
+
+      .post-grid>*:not(.sidenote, .breakout, .post-header) {
+        grid-column: content;
+      }
+
+      .post-grid>*.sidenote {
+        grid-column: content-end / grid-end;
+      }
+
+      .post-header {
+        display: grid;
+        grid-column: 1 / -1;
+        grid-template-columns: subgrid;
+        margin-block-end: 5rem;
+      }
     }
 
     /* texts */
