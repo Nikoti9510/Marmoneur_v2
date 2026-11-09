@@ -269,6 +269,10 @@ utilities;
       margin-block-start: 6rem;
     }
 
+    & h2 {
+      grid-column: grid-start / content-end;
+    }
+
     & h2:not(:first-child) {
       margin-block-start: 4.5rem;
 
@@ -386,7 +390,7 @@ utilities;
 
     /* Tables */
     & table {
-      border: .1rem solid currentColor;
+      border-radius: var(--radius);
       border-collapse: collapse;
       text-align: start;
       font-variant-numeric: tabular-nums;
