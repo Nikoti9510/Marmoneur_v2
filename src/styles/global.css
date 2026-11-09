@@ -237,7 +237,7 @@ utilities;
       gap: var(--space, 1rem);
     }
 
-    .post-grid>*:not(.sidenote, .breakout) {
+    .post-grid>*:not(.sidenote, .breakout, .post-header) {
       grid-column: content;
     }
 
