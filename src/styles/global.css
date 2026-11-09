@@ -219,7 +219,6 @@ utilities;
     width: min(100%, var(--breakout-grid-width) - var(--space, 1rem));
     row-gap: var(--space, 1rem);
     margin: auto;
-
     container-name: post-grid;
     container-type: inline-size;
   }
@@ -230,7 +229,7 @@ utilities;
 
   .post-grid>*.breakout {
     grid-column: grid-start / content-end;
-  }
+  } 
 }
 
 @layer blog {
