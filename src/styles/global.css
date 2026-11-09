@@ -241,10 +241,13 @@ utilities;
   .post {
     --space: 1.25rem;
 
+    .post-header {
+      display: grid;
+    }
+
     @container post-grid (width > 50rem) {
       .post-header {
         grid-column: 1 / -1;
-        display: grid;
         grid-template-columns: subgrid;
         margin-block-end: 5rem;
 
