@@ -6,7 +6,6 @@ blog,
 utilities;
 
 @layer layout {
-
   /* STACK */
   .stack {
     display: flex;
@@ -435,7 +434,6 @@ utilities;
     grid-row: 1;
     grid-column: 1 / span 2;
   }
-}
 }
 
 @layer utilities {
