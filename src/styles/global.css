@@ -445,6 +445,9 @@ utilities;
       grid-column: content-end / grid-end;
       box-shadow: var(--shadow);
       background-color: var(--background-accent);
+      padding: .8rem;
+      font-size: .8rem;
+      line-height: var(--line-height__special);
     }
 
     .post-header {
