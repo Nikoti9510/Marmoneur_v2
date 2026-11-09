@@ -41,12 +41,16 @@ utilities;
     container-name: post-grid;
     container-type: inline-size;
 
-    &>*:not(.breakout) {
+    &>*:not(.breakout, .sidenote) {
       grid-column: 2;
     }
 
     &>.breakout {
       grid-column: 1 / span 2;
+    }
+
+    &>.breakout {
+      grid-column: 3;
     }
   }
 }
