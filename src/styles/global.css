@@ -189,7 +189,6 @@ utilities;
 }
 
 @layer layout {
-
   /* STACK */
   .stack {
     display: flex;
@@ -226,13 +225,13 @@ utilities;
     container-type: inline-size;
 
     @container post-grid (width > 50rem) {
-      &>*:not(.breakout, .sidenote) {
+      post-grid > *:not(.breakout, .sidenote) {
         grid-column: 2;
       }
-      &>.breakout {
+      .breakout {
         grid-column: 1 / span 2;
       }
-      &>.sidenote {
+      .sidenote {
         grid-column: 3;
       }
     }
