@@ -441,6 +441,7 @@ utilities;
       grid-column: content;
     }
 
+    /* baise toi */
     .post-grid>*.sidenote {
       grid-column: content-end / grid-end;
       box-shadow: var(--shadow);
