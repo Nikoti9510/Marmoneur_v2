@@ -49,7 +49,7 @@ utilities;
       grid-column: 1 / span 2;
     }
 
-    &>.breakout {
+    &>.sidenote {
       grid-column: 3;
     }
   }
