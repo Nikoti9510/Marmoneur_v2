@@ -444,7 +444,7 @@ utilities;
     .post-grid>*.sidenote {
       grid-column: content-end / grid-end;
       box-shadow: var(--shadow);
-      background-color: var(--titles-color);
+      background-color: var(--background-accent);
     }
 
     .post-header {
