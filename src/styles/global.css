@@ -95,6 +95,7 @@ utilities;
     max-width: 100%;
     display: block;
     height: fit-content;
+    border-radius: var(--radius);
   }
 
   /* Inherit fonts for inputs and buttons */
@@ -345,8 +346,8 @@ utilities;
       margin-inline: 0;
       padding: 2rem;
       background-color: var(--background-accent);
-      border-left: solid 0.5rem currentColor;
       box-shadow: var(--shadow);
+      border-radius: var(--radius);
     }
 
     /* Imgs */
@@ -373,6 +374,7 @@ utilities;
       display: flex;
       border-top: solid .5rem currentColor;
       padding: var(--space);
+      border-radius: var(--radius);
 
       & code {
         min-width: 35ch;
@@ -385,6 +387,7 @@ utilities;
       border-collapse: collapse;
       text-align: start;
       font-variant-numeric: tabular-nums;
+      border-radius: var(--radius);
 
       & thead {
         background-color: var(--background-accent);
