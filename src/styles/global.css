@@ -237,6 +237,16 @@ utilities;
   .post {
     --space: 1.25rem;
 
+    /* post header */
+    & .post-header {
+      .meta {
+        grid-column: content-end / grid-end ;
+      }
+      .titre {
+        grid-column: grid-start / content-end;
+      }
+    }
+
     /* texts */
     & :is(p, span) {
       font-variant-numeric: oldstyle-nums;
