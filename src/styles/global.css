@@ -224,7 +224,7 @@ utilities;
     container-type: inline-size;
   }
 
-  .post-grid>* {
+  .post-grid>*:not(.breakout) {
     grid-column: content;
   }
 
@@ -232,7 +232,7 @@ utilities;
     .post-grid {
       column-gap: var(--space, 1rem);
     }
-    .post-grid>*:not(.breakout, .sidenote) {
+    .post-grid>*:not(.sidenote) {
       grid-column: content;
     }
     .post-grid>*.breakout {
