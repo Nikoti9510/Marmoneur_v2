@@ -225,13 +225,13 @@ utilities;
     container-type: inline-size;
 
     @container post-grid (width > 50rem) {
-      post-grid > *:not(.breakout, .sidenote) {
+      .post-grid > *:not(.breakout, .sidenote) {
         grid-column: 2;
       }
-      post-grid > *.breakout {
+      .post-grid > *.breakout {
         grid-column: 1 / span 2;
       }
-      post-grid > *.sidenote {
+      .post-grid > *.sidenote {
         grid-column: 3;
       }
     }
