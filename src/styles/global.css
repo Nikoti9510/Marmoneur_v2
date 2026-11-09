@@ -235,10 +235,9 @@ utilities;
 
   @container post-grid (width > 50rem) {
     .post-grid {
-      column-gap: var(--space, 1rem);
+      gap: var(--space, 1rem);
     }
 
-    /* pine */
     .post-grid>*:not(.sidenote, .breakout) {
       grid-column: content;
     }
