@@ -6,6 +6,7 @@ blog,
 utilities;
 
 @layer reset {
+
   /* Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
   /* Box sizing rules */
   *,
@@ -228,16 +229,19 @@ utilities;
     grid-column: content;
   }
 
+  .post-grid>*.breakout {
+    grid-column: grid-start / content-end;
+  }
+
   @container post-grid (width > 50rem) {
     .post-grid {
       column-gap: var(--space, 1rem);
     }
+
     .post-grid>*:not(.sidenote) {
       grid-column: content;
     }
-    .post-grid>*.breakout {
-      grid-column: grid-start / content-end;
-    }
+
     .post-grid>*.sidenote {
       grid-column: content-end / grid-end;
     }
