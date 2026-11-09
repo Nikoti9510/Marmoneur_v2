@@ -237,27 +237,6 @@ utilities;
   .post {
     --space: 1.25rem;
 
-    @container post-grid (width > 50rem) {
-      .post-grid {
-        gap: var(--space, 1rem);
-      }
-
-      .post-grid>*:not(.sidenote, .breakout, .post-header) {
-        grid-column: content;
-      }
-
-      .post-grid>*.sidenote {
-        grid-column: content-end / grid-end;
-      }
-
-      .post-header {
-        display: grid;
-        grid-column: 1 / -1;
-        grid-template-columns: subgrid;
-        margin-block-end: 5rem;
-      }
-    }
-
     /* texts */
     & :is(p, span) {
       font-variant-numeric: oldstyle-nums;
@@ -431,6 +410,23 @@ utilities;
       margin-block-start: 6rem;
       border-top: solid .5rem currentColor;
       padding-block-start: .5rem;
+    }
+  }
+
+  @container post-grid (width > 50rem) {
+    .post-grid>*:not(.sidenote, .breakout, .post-header) {
+      grid-column: content;
+    }
+
+    .post-grid>*.sidenote {
+      grid-column: content-end / grid-end;
+    }
+
+    .post-header {
+      display: grid;
+      grid-column: 1 / -1;
+      grid-template-columns: subgrid;
+      margin-block-end: 5rem;
     }
   }
 }
