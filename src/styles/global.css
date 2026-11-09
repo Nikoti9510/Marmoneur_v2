@@ -6,7 +6,6 @@ blog,
 utilities;
 
 @layer layout {
-
   /* STACK */
   .stack {
     display: flex;
@@ -57,7 +56,6 @@ utilities;
 }
 
 @layer reset {
-
   /* Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
   /* Box sizing rules */
   *,
@@ -103,6 +101,7 @@ utilities;
     min-height: 100vh;
     text-wrap: pretty;
     margin: 0;
+    padding: 2rem;
   }
 
   /* Set shorter line heights on headings and interactive elements */
