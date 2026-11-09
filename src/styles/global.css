@@ -129,6 +129,7 @@ utilities;
     --line-height__title: 1.1;
     --postWidth: 100ch;
     --radius: 3px;
+    --shadow: 8px 8px var(--titles-color);
 
     /* colors */
     --off-white: #fffcfb;
@@ -242,7 +243,7 @@ utilities;
       background-color: var(--background-accent);
       padding: 2rem;
       border-radius: var(--radius);
-      box-shadow: 8px 8px var(--dark-green);
+      box-shadow: var(--shadow);
 
       & > * {
         grid-row: 1;
@@ -345,6 +346,7 @@ utilities;
       padding: 2rem;
       background-color: var(--background-accent);
       border-left: solid 0.5rem currentColor;
+      box-shadow: var(--shadow);
     }
 
     /* Imgs */
@@ -438,6 +440,8 @@ utilities;
 
     .post-grid>*.sidenote {
       grid-column: content-end / grid-end;
+      box-shadow: var(--shadow);
+      background-color: var(--titles-color);
     }
 
     .post-header {
