@@ -6,6 +6,7 @@ blog,
 utilities;
 
 @layer reset {
+
   /* Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
   /* Box sizing rules */
   *,
@@ -188,6 +189,7 @@ utilities;
 }
 
 @layer layout {
+
   /* STACK */
   .stack {
     display: flex;
@@ -223,16 +225,16 @@ utilities;
     container-name: post-grid;
     container-type: inline-size;
 
-    &>*:not(.breakout, .sidenote) {
-      grid-column: 2;
-    }
-
-    &>.breakout {
-      grid-column: 1 / span 2;
-    }
-
-    &>.sidenote {
-      grid-column: 3;
+    @container post-grid (width > 50rem) {
+      &>*:not(.breakout, .sidenote) {
+        grid-column: 2;
+      }
+      &>.breakout {
+        grid-column: 1 / span 2;
+      }
+      &>.sidenote {
+        grid-column: 3;
+      }
     }
   }
 }
