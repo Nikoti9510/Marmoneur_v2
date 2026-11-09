@@ -239,8 +239,11 @@ utilities;
 
     /* post header */
     & .post-header {
+      & > * {
+        grid-row: 1;
+      }
       .meta {
-        grid-column: content-end / grid-end ;
+        grid-column: content-end / grid-end;
       }
       .titre {
         grid-column: grid-start / content-end;
