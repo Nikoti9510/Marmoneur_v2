@@ -292,10 +292,6 @@ utilities;
       margin-block-start: 6rem;
     }
 
-    & > h2 {
-      grid-column: grid-start / content-end;
-    }
-
     & h2:not(:first-child) {
       margin-block-start: 4.5rem;
 
