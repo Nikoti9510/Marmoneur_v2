@@ -212,8 +212,7 @@ utilities;
   .post-grid {
     --max-content-width: 55ch;
     --breakout-difference: 1;
-    /*  Compute total allowed grid width to `--breakout-difference` 
-      larger than content area  */
+    /* Compute total allowed grid width to `--breakout-difference` larger than content area */
     --breakout-grid-width: calc(var(--max-content-width) + (var(--max-content-width) * var(--breakout-difference)));
     display: grid;
     grid-template-columns: [grid-start] 1fr [content-start] minmax(min(100%, var(--max-content-width)), 3fr) [content-end] 1fr [grid-end];
@@ -245,6 +244,12 @@ utilities;
     .post-grid>*.sidenote {
       grid-column: content-end / grid-end;
     }
+
+    .post-header {
+      grid-column: 1 / -1;
+      grid-template-columns: subgrid;
+      margin-block-end: 5rem;
+    }
   }
 }
 
@@ -254,24 +259,6 @@ utilities;
 
     .post-header {
       display: grid;
-    }
-
-    @container post-grid (width > 50rem) {
-      .post-header {
-        grid-column: 1 / -1;
-        grid-template-columns: subgrid;
-        margin-block-end: 5rem;
-
-        & .meta {
-          grid-row: 1;
-          grid-column: 3;
-        }
-
-        & .titre {
-          grid-row: 1;
-          grid-column: 1 / span 2;
-        }
-      }
     }
 
     /* texts */
