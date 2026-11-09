@@ -6,6 +6,7 @@ blog,
 utilities;
 
 @layer layout {
+
   /* STACK */
   .stack {
     display: flex;
@@ -240,191 +241,185 @@ utilities;
 @layer blog {
   .post {
     --space: 1.25rem;
-  }
 
-  .post-header {
-    margin-block-end: 5rem;
-    align-items: end;
+    .post-header {
 
-    &>* {
-      border-bottom: solid .5rem currentColor;
-      padding-block-end: .5rem;
-    }
-  }
-
-  /* texts */
-  & :is(p, span) {
-    font-variant-numeric: oldstyle-nums;
-  }
-
-  /* Titles */
-  & h1 {
-    margin-block-start: 6rem;
-  }
-
-  & h2:not(:first-child) {
-    margin-block-start: 4.5rem;
-
-    &::after {
-      height: .5rem;
-      margin-block-start: .5rem;
-    }
-  }
-
-  & h3 {
-    margin-block-start: 3rem;
-    font-style: italic;
-
-    &::after {
-      height: .25rem;
-      margin-block-start: .25rem;
-    }
-  }
-
-  & :is(h2, h3) {
-    position: relative;
-
-    &::after {
-      content: "";
-      display: block;
-      background: currentcolor;
-      width: 100%;
     }
 
-    /* Anchors */
-    &>a {
-      text-decoration: none;
-      position: relative;
+    /* texts */
+    & :is(p, span) {
+      font-variant-numeric: oldstyle-nums;
     }
 
-    &>a::before {
-      content: "⩉";
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      left: -1.5ch;
-      color: var(--background-accent);
-      opacity: 0;
-      transition: ease-in-out .1s;
+    /* Titles */
+    & h1 {
+      margin-block-start: 6rem;
     }
 
-    &:hover>a::before {
-      opacity: 1;
-    }
-  }
+    & h2:not(:first-child) {
+      margin-block-start: 4.5rem;
 
-  :is(h4, h5, h6) {
-    margin-block-start: var(--space, 1rem);
-  }
-
-  /* Lists */
-  & ol>li::marker {
-    font-weight: 700;
-  }
-
-  & :is(ol, ul) {
-    --space: 1rem;
-    padding-inline-start: 1.75ch;
-
-    &>li+li,
-    & li ul {
-      margin-block-start: 0.5rem;
-    }
-
-    & li ul {
-      margin-block-end: 1.25rem;
-    }
-  }
-
-  /* Quotes */
-  & blockquote {
-    margin-inline: 0;
-    padding: 2rem;
-    background-color: var(--background-accent);
-    border-left: solid 0.5rem currentColor;
-  }
-
-  /* Imgs */
-  & figure {
-    margin-inline: 0;
-
-    & figcaption {
-      color: var(--captions-color);
-      margin-inline-start: .5rem;
-      margin-block-start: .5rem;
-      font-style: italic;
-      font-size: 1rem;
-      position: relative;
-
-      &::before {
-        content: "—";
-        margin-inline-end: .5rem;
+      &::after {
+        height: .5rem;
+        margin-block-start: .5rem;
       }
     }
-  }
 
-  /* Code blocks */
-  & pre {
-    display: flex;
-    border-top: solid .5rem currentColor;
-    padding: var(--space);
+    & h3 {
+      margin-block-start: 3rem;
+      font-style: italic;
 
-    & code {
-      min-width: 35ch;
+      &::after {
+        height: .25rem;
+        margin-block-start: .25rem;
+      }
     }
-  }
 
-  /* Tables */
-  & table {
-    border: .1rem solid currentColor;
-    border-collapse: collapse;
-    text-align: start;
-    font-variant-numeric: tabular-nums;
+    & :is(h2, h3) {
+      position: relative;
 
-    & thead {
+      &::after {
+        content: "";
+        display: block;
+        background: currentcolor;
+        width: 100%;
+      }
+
+      /* Anchors */
+      &>a {
+        text-decoration: none;
+        position: relative;
+      }
+
+      &>a::before {
+        content: "⩉";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: -1.5ch;
+        color: var(--background-accent);
+        opacity: 0;
+        transition: ease-in-out .1s;
+      }
+
+      &:hover>a::before {
+        opacity: 1;
+      }
+    }
+
+    :is(h4, h5, h6) {
+      margin-block-start: var(--space, 1rem);
+    }
+
+    /* Lists */
+    & ol>li::marker {
+      font-weight: 700;
+    }
+
+    & :is(ol, ul) {
+      --space: 1rem;
+      padding-inline-start: 1.75ch;
+
+      &>li+li,
+      & li ul {
+        margin-block-start: 0.5rem;
+      }
+
+      & li ul {
+        margin-block-end: 1.25rem;
+      }
+    }
+
+    /* Quotes */
+    & blockquote {
+      margin-inline: 0;
+      padding: 2rem;
       background-color: var(--background-accent);
-      border-bottom: solid .25rem currentColor;
+      border-left: solid 0.5rem currentColor;
+    }
 
-      & th {
-        min-width: 15ch;
+    /* Imgs */
+    & figure {
+      margin-inline: 0;
+
+      & figcaption {
+        color: var(--captions-color);
+        margin-inline-start: .5rem;
+        margin-block-start: .5rem;
+        font-style: italic;
+        font-size: 1rem;
+        position: relative;
+
+        &::before {
+          content: "—";
+          margin-inline-end: .5rem;
+        }
       }
     }
 
-    & :is(tbody, thead)>tr> :is(td, th)+ :is(td, th) {
-      border-left: solid 1px currentColor;
+    /* Code blocks */
+    & pre {
+      display: flex;
+      border-top: solid .5rem currentColor;
+      padding: var(--space);
+
+      & code {
+        min-width: 35ch;
+      }
     }
 
-    & tbody>tr+tr {
-      border-top: solid 1px currentColor;
-    }
-
-    & :is(tr, td, th) {
-      padding: 0.5rem;
-      vertical-align: top;
-      line-height: var(--line-height__special);
-    }
-
-    & caption {
-      color: var(--captions-color);
-      margin-inline-start: .5rem;
-      margin-block-end: .5rem;
-      font-style: italic;
-      font-size: 1rem;
-      position: relative;
+    /* Tables */
+    & table {
+      border: .1rem solid currentColor;
+      border-collapse: collapse;
       text-align: start;
+      font-variant-numeric: tabular-nums;
 
-      &::before {
-        content: "—";
-        margin-inline-end: .5rem;
+      & thead {
+        background-color: var(--background-accent);
+        border-bottom: solid .25rem currentColor;
+
+        & th {
+          min-width: 15ch;
+        }
+      }
+
+      & :is(tbody, thead)>tr> :is(td, th)+ :is(td, th) {
+        border-left: solid 1px currentColor;
+      }
+
+      & tbody>tr+tr {
+        border-top: solid 1px currentColor;
+      }
+
+      & :is(tr, td, th) {
+        padding: 0.5rem;
+        vertical-align: top;
+        line-height: var(--line-height__special);
+      }
+
+      & caption {
+        color: var(--captions-color);
+        margin-inline-start: .5rem;
+        margin-block-end: .5rem;
+        font-style: italic;
+        font-size: 1rem;
+        position: relative;
+        text-align: start;
+
+        &::before {
+          content: "—";
+          margin-inline-end: .5rem;
+        }
       }
     }
-  }
 
-  /* Notes de bas de page */
-  & .footnotes {
-    margin-block-start: 6rem;
-    border-top: solid .5rem currentColor;
-    padding-block-start: .5rem;
+    /* Notes de bas de page */
+    & .footnotes {
+      margin-block-start: 6rem;
+      border-top: solid .5rem currentColor;
+      padding-block-start: .5rem;
+    }
   }
 }
 
