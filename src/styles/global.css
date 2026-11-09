@@ -6,7 +6,6 @@ blog,
 utilities;
 
 @layer reset {
-
   /* Reset from https://piccalil.li/blog/a-more-modern-css-reset/ */
   /* Box sizing rules */
   *,
@@ -224,19 +223,20 @@ utilities;
     container-name: post-grid;
     container-type: inline-size;
   }
+
   .post-grid>* {
-    grid-column: 2;
+    grid-column: content;
   }
 
   @container post-grid (width > 50rem) {
     .post-grid>*:not(.breakout, .sidenote) {
-      grid-column: 2;
+      grid-column: content;
     }
     .post-grid>*.breakout {
-      grid-column: 1 / span 2;
+      grid-column: grid-start / content-end;
     }
     .post-grid>*.sidenote {
-      grid-column: 3;
+      grid-column: content-end / grid-end;
     }
   }
 }
