@@ -243,10 +243,14 @@ utilities;
 
     .post-grid>*.sidenote {
       grid-column: grid-start / grid-end;
+      height: 0;
+      margin-block-start: calc(-1 * var(--space, 1rem));
+
       aside {
         width: 100%;
         transform: translateY(-100%);
         margin-inline-start: var(--space, 1rem);
+        grid-column: content-end / grid-end;
       }
     }
 
