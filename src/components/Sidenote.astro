@@ -3,11 +3,9 @@ const props = Astro.props;
 ---
 
 <div {...props} class="sidenote">
-    <div class="grid-context">
-        <aside>
-            <slot />
-        </aside>
-    </div>
+    <aside>
+        <slot />
+    </aside>
 </div>
 
 <style>
