@@ -2,13 +2,13 @@
 const props = Astro.props;
 ---
 
-<span {...props} class="sidenote">
+<div {...props} class="sidenote">
     <div class="grid-context">
         <aside>
             <slot />
         </aside>
     </div>
-</span>
+</div>
 
 <style>
     @layer components {
