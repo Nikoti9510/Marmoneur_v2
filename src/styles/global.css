@@ -241,6 +241,10 @@ utilities;
       grid-column: content;
     }
 
+    .post-grid>*.sidenote {
+      grid-column: content-end / grid-end;
+    }
+
     .post-header {
       display: grid;
       grid-column: 1 / -1;
