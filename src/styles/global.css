@@ -3,7 +3,8 @@ variables,
 base,
 layout,
 blog,
-utilities;
+utilities,
+components;
 
 @layer reset {
 
