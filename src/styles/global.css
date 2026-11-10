@@ -242,7 +242,7 @@ utilities;
       grid-column: content;
     }
 
-    .post-grid *.sidenote {
+    .sidenote {
       grid-column: grid-start / grid-end;
       height: 0;
       margin-block-start: calc(-1 * var(--space, 1rem));
@@ -265,6 +265,7 @@ utilities;
 
   .post {
     --space: 1.25rem;
+    position: relative;
 
     /* post header */
     & .post-header {
