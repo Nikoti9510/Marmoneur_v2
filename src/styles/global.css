@@ -1,10 +1,10 @@
 @layer reset,
 variables,
+components,
 base,
 layout,
 blog,
-utilities,
-components;
+utilities;
 
 @layer reset {
 
