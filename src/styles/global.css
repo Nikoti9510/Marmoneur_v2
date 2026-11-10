@@ -292,6 +292,17 @@ utilities;
         align-items: start;
         align-content: start;
         gap: .8rem;
+
+        & .tags {
+          list-style: none;
+
+          & li {
+            padding: .8rem 1.2rem;
+            background-color: var(--background-color);
+            border-radius: var(--radius);
+            border: solid 2px var(--background-accent);
+          }
+        }
       }
 
       .titre {
@@ -365,11 +376,11 @@ utilities;
     }
 
     /* Lists */
-    & ol>li::marker {
+    & ol:not([class])>li::marker {
       font-weight: 700;
     }
 
-    & :is(ol, ul) {
+    & :is(ol:not([class]), ul:not([class])) {
       --space: 1rem;
       padding-inline-start: 1.75ch;
 
