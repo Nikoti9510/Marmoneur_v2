@@ -7,15 +7,15 @@
 </aside>
 
 <style>
+    .post-grid > aside {
+        grid-column: content-end / grid-end;
+        padding: 0.8rem;
+        font-size: 0.8rem;
+        line-height: var(--line-height__special);
+        box-shadow: var(--shadow);
+        border-radius: var(--radius);
+        background-color: var(--background-accent);
+    }
     @container post-grid (width > 50rem) {
-        .post-grid > aside {
-            grid-column: content-end / grid-end;
-            padding: 0.8rem;
-            font-size: 0.8rem;
-            line-height: var(--line-height__special);
-            box-shadow: var(--shadow);
-            border-radius: var(--radius);
-            background-color: var(--background-accent);
-        }
     }
 </style>
