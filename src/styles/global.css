@@ -117,6 +117,10 @@ utilities;
   :target {
     scroll-margin-block: 5ex;
   }
+
+  time {
+    font-style: italic;
+  }
 }
 
 @layer variables {
@@ -282,6 +286,12 @@ utilities;
       .meta {
         grid-column: content-end / grid-end;
         font-size: var(--font-size_small);
+        line-height: var(--line-height__special);
+
+        display: grid;
+        align-items: start;
+        align-content: start;
+        gap: .8rem;
       }
 
       .titre {
