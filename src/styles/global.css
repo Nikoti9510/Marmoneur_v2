@@ -295,6 +295,10 @@ utilities;
 
         & .tags {
           list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+          gap: .3rem;
 
           & li {
             padding: .8rem 1.2rem;
