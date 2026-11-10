@@ -299,13 +299,6 @@ utilities;
           padding: 0;
           display: flex;
           gap: .3rem;
-
-          & li {
-            padding: .8rem 1.2rem;
-            background-color: var(--background-color);
-            border-radius: var(--radius);
-            border: solid 2px var(--background-accent);
-          }
         }
       }
 
