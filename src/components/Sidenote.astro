@@ -9,12 +9,25 @@
 </div>
 
 <style>
+    .sidenote {
+        display: grid;
+        grid-template-columns: subgrid;
+
+        height: 0;
+        position: relative;
+        margin-block-start: calc(-1 * var(--space, 1rem));
+    }
     aside {
-        padding: 0.8rem;
+        grid-column: content-end / grid-end;
+
+        padding: var(--space, 1rem);
         font-size: 0.8rem;
-        line-height: var(--line-height__special);
         box-shadow: var(--shadow);
         border-radius: var(--radius);
+        line-height: var(--line-height__special);
         background-color: var(--background-accent);
+
+        transform: translateY(-100%);
+        margin-inline-start: var(--space, 1rem);
     }
 </style>
