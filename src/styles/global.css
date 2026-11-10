@@ -243,6 +243,11 @@ utilities;
 
     .post-grid>*.sidenote {
       grid-column: grid-start / grid-end;
+      aside {
+        width: 100%;
+        transform: translateY(-100%);
+        margin-inline-start: var(--space, 1rem);
+      }
     }
 
     .post-header {
