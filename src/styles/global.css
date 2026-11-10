@@ -241,16 +241,6 @@ utilities;
       grid-column: content;
     }
 
-    .post-grid>*.sidenote {
-      grid-column: content-end / grid-end;
-      padding: .8rem;
-      font-size: .8rem;
-      line-height: var(--line-height__special);
-      box-shadow: var(--shadow);
-      border-radius: var(--radius);
-      background-color: var(--background-accent);
-    }
-
     .post-header {
       display: grid;
       grid-column: 1 / -1;
